@@ -31,12 +31,12 @@ const Footer: React.FC = () => {
           <div className="w-full md:w-1/3">
             <h3 className="text-xl font-bold mb-4">Get In Touch!</h3>
             <p>
-              Phone:{" "}
+              Phone:
               <a
-                href="tel:+9318481183"
+                href="tel:+91 7895927366"
                 className="text-blue-400 hover:underline"
               >
-                93 184 81 183
+                +91 7895927366
               </a>
             </p>
             <p>

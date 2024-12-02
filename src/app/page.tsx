@@ -367,7 +367,7 @@ export default function Home() {
           <h5 className="text-3xl font-sans font-semibold text-gray-800">
             Your Transformation Destination.
           </h5>
-          <div className="px-20 pt-10">
+          <div className="px-20 pt-10 hover:scale-95 duration-500">
             <CoverSlider />
           </div>
         </div>
