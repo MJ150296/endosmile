@@ -146,9 +146,9 @@ export default function Home() {
           <div className="flex-1 flex justify-center items-center">
             <div className="rounded-lg shadow-lg overflow-hidden">
               <Image
-                src="/Images/drimage.jpg" // Ensure correct path for your image
+                src="/Images/Clinic/dentist.jpg" // Ensure correct path for your image
                 alt="Dr Sumit"
-                width={530} // Specify image width
+                width={400} // Specify image width
                 height={600} // Specify image height
                 className="object-cover"
                 priority
@@ -383,7 +383,7 @@ export default function Home() {
             </h5>
             <div className="space-y-1">
               <p className="text-4xl font-sans text-gray-800 font-semibold">
-                Dr. Sumit Dinkar
+                Dr. Sumit Dinkar 
                 <span className="text-xl text-blue-600">
                   (The Smile Architect)
                 </span>
