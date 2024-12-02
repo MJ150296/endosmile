@@ -104,7 +104,7 @@ export default function Home() {
               dedicated to enhancing the beauty of your smile.
             </h2>
             <h3 className="text-blue-600 text-lg font-semibold">
-              "EndoSmile - The Art of Creating Beautiful Smiles."
+              &quot;EndoSmile - The Art of Creating Beautiful Smiles&quot;
             </h3>
             {/* Stats Section */}
             <div className="flex justify-between items-center border-t border-b border-gray-400 py-4">
