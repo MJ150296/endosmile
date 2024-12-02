@@ -92,6 +92,34 @@ export default function Home() {
   ];
   return (
     <div>
+      {/* WHATSAPP ICON  */}
+      <div className="fixed z-50 right-5 bottom-10 flex flex-col gap-y-3">
+        {/* Phone Icon */}
+        <a href="tel:7895927366" aria-label="Call 7895927366">
+          <Image
+            src="/Images/Icons/phone.png"
+            alt="Phone Icon"
+            width={40}
+            height={40}
+            className="ml-2"
+          />
+        </a>
+
+        {/* WhatsApp Icon */}
+        <a
+          href="https://api.whatsapp.com/send?phone=7895927366&text=Hello Doc!%20Help%20me%20with%20the%20following%20questions%20please."
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Message on WhatsApp"
+        >
+          <Image
+            src="/Images/Icons/WhatsApp.png"
+            alt="WhatsApp Icon"
+            width={60}
+            height={40}
+          />
+        </a>
+      </div>
       <div className="w-full pt-40 py-12 pb-32 bg-gray-100 shadow-md">
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10 px-6 lg:px-10">
           {/* Text Section */}
@@ -104,7 +132,7 @@ export default function Home() {
               dedicated to enhancing the beauty of your smile.
             </h2>
             <h3 className="text-blue-600 text-lg font-semibold">
-              &quot;EndoSmile - The Art of Creating Beautiful Smiles&quot;
+              &quot;Endo<span className="text-green-600">Smile</span> - The Art of Creating Beautiful Smiles&quot;
             </h3>
             {/* Stats Section */}
             <div className="flex justify-between items-center border-t border-b border-gray-400 py-4">
@@ -383,7 +411,7 @@ export default function Home() {
             </h5>
             <div className="space-y-1">
               <p className="text-4xl font-sans text-gray-800 font-semibold">
-                Dr. Sumit Dinkar 
+                Dr. Sumit Dinkar
                 <span className="text-xl text-blue-600">
                   (The Smile Architect)
                 </span>

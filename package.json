@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "countup.js": "^2.8.0",
     "nanoid": "^5.0.9",
     "next": "15.0.3",
