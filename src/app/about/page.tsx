@@ -3,6 +3,7 @@ import SEO from "../components/SEO";
 import Image from "next/image";
 import SwiperComponent from "../components/SwiperComponent";
 import DoctorCardList from "../components/DoctorsCardList";
+import HeadingPointer from "../components/HeadingPointer";
 
 const About = () => {
   return (
@@ -49,15 +50,9 @@ const About = () => {
         {/* SECOND SECTION - ABOUT US BLOG  */}
         <div className="w-full bg-gray-50 flex p-20">
           <div className="w-1/2 flex flex-col gap-y-5">
-            <div className="flex gap-x-3">
-              <Image
-                src="/Images/Icons/Teeth.png"
-                alt="Teeth Pointer"
-                width={20}
-                height={20}
-                className="-ml-8"
-              />
-              <p className="text-gray-800 font-semibold text-lg">WELCOME TO</p>
+            <div className="flex gap-x-3 items-center">
+              <HeadingPointer />
+              <h3 className="font-semibold">WELCOME TO</h3>
             </div>
             <div className="flex flex-col gap-y-1">
               <h2 className="text-3xl text-blue-600 font-semibold">
