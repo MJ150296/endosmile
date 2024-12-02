@@ -1,6 +1,15 @@
 import Image from "next/image";
 
-function ServiceCard({ service }) {
+interface Service {
+  iconURL: string;
+  title: string;
+  description: string;
+  imageURL: string;
+  linkURL?: string;
+  detailedDescription?: string;
+}
+
+function ServiceCard({ service }: { service: Service }) {
   const {
     iconURL,
     title,
@@ -16,10 +25,10 @@ function ServiceCard({ service }) {
         <div className="flex justify-between items-center mb-5">
           <div className="border border-gray-600 rounded-full p-2">
             <Image
-              src={iconURL} // Ensure correct path for your image
+              src={iconURL}
               alt="icon"
-              width={35} // Specify image width
-              height={50} // Specify image height
+              width={35}
+              height={35}
               className="object-cover rounded-full"
             />
           </div>
@@ -36,10 +45,15 @@ function ServiceCard({ service }) {
             src={imageURL}
             alt="Card Image"
             width={300}
-            height={10}
+            height={200} // Adjust height to match the image's aspect ratio
             className="object-cover rounded-3xl"
           />
         </div>
+      </div>
+
+      <div className="hidden">
+        <p>{linkURL ?? "No link available"}</p>
+        <p>{detailedDescription ?? "No details available"}</p>
       </div>
     </div>
   );

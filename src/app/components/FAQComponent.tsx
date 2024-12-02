@@ -6,7 +6,7 @@ const faqData = [
   {
     question: "How often should I visit the dentist?",
     answer:
-      "It's recommended to visit your dentist every six months for a routine check-up and cleaning. However, your dentist may suggest more frequent visits based on your oral health needs.",
+      "It&apos;s recommended to visit your dentist every six months for a routine check-up and cleaning. However, your dentist may suggest more frequent visits based on your oral health needs.",
   },
   {
     question: "What is the best way to prevent cavities?",
@@ -40,8 +40,8 @@ const FAQComponent: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto p-10 mb-10">
       <h5 className="text-green-600 tracking-wide font-semibold text-3xl mb-5">
-        Got Questions About Your Smile?{" "}
-        <span className="text-blue-600">We've Got Answers!</span>
+        Got Questions About Your Smile?
+        <span className="text-blue-600">We&apos;ve Got Answers!</span>
       </h5>
       <div className="space-y-4">
         {faqData.map((faq, index) => (

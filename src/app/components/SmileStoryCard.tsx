@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 const SmileStoryCard = () => {
   return (
@@ -26,10 +25,10 @@ const SmileStoryCard = () => {
         <div className="">
           <h4 className="font-sans italic text-4xl absolute bottom-10 left-1/2 -translate-x-1/2 text-center">
             <span className="text-blue-600">
-              "Every smile has a story, and we're{" "}
+            &quot;Every smile has a story, and we&apos;re
             </span>
             <span className="text-green-600">
-              here to make yours unforgettable."
+              here to make yours unforgettable.&quot;
             </span>
           </h4>
         </div>

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Counter from "./components/Counter";
-import CustomCursor from "./components/CustomCursor";
 import ServiceCard from "./components/ServiceCard";
 import SmileStoryCard from "./components/SmileStoryCard";
 import CoverSlider from "./components/CoverSlider";
@@ -94,7 +93,6 @@ export default function Home() {
   return (
     <div>
       <div className="w-full pt-40 py-12 pb-32 bg-gray-100 shadow-md">
-        {/* <CustomCursor /> */}
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10 px-6 lg:px-10">
           {/* Text Section */}
           <div className="flex-1 flex flex-col text-center lg:text-left gap-6">
@@ -268,16 +266,16 @@ export default function Home() {
               <h3 className="font-semibold">EXPERTISE</h3>
             </div>
             <p className="text-5xl font-semibold">
-              Elevating Your Oral Health and Smile Aesthetics with Expertise{" "}
+              Elevating Your Oral Health and Smile Aesthetics with Expertise
             </p>
             <div className="space-y-4">
               <p className="mr-10 text-gray-600">
                 Welcome to EndoSmile Dental Care, your trusted dental clinic in
                 Greater Noida! Here, expertise truly meets excellence. With our
                 team of highly skilled professionals and a passion for
-                innovation, we're dedicated to offering personalized care that
-                prioritizes your comfort and oral health.
-              </p>{" "}
+                innovation, we&apos;re dedicated to offering personalized care
+                that prioritizes your comfort and oral health.
+              </p>
               <p className="mr-10 text-gray-600">
                 From advanced endodontics and smile makeovers to preventive
                 dental solutions, we combine state-of-the-art technology with a
@@ -339,7 +337,7 @@ export default function Home() {
           <div className="flex justify-between">
             <div className="">
               <h2 className="tracking-wide text-green-600 text-4xl">
-                ENDOSMILE{" "}
+                ENDOSMILE
                 <span className="text-blue-600 text-3xl font-medium">
                   STORIES..
                 </span>
@@ -385,7 +383,7 @@ export default function Home() {
             </h5>
             <div className="space-y-1">
               <p className="text-4xl font-sans text-gray-800 font-semibold">
-                Dr. Sumit Dinkar{" "}
+                Dr. Sumit Dinkar
                 <span className="text-xl text-blue-600">
                   (The Smile Architect)
                 </span>
@@ -406,15 +404,15 @@ export default function Home() {
               <p>
                 A proud alumnus of the prestigious Maulana Azad Institute of
                 Dental Sciences, New Delhi, Dr. Sumit brings over a decade of
-                hands-on experience to his practice. He's a lifetime member of
-                the Indian Academy of Aesthetic and Cosmetic Dentistry and has
-                pursued advanced training in Smile Design, Porcelain Veneers,
-                Teeth Whitening, Bioclear techniques, Implant Dentistry, and TMD
-                (Temporomandibular Disorder) Management.
+                hands-on experience to his practice. He&apos;s a lifetime member
+                of the Indian Academy of Aesthetic and Cosmetic Dentistry and
+                has pursued advanced training in Smile Design, Porcelain
+                Veneers, Teeth Whitening, Bioclear techniques, Implant
+                Dentistry, and TMD (Temporomandibular Disorder) Management.
               </p>
               <p>
-                Dr. Sumit's blend of cutting-edge skills and genuine care for
-                his patients makes every dental visit a step closer to the
+                Dr. Sumit&apos;s blend of cutting-edge skills and genuine care
+                for his patients makes every dental visit a step closer to the
                 perfect smile you deserve!
               </p>
               <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
