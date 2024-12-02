@@ -1,8 +1,7 @@
-
 const SmileStoryCard = () => {
   return (
-    <div className="pt-32">
-      <div className="relative h-screen w-full flex justify-center items-center">
+    <div className="pt-32 flex flex-col gap-y-5">
+      <div className="relative h-screen w-full flex flex-col justify-center items-center">
         <div className="bg-white p-1 z-40">
           <div className="w-64 h-48 bg-[url('/Images/smileStories/smile1.jpg')] bg-cover bg-top"></div>
         </div>
@@ -21,12 +20,12 @@ const SmileStoryCard = () => {
         <div className="bg-white p-1 absolute bottom-[210px] right-32">
           <div className="w-80 h-52 bg-[url('/Images/expertise-img-1.jpg')] bg-cover bg-top"></div>
         </div>
-
-        <div className="">
-          <h4 className="font-sans italic text-4xl absolute bottom-10 left-1/2 -translate-x-1/2 text-center">
+        <div className="w-full absolute bottom-12">
+          <h4 className="font-sans italic text-4xl text-center">
             <span className="text-blue-600">
-            &quot;Every smile has a story, and we&apos;re
+              &quot;Every smile has a story, and we&apos;re
             </span>
+            <br />
             <span className="text-green-600">
               here to make yours unforgettable.&quot;
             </span>
