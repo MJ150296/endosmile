@@ -107,8 +107,8 @@ const AppointmentPage: React.FC = () => {
       {/* Footer Section */}
       <footer className="py-8 bg-blue-600 text-gray-300 text-center">
         <p className="text-xl font-sans font-semibold tracking-wide">
-          "Smile brighter on your first visit! Enjoy a 10% discount on your
-          first booking with us!"{" "}
+          &quot;Smile brighter on your first visit! Enjoy a 10% discount on your
+          first booking with us!&quot;
         </p>
       </footer>
     </div>
