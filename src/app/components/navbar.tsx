@@ -1,8 +1,13 @@
+"use client";
+
 // components/Navbar.tsx
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname(); // Replace useRouter with usePathname
+
   return (
     <nav className="fixed z-50 w-full p-4 bg-black tracking-wide font-medium">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -23,25 +28,35 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-6 text-white">
           <Link
             href="/"
-            className="px-2 py-1 hover:text-cyan-400 focus:border-b-2 focus:border-cyan-500"
+            className={`px-2 py-1 transition-colors ${
+              pathname === "/" ? "text-cyan-400" : "hover:text-cyan-400"
+            }`}
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="px-2 py-1 hover:text-cyan-400 focus:border-b-2 focus:border-cyan-500"
+            className={`px-2 py-1 transition-colors ${
+              pathname === "/about" ? "text-cyan-400" : "hover:text-cyan-400"
+            }`}
           >
             About
           </Link>
           <Link
             href="/treatments"
-            className="px-2 py-1 hover:text-cyan-400 focus:border-b-2 focus:border-cyan-500"
+            className={`px-2 py-1 transition-colors ${
+              pathname === "/treatments"
+                ? "text-cyan-400"
+                : "hover:text-cyan-400"
+            }`}
           >
             Treatments
           </Link>
           <Link
             href="/blogs"
-            className="px-2 py-1 hover:text-cyan-400 focus:border-b-2 focus:border-cyan-500"
+            className={`px-2 py-1 transition-colors ${
+              pathname === "/blogs" ? "text-cyan-400" : "hover:text-cyan-400"
+            }`}
           >
             Blogs
           </Link>

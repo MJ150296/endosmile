@@ -127,13 +127,11 @@ const About = () => {
                   alt="Phone Icon"
                   width={50}
                   height={30}
+                  className="animate__animated animate__tada animate__infinite animate__slow"
                 />
                 <div className="flex flex-col font-medium">
                   <p className="text-blue-600">FOR MORE INFORMATION</p>
-                  <p className="text-green-600 font-semibold">
-                    {" "}
-                    +91 7895927366
-                  </p>
+                  <p className="text-green-600 font-semibold">+91 7895927366</p>
                 </div>
               </div>
             </div>
