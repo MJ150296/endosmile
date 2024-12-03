@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-6 text-white">
           <Link
             href="/"
-            className={`px-2 py-1 transition-colors ${
+            className={`p-2 transition-colors ${
               pathname === "/" ? "text-cyan-400" : "hover:text-cyan-400"
             }`}
           >
@@ -36,7 +36,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="/about"
-            className={`px-2 py-1 transition-colors ${
+            className={`p-2 transition-colors ${
               pathname === "/about" ? "text-cyan-400" : "hover:text-cyan-400"
             }`}
           >
@@ -44,7 +44,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="/treatments"
-            className={`px-2 py-1 transition-colors ${
+            className={`p-2 transition-colors ${
               pathname === "/treatments"
                 ? "text-cyan-400"
                 : "hover:text-cyan-400"
@@ -54,15 +54,18 @@ const Navbar = () => {
           </Link>
           <Link
             href="/blogs"
-            className={`px-2 py-1 transition-colors ${
+            className={`p-2 transition-colors ${
               pathname === "/blogs" ? "text-cyan-400" : "hover:text-cyan-400"
             }`}
           >
             Blogs
           </Link>
-          <button className="bg-green-500 text-white font-medium rounded-lg py-3 px-5">
+          <Link
+            href="/bookAppointment"
+            className="bg-green-500 text-white font-medium rounded-lg py-3 px-5"
+          >
             Book Appointment
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button (Hamburger) */}
