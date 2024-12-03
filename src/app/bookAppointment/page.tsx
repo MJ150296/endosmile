@@ -10,10 +10,9 @@ import BookAppointmentForm from "../components/BookAppointmentForm";
 import Image from "next/image";
 import SwiperCore from "swiper";
 
-// Register the Autoplay module
-SwiperCore.use([Autoplay]);
-
 const AppointmentPage: React.FC = () => {
+  // Register the Autoplay module
+  SwiperCore.use([Autoplay]);
   return (
     <div className="min-h-screen pt-24 bg-gradient-to-br from-blue-50 to-white">
       {/* Hero Section */}

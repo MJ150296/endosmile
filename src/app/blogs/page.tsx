@@ -3,6 +3,7 @@
 import React from "react";
 import "animate.css";
 import { nanoid } from "nanoid";
+import Image from "next/image";
 
 const Blogs = () => {
   const blogs = [
@@ -56,9 +57,11 @@ const Blogs = () => {
             className="bg-white shadow-lg rounded-lg overflow-hidden animate__animated animate__fadeInUp"
           >
             {/* Blog Image */}
-            <img
+            <Image
               src={blog.image}
               alt={blog.title}
+              width={200}
+              height={200}
               className="w-full h-48 object-cover"
             />
             {/* Blog Content */}

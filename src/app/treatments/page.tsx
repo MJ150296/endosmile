@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import { CountUp } from "countup.js";
 import { nanoid } from "nanoid";
+import Image from "next/image";
 
 const Treatments = () => {
   const treatmentDetails = [
@@ -161,9 +162,11 @@ const Treatments = () => {
           {treatmentDetails.map((treatment) => (
             <SwiperSlide key={treatment.id}>
               <div className="p-20 flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg">
-                <img
+                <Image
                   src={treatment.image}
                   alt={treatment.title}
+                  width={500}
+                  height={500}
                   className="w-full md:w-1/3 rounded-lg animate__animated animate__zoomIn"
                 />
                 <div className="md:ml-6 mt-4 md:mt-0 text-center md:text-left">
