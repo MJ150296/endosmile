@@ -91,7 +91,7 @@ export default function Home() {
     },
   ];
   return (
-    <div>
+    <>
       {/* WHATSAPP ICON  */}
       <div className="fixed z-50 right-5 bottom-10 flex flex-col gap-y-3">
         {/* Phone Icon */}
@@ -101,7 +101,7 @@ export default function Home() {
             alt="Phone Icon"
             width={40}
             height={40}
-            className="ml-2"
+            className="ml-2 w-10 h-10"
           />
         </a>
 
@@ -117,10 +117,11 @@ export default function Home() {
             alt="WhatsApp Icon"
             width={60}
             height={40}
+            className="w-14 h-14"
           />
         </a>
       </div>
-      <div className="w-full pt-40 py-12 pb-32 bg-gray-100 shadow-md">
+      <div className="pt-40 py-12 pb-32 bg-gray-100 shadow-md">
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10 px-6 lg:px-10">
           {/* Text Section */}
           <div className="flex-1 flex flex-col text-center lg:text-left gap-6">
@@ -132,7 +133,8 @@ export default function Home() {
               dedicated to enhancing the beauty of your smile.
             </h2>
             <h3 className="text-blue-600 text-lg font-semibold">
-              &quot;Endo<span className="text-green-600">Smile</span> - The Art of Creating Beautiful Smiles&quot;
+              &quot;Endo<span className="text-green-600">Smile</span> - The Art
+              of Creating Beautiful Smiles&quot;
             </h3>
             {/* Stats Section */}
             <div className="flex justify-between items-center border-t border-b border-gray-400 py-4">
@@ -469,6 +471,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
