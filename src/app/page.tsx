@@ -124,61 +124,80 @@ export default function Home() {
       <div className="pt-40 py-12 pb-32 bg-gray-100 shadow-md">
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10 px-6 lg:px-10">
           {/* Text Section */}
-          <div className="flex-1 flex flex-col text-center lg:text-left gap-6">
-            <h1 className="text-6xl font-bold text-gray-800 leading-tight">
+          <div className="flex-1 flex flex-col text-center gap-6 lg:text-left pt-1">
+            {/* Heading */}
+            <h1 className="text-4xl font-bold text-gray-800 leading-snug sm:text-5xl lg:text-6xl">
               Crafting Smiles, Creating Confidence
             </h1>
-            <h2 className="text-lg text-gray-600 leading-relaxed">
+
+            {/* Subheading */}
+            <h2 className="text-base text-gray-600 leading-relaxed sm:text-lg lg:text-xl">
               Your trusted partner in delivering unparalleled dental care,
               dedicated to enhancing the beauty of your smile.
             </h2>
-            <h3 className="text-blue-600 text-lg font-semibold">
+
+            {/* Tagline */}
+            <h3 className="text-blue-600 text-base font-semibold sm:text-lg lg:text-xl">
               &quot;Endo<span className="text-green-600">Smile</span> - The Art
               of Creating Beautiful Smiles&quot;
             </h3>
+
             {/* Stats Section */}
-            <div className="flex justify-between items-center border-t border-b border-gray-400 py-4">
-              <div className="flex flex-col items-center">
-                <Counter end={5} duration={2} suffix=".0" />
-                <p className="text-gray-600">Google Rating</p>
+            <div className="flex gap-4 border-t border-b border-gray-400 py-4 sm:justify-between sm:items-center">
+              <div className="flex flex-col items-center sm:items-start">
+                <span className="text-lg sm:text-xl lg:text-3xl font-bold">
+                  <Counter end={5} duration={2} suffix=".0" />
+                </span>
+                <p className="text-xs sm:text-sm text-gray-600">
+                  Google Rating
+                </p>
               </div>
-              <div className="flex flex-col items-center">
-                <Counter end={24} duration={2} suffix="x7" />
-                <p className="text-gray-600">Emergency Services</p>
+              <div className="flex flex-col items-center sm:items-start">
+                <span className="text-lg sm:text-xl lg:text-3xl font-bold">
+                  <Counter end={24} duration={2} suffix="x7" />
+                </span>
+                <p className="text-xs sm:text-sm text-gray-600">
+                  Emergency Services
+                </p>
               </div>
-              <div className="flex flex-col items-center">
-                <Counter end={12} duration={2} suffix="+" />
-                <p className="text-gray-600">Years of Experience</p>
+              <div className="flex flex-col items-center sm:items-start">
+                <span className="text-lg sm:text-xl lg:text-3xl font-bold">
+                  <Counter end={12} duration={2} suffix="+" />
+                </span>
+                <p className="text-xs sm:text-sm text-gray-600">
+                  Years of Experience
+                </p>
               </div>
             </div>
-            {/* CTA Button */}
-            <div className="mt-6 flex gap-x-5">
-              <button className="inline-block px-6 py-3 text-white bg-blue-600 rounded-md shadow hover:bg-blue-700 transition">
+
+            {/* Call-To-Action Buttons */}
+            <div className="mt-6 flex flex-row gap-4 justify-start">
+              <button className="p-3 md:px-6 md:py-3 text-white bg-blue-600 rounded-md shadow hover:bg-blue-700 transition">
                 Book An Appointment
               </button>
-              <button className="px-6 py-3 text-white bg-green-600 rounded-md shadow hover:bg-green-700 transition">
+              <button className="p-3 md:px-6 md:py-3 text-white bg-green-600 rounded-md shadow hover:bg-green-700 transition">
                 + Enquiries
               </button>
             </div>
 
-            {/* OFFER  */}
-
-            <div className="flex gap-x-2 text-red-600">
-              <p>*</p>
-              <p className="">
-                Book your first appointment through our website and enjoy an
-                exclusive 10% off your first visit! Your perfect smile awaits!
+            {/* Offer Section */}
+            <div className="flex items-start text-red-600 text-start gap-x-2 mt-2 md:mt-4">
+              <p className="mt-1 font-semibold animate-colorChange">*</p>
+              <p className="text-sm sm:text-base animate-colorChange">
+                Enjoy an exclusive 10% off your first visit! Your perfect smile
+                awaits!
               </p>
+              {/* in global css  */}
             </div>
           </div>
 
           {/* Image Section */}
-          <div className="flex-1 flex justify-center items-center">
+          <div className="flex-1 p-5 md:p-0 flex justify-center items-center">
             <div className="rounded-lg shadow-lg overflow-hidden">
               <Image
                 src="/Images/Clinic/dentist.jpg" // Ensure correct path for your image
                 alt="Dr Sumit"
-                width={400} // Specify image width
+                width={380} // Specify image width
                 height={600} // Specify image height
                 className="object-cover"
                 priority
@@ -191,16 +210,21 @@ export default function Home() {
       {/* SECOND SECTION   POP UP MODAL */}
 
       <div className="flex flex-col items-center -mt-12">
-        <div className="w-4/5 bg-white rounded-xl shadow-xl p-10 flex justify-between items-center">
-          <div className="flex flex-col text-lg font-medium">
+        <div className="w-4/5 max-w-4xl bg-white rounded-xl shadow-xl p-6 sm:p-8 md:p-10 flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-12">
+          {/* Dental Queries Section */}
+          <div className="flex flex-col text-lg font-medium text-center lg:text-left">
             <p>Any Dental Queries</p>
             <p className="font-sans font-light">+91-1234567890</p>
           </div>
-          <div className="flex flex-col text-xl">
+
+          {/* Opening Hours Section */}
+          <div className="flex flex-col text-lg sm:text-xl font-medium text-center lg:text-left">
             <p>Opening Hours</p>
             <p className="font-sans font-light">Tue to Sun 10:00AM to 7:30PM</p>
           </div>
-          <div className="flex flex-col text-xl font-medium">
+
+          {/* Book Appointment Button Section */}
+          <div className="flex flex-col text-center lg:text-left">
             <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
               Book An Appointment
             </button>
@@ -211,25 +235,28 @@ export default function Home() {
       {/* SECOND SECTION - ABOUT US */}
 
       <div>
-        <div className="w-full flex py-20">
-          <div className="w-1/2 pl-32 py-5">
+        <div className="w-full flex flex-col-reverse gap-y-10 lg:flex-row pt-20 pb-5 md:py-20 px-5 sm:px-10 lg:px-32">
+          {/* Image Section */}
+          <div className="w-full p-5 md:p-0 lg:w-1/2 mb-10 lg:mb-0">
             <Image
               src="/Images/AboutUs.png"
-              alt=""
+              alt="About Us"
               width={400}
-              height={3}
-              className="rounded-xl shadow-xl shadow-gray-400"
+              height={300} // Ensure image height is proportional to the width
+              className="w-full rounded-xl shadow-xl shadow-gray-400"
             />
           </div>
-          <div className="w-1/2 flex flex-col gap-y-10">
+
+          {/* Content Section */}
+          <div className="w-full lg:w-1/2 flex flex-col gap-y-10">
             <div className="flex gap-x-3 items-center">
               <HeadingPointer />
-              <h3 className="font-semibold">ABOUT US</h3>
+              <h3 className="font-semibold text-2xl sm:text-3xl">ABOUT US</h3>
             </div>
-            <p className="text-5xl font-semibold">
+            <p className="text-3xl sm:text-4xl font-semibold">
               Bringing Bright Smiles and Better Health Together.
             </p>
-            <p className="mr-10 text-gray-600">
+            <p className="mr-10 text-gray-600 text-base sm:text-lg lg:text-xl">
               At EndoSmile Dental Care, we believe every smile tells a story.
               Our mission is to provide exceptional dental care tailored to your
               unique needs, combining cutting-edge technology with a
@@ -237,18 +264,22 @@ export default function Home() {
               solutions, we are committed to enhancing your oral health and
               restoring your confidence—one smile at a time.
             </p>
-            <div className="p-5 flex border-b border-t border-gray-200">
-              <div className="w-1/2 flex flex-col">
-                <p className="text-4xl font-semibold">5000+</p>
+
+            {/* Stats Section */}
+            <div className="flex flex-col lg:flex-row justify-between p-5 border-b border-t border-gray-200">
+              <div className="w-full lg:w-1/2 flex flex-col text-center lg:text-left mb-5 lg:mb-0">
+                <p className="text-3xl sm:text-4xl font-semibold">5000+</p>
                 <p className="text-lg">Smiles Delivered</p>
               </div>
-              <div className="w-1/2 flex flex-col">
-                <p className="text-4xl font-semibold">100%</p>
+              <div className="w-full lg:w-1/2 flex flex-col text-center lg:text-left">
+                <p className="text-3xl sm:text-4xl font-semibold">100%</p>
                 <p className="text-lg">Patient Satisfaction</p>
               </div>
             </div>
-            <div>
-              <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
+
+            {/* CTA Button */}
+            <div className="flex justify-center lg:justify-start">
+              <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base sm:text-lg">
                 Make An Appointment +
               </button>
             </div>
@@ -259,19 +290,19 @@ export default function Home() {
       {/* THIRD SECTION - OUR SERVICES*/}
 
       <div>
-        <div className="w-full flex flex-col p-10">
+        <div className="w-full flex flex-col p-5 md:p-10">
           <div className="w-full flex flex-col gap-y-10">
-            <div className="w-full flex">
+            <div className="w-full flex flex-col md:flex-row">
               <div className="w-3/4 flex flex-col gap-y-10">
                 <div className="flex gap-x-3 items-center">
                   <HeadingPointer />
                   <h3 className="font-semibold">OUR SERVICES</h3>
                 </div>
-                <p className="text-5xl font-semibold">
+                <p className="text-3xl md:text-5xl font-semibold">
                   Comprehensive dental care tailored services for every smile
                 </p>
               </div>
-              <div className="w-1/4 py-5 flex justify-end items-center">
+              <div className="w-full md:w-1/4 py-5 flex justify-end items-center">
                 <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
                   Go to Services
                 </button>
@@ -289,13 +320,13 @@ export default function Home() {
       {/* FOURTH SECTION  */}
 
       <div>
-        <div className="w-full flex py-20 px-10">
-          <div className="w-1/2 flex flex-col gap-y-10">
+        <div className="w-full flex flex-col md:flex-row py-20 px-10">
+          <div className="w-full md:w-1/2 flex flex-col gap-y-10">
             <div className="flex gap-x-3 items-center">
               <HeadingPointer />
               <h3 className="font-semibold">EXPERTISE</h3>
             </div>
-            <p className="text-5xl font-semibold">
+            <p className="text-3xl md:text-5xl font-semibold">
               Elevating Your Oral Health and Smile Aesthetics with Expertise
             </p>
             <div className="space-y-4">
@@ -325,7 +356,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="w-1/2 flex relative justify-center items-center">
+          <div className="w-full md:w-1/2 flex relative justify-center items-center">
             <div className="p-20">
               <Image
                 src="/Images/bg/bg1.jpg"

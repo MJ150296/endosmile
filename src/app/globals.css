@@ -14,3 +14,20 @@ body {
 :root::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Edge */
 }
+
+@keyframes colorChange {
+  33% {
+    color: #3b82f6; /* text-blue-600 */
+  }
+  66% {
+    color: #10b981; /* text-green-600 */
+  }
+  0% {
+    color: #f87171; /* text-green-600 */
+  }
+}
+
+/* Apply the animation to the class */
+.animate-colorChange {
+  animation: colorChange 8s infinite;
+}
