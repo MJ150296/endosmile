@@ -131,7 +131,7 @@ export default function Home() {
             </h1>
 
             {/* Subheading */}
-            <h2 className="text-base text-gray-600 leading-relaxed sm:text-lg lg:text-xl">
+            <h2 className="text-gray-600 leading-relaxed">
               Your trusted partner in delivering unparalleled dental care,
               dedicated to enhancing the beauty of your smile.
             </h2>
@@ -235,28 +235,28 @@ export default function Home() {
       {/* SECOND SECTION - ABOUT US */}
 
       <div>
-        <div className="w-full flex flex-col-reverse gap-y-10 lg:flex-row pt-20 pb-5 md:py-20 px-5 sm:px-10 lg:px-32">
+        <div className="w-full flex flex-col-reverse gap-y-10 md:flex-row md:px-10 pt-20 pb-5">
           {/* Image Section */}
-          <div className="w-full p-5 md:p-0 lg:w-1/2 mb-10 lg:mb-0">
+          <div className="w-full md:w-1/2 p-10 md:p-0 flex justify-center items-start">
             <Image
               src="/Images/AboutUs.png"
               alt="About Us"
               width={400}
-              height={300} // Ensure image height is proportional to the width
-              className="w-full rounded-xl shadow-xl shadow-gray-400"
+              height={400} // Ensure image height is proportional to the width
+              className="rounded-xl shadow-xl shadow-gray-400 "
             />
           </div>
 
           {/* Content Section */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-y-10">
+          <div className="w-full md:w-1/2 flex flex-col gap-y-5 px-5 md:p-0">
             <div className="flex gap-x-3 items-center">
               <HeadingPointer />
-              <h3 className="font-semibold text-2xl sm:text-3xl">ABOUT US</h3>
+              <h3 className="font-semibold">ABOUT US</h3>
             </div>
-            <p className="text-3xl sm:text-4xl font-semibold">
+            <p className="text-3xl md:text-5xl font-semibold">
               Bringing Bright Smiles and Better Health Together.
             </p>
-            <p className="mr-10 text-gray-600 text-base sm:text-lg lg:text-xl">
+            <p className="mr-10 text-gray-600 tracking-wide">
               At EndoSmile Dental Care, we believe every smile tells a story.
               Our mission is to provide exceptional dental care tailored to your
               unique needs, combining cutting-edge technology with a
@@ -356,8 +356,8 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="w-full md:w-1/2 flex relative justify-center items-center">
-            <div className="p-20">
+          <div className="w-full py-5 md:w-1/2 mt-10 md:mt-0 flex relative justify-center items-center">
+            <div className="p-0 md:p-20">
               <Image
                 src="/Images/bg/bg1.jpg"
                 alt="Dr Sumit"
@@ -367,23 +367,36 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="absolute top-20 left-10">
+            <div className="absolute md:top-20 md:left-10 top-0 right-0">
               <Image
                 src="/Images/expertise-img-1.jpg"
                 alt="Dr Sumit"
                 width={220} // Specify image width
                 height={600} // Specify image height
-                className="object-cover rounded-3xl"
+                className="object-cover rounded-3xl w-32 md:w-48"
                 priority
               />
             </div>
-            <div className="absolute bottom-20 right-16">
+            <div className="absolute hidden md:flex md:bottom-20 md:right-10 ">
               <Image
                 src="/Images/expertise-img-1.jpg"
                 alt="Dr Sumit"
                 width={200} // Specify image width
                 height={600} // Specify image height
-                className="object-cover rounded-3xl"
+                className="object-cover rounded-3xl w-28 md:w-60"
+                priority
+              />
+            </div>
+
+            {/* ABOVE AND BELOW DIV'S ARE SAME, TO TACKLE SCREEN SIZE WE HAVE TO CREATE 2 DIV'S  */}
+
+            <div className="absolute md:hidden -bottom-10 left-0">
+              <Image
+                src="/Images/expertise-img-1.jpg"
+                alt="Dr Sumit"
+                width={200} // Specify image width
+                height={600} // Specify image height
+                className="object-cover rounded-3xl w-28 md:w-60"
                 priority
               />
             </div>
@@ -393,18 +406,18 @@ export default function Home() {
 
       {/* FIFTH SECTION  */}
 
-      <div className="px-10">
-        <div className="flex flex-col px-10 pt-10">
-          <div className="flex justify-between">
+      <div className="px-0 md:px-10">
+        <div className="flex flex-col px-5 md:px-10 pt-10">
+          <div className="flex flex-col gap-y-5 md:flex-row md:justify-between">
             <div className="">
-              <h2 className="tracking-wide text-green-600 text-4xl">
+              <h2 className="tracking-wide text-green-600 text-3xl md:text-4xl">
                 ENDOSMILE
-                <span className="text-blue-600 text-3xl font-medium">
+                <span className="text-blue-600 text-2xl md:text-3xl font-medium">
                   STORIES..
                 </span>
                 .
               </h2>
-              <p className="text-gray-700 text-2xl tracking-wider">
+              <p className="text-gray-700 md:text-2xl tracking-wider">
                 Redefining smiles, Redefining confidence.
               </p>
             </div>
@@ -428,7 +441,7 @@ export default function Home() {
           <h5 className="text-3xl font-sans font-semibold text-gray-800">
             Your Transformation Destination.
           </h5>
-          <div className="px-20 pt-10 hover:scale-95 duration-500">
+          <div className="px-0 md:px-20 pt-10 hover:scale-95 duration-500">
             <CoverSlider />
           </div>
         </div>
@@ -437,8 +450,8 @@ export default function Home() {
       {/* SEVENTH SECTION - PROFILE  */}
 
       <div>
-        <div className="flex p-20">
-          <div className="w-1/2 flex flex-col gap-y-5">
+        <div className="flex flex-col md:flex-row p-10 gap-y-10 md:p-20">
+          <div className="w-full md:w-1/2 flex flex-col gap-y-5">
             <h5 className="text-blue-600 tracking-wider text-xl font-semibold">
               ENDO<span className="text-green-600">SMILE</span> DENTAL CARE
             </h5>
@@ -481,7 +494,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="w-1/2 flex flex-col items-center justify-center">
+          <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
             <Image
               src="/Images/Clinic/dentist.jpg"
               alt="Best Dentist in Grater Noida"
@@ -496,8 +509,8 @@ export default function Home() {
       {/* EIGHT SECTION - FAQ's  */}
 
       <div>
-        <div className="w-full flex justify-center items-center px-10">
-          <div className="w-3/4">
+        <div className="w-full flex justify-center items-center px-0 md:px-10">
+          <div className="w-full md:w-3/4">
             <FAQComponent />
           </div>
         </div>

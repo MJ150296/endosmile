@@ -6,7 +6,7 @@ const faqData = [
   {
     question: "How often should I visit the dentist?",
     answer:
-      "It&apos;s recommended to visit your dentist every six months for a routine check-up and cleaning. However, your dentist may suggest more frequent visits based on your oral health needs.",
+      "It's recommended to visit your dentist every six months for a routine check-up and cleaning. However, your dentist may suggest more frequent visits based on your oral health needs.",
   },
   {
     question: "What is the best way to prevent cavities?",

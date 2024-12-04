@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed z-50 w-full p-4 bg-black tracking-wide font-medium">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="w-full flex justify-between items-center">
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
           <Link href="/" passHref>
@@ -75,7 +75,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div>
+        <div className="md:hidden">
           {/* Mobile Menu Button (Hamburger) */}
           <div className="md:hidden">
             <button
