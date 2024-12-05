@@ -13,8 +13,8 @@ const Footer: React.FC = () => {
           <div className="mb-6 md:mb-0 w-full md:w-1/3 md:pr-5">
             <h3 className="text-xl font-bold mb-4">EndoSmile Dental Care</h3>
             <p className="mb-2">
-              "Patients will experience a comfortable, professional setting
-              designed for relaxation and care."
+              Patients will experience a comfortable, professional setting
+              designed for relaxation and care.
             </p>
             <p className="mb-2">Location:</p>
             <p>Gaur City 2, Greater Noida (west)</p>

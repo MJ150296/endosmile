@@ -46,7 +46,7 @@ const SignUpExcitingOffer = () => {
       </p>
 
       <p className="text-3xl font-semibold bg-gradient-to-br from-[#3FA434] to-[#23a4db] bg-clip-text text-transparent">
-        "Strong Teeth, Bright Smiles."
+        &quot;Strong Teeth, Bright Smiles.&quot;
       </p>
 
       <div className="flex md:hidden gap-x-5 px-5">
