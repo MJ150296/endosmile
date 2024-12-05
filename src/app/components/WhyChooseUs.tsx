@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
         Why Choose Endo<span className="text-green-600">Smile</span> Dental Care
       </h2>
       <p className="text-center mb-12 mx-5 md:mx-24 text-gray-800 text-lg">
-        <span className="text-xl text-blue-600">"Endo</span>
+        <span className="text-xl text-blue-600">&quot;Endo</span>
         <span className="text-xl text-green-600">Smile,</span> a leading Dental
         Surgery Clinic in Greater Noida - west, is renowned for its exceptional
         care provided by expert Micro Endodontist and Aesthetic Dentist Dr.
@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
         <span className="text-xl text-green-600"> 05:00 PM to 08:00 PM</span>,
         with Sunday visits available by appointment only, ensuring convenient
         timing for all patients.
-        <span className="text-xl text-green-600">"</span>
+        <span className="text-xl text-green-600">&quot;</span>
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700">
         <div className="bg-blue-100 rounded-lg p-6 text-center">
