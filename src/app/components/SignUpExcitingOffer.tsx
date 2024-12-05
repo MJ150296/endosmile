@@ -18,7 +18,7 @@ const SignUpExcitingOffer = () => {
     window.open(whatsappURL, "_blank"); // Opens WhatsApp in a new tab
   };
   return (
-    <div className="flex flex-col gap-y-10 pt-20 text-center md:text-start justify-center items-center">
+    <div className="flex flex-col px-5 gap-y-10 pt-20 text-center md:text-start justify-center items-center">
       <p className="text-3xl md:text-5xl font-semibold bg-gradient-to-br from-[#23a4db] to-[#3FA434] bg-clip-text text-transparent">
         For special Offers & Discount Updates
       </p>
