@@ -22,7 +22,7 @@ const SwiperCard: React.FC<{ card: CardProps }> = ({ card }) => {
       </div>
 
       <p className="font-bold mt-2">{card.title}</p>
-      <p className="text-sm mt-1 h-14">{card.description}</p>
+      <p className="text-sm mt-1 min-h-20 md:min-h-14">{card.description}</p>
     </div>
   );
 };

@@ -19,11 +19,11 @@ const About = () => {
       <div className="w-full min-h-screen flex flex-col items-center justify-center pt-28">
         <div className="w-full h-screen bg-fixed bg-[url('/Images/Clinic/DentalClinic3.jpg')] bg-cover bg-center flex flex-col items-center justify-center">
           <div className="w-full h-full bg-white bg-opacity-20 flex flex-col items-center justify-center">
-            <div className="w-full flex flex-col items-center justify-center -mt-14">
-              <h1 className="animate__animated animate__slideInUp px-10 py-5 border-b-2 border-b-white  text-6xl font-bold font-sans bg-black bg-opacity-60 text-gray-200 text-center rounded-tl-3xl rounded-tr-3xl">
+            <div className="w-11/12 md:w-full flex flex-col items-center justify-center -mt-14">
+              <h1 className="animate__animated animate__slideInUp px-10 py-5 border-b-2 border-b-white text-3xl md:text-6xl font-bold font-sans bg-black bg-opacity-60 text-gray-200 text-center rounded-tl-3xl rounded-tr-3xl">
                 About Us
               </h1>
-              <p className="animate__animated animate__slideInUp animate__delay-800ms text-xl p-10 border-b-2 border-white bg-black bg-opacity-60 text-gray-200 text-center max-w-3xl rounded-3xl">
+              <p className="animate__animated animate__slideInUp animate__delay-800ms text-xl px-10 py-5 border-b-2 border-white bg-black bg-opacity-60 text-gray-200 text-center max-w-3xl rounded-3xl">
                 Welcome to{" "}
                 <span className="font-semibold">EndoSmile Dental Care</span>,
                 where{" "}
@@ -37,7 +37,7 @@ const About = () => {
                   personalized treatment plans.
                 </span>
               </p>
-              <p className="animate__animated animate__slideInUp animate__delay-1.5s text-xl p-10 border-b-2 border-white bg-black bg-opacity-60 text-gray-200 text-center max-w-3xl rounded-3xl">
+              <p className="animate__animated animate__slideInUp animate__delay-1.5s text-xl px-10 py-5 border-b-2 border-white bg-black bg-opacity-60 text-gray-200 text-center max-w-3xl rounded-3xl">
                 Our team of skilled professionals is dedicated to making each
                 visit as comfortable as possible. With a focus on preventive
                 care, we ensure that you have the knowledge and support needed
@@ -48,8 +48,8 @@ const About = () => {
         </div>
 
         {/* SECOND SECTION - ABOUT US BLOG  */}
-        <div className="w-full bg-gray-50 flex p-20">
-          <div className="w-1/2 flex flex-col gap-y-5">
+        <div className="w-full p-10 md:p-20 bg-gray-50 flex flex-col gap-y-14 md:flex-row">
+          <div className="w-full md:w-1/2 flex flex-col gap-y-5">
             <div className="flex gap-x-3 items-center">
               <HeadingPointer />
               <h3 className="font-semibold">WELCOME TO</h3>
@@ -95,7 +95,7 @@ const About = () => {
               </button>
             </div>
           </div>
-          <div className="w-1/2 flex flex-col items-end justify-center pr-10">
+          <div className="w-full md:w-1/2 flex flex-col items-end justify-center pr-0 md:pr-10">
             <Image
               src="/Images/Clinic/dentist.jpg"
               alt="About Us Clinic Image"
@@ -107,9 +107,9 @@ const About = () => {
         </div>
 
         {/* SWIPER COMPONENT  */}
-        <div className="bg-white p-20 w-full">
-          <div className="w-full flex gap-x-10">
-            <div className="w-1/3 flex flex-col gap-y-5 justify-center">
+        <div className="bg-white p-0 md:p-20 w-full">
+          <div className="w-full flex flex-col md:flex-row gap-y-10 gap-x-10">
+            <div className="w-full p-10 md:p-0 md:w-1/3 flex flex-col gap-y-5 justify-center">
               <p className="text-green-600 tracking-wide">
                 ENDO<span className="text-blue-600">SMILE</span> DENTAL CARE
               </p>
@@ -135,15 +135,15 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="w-2/3">
+            <div className="w-full md:w-2/3">
               <SwiperComponent />
             </div>
           </div>
         </div>
 
         {/* TEAM CARDS  */}
-        <div className="px-20 py-10 w-full flex">
-          <div className="flex flex-col gap-y-5">
+        <div className="px-5 md:px-20 py-10 md:py-5 w-full flex">
+          <div className="flex flex-col gap-y-2">
             <h4 className="text-4xl font-semibold text-blue-600">
               The Smile <span className="text-green-600">Squad</span>
             </h4>

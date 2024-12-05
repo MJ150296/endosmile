@@ -100,7 +100,7 @@ const SwiperComponent: React.FC = () => {
         {cardDetails.map((card) => (
           <SwiperSlide
             key={card.id}
-            className="flex items-center justify-center bg-white text-lg p-2 rounded-lg"
+            className="flex items-center justify-center bg-white text-sm md:text-lg p-0 md:p-2 rounded-lg"
           >
             <SwiperCard card={card} />
           </SwiperSlide>
