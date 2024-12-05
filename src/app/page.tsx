@@ -6,9 +6,41 @@ import CoverSlider from "./components/CoverSlider";
 import FAQComponent from "./components/FAQComponent";
 import { nanoid } from "nanoid";
 import HeadingPointer from "./components/HeadingPointer";
+import WhyChooseUs from "./components/WhyChooseUs";
+import SignUpExcitingOffer from "./components/SignUpExcitingOffer";
 
 export default function Home() {
   const services = [
+    {
+      id: nanoid(),
+      iconURL: "/Images/Icons/orthodontics.png",
+      title: "Painless Root Canal Treatment",
+      description:
+        "Save your smile with precise and painless root canal treatment.",
+      imageURL: "/Images/services/rootCanal.jpg",
+      linkURL: "",
+      detailedDescription: "",
+    },
+    {
+      id: nanoid(),
+      iconURL: "/Images/Icons/cosmetics.png",
+      title: "Cosmetic Dentistry",
+      description:
+        "Enhance your smile and confidence with personalized cosmetic dentistry.",
+      imageURL: "/Images/services/cosmeticDentistry.jpg",
+      linkURL: "",
+      detailedDescription: "",
+    },
+    {
+      id: nanoid(),
+      iconURL: "/Images/Icons/dental.png",
+      title: "Dental Fillings and Implants",
+      description:
+        "From seamless fillings to secure dental implants, restore and protect your smile with confidence.",
+      imageURL: "/Images/services/ImplantsAndFillings.jpg",
+      linkURL: "",
+      detailedDescription: "",
+    },
     {
       id: nanoid(),
       iconURL: "/Images/Icons/orthodontics1.png",
@@ -16,16 +48,6 @@ export default function Home() {
       description:
         "Straighten your teeth and perfect your smile with our advanced orthodontic treatments.",
       imageURL: "/Images/services/orthodontics.jpg",
-      linkURL: "",
-      detailedDescription: "",
-    },
-    {
-      id: nanoid(),
-      iconURL: "/Images/Icons/dental.png",
-      title: "Dental Implants and Fillings",
-      description:
-        "From seamless fillings to secure dental implants, restore and protect your smile with confidence.",
-      imageURL: "/Images/services/ImplantsAndFillings.jpg",
       linkURL: "",
       detailedDescription: "",
     },
@@ -51,20 +73,10 @@ export default function Home() {
     },
     {
       id: nanoid(),
-      iconURL: "/Images/Icons/orthodontics.png",
-      title: "Root Canal Treatment",
-      description:
-        "Save your smile with precise and painless root canal treatment.",
-      imageURL: "/Images/services/rootCanal.jpg",
-      linkURL: "",
-      detailedDescription: "",
-    },
-    {
-      id: nanoid(),
       iconURL: "/Images/Icons/pediatric.png",
-      title: "Pediatric Dentistry",
+      title: "Periradicular Treatments",
       description:
-        "Gentle care for little smiles with expert pediatric dentistry.",
+        "Expert care for tissues around the tooth root, ensuring comfort and health.",
       imageURL: "/Images/services/pediaticDentistry.jpg",
       linkURL: "",
       detailedDescription: "",
@@ -76,16 +88,6 @@ export default function Home() {
       description:
         "Restore your smile and confidence with comfortable, natural-looking dentures.",
       imageURL: "/Images/services/dentures.jpg",
-      linkURL: "",
-      detailedDescription: "",
-    },
-    {
-      id: nanoid(),
-      iconURL: "/Images/Icons/cosmetics.png",
-      title: "Cosmetic Dentistry",
-      description:
-        "Enhance your smile and confidence with personalized cosmetic dentistry.",
-      imageURL: "/Images/services/cosmeticDentistry.jpg",
       linkURL: "",
       detailedDescription: "",
     },
@@ -435,16 +437,10 @@ export default function Home() {
         </div>
       </div>
 
-      {/* SIXTH SECTION - TRANSFORMATION  */}
-      <div className="">
-        <div className="p-10 bg-gray-200 shadow-xl">
-          <h5 className="text-3xl font-sans font-semibold text-gray-800">
-            Your Transformation Destination.
-          </h5>
-          <div className="px-0 md:px-20 pt-10 hover:scale-95 duration-500">
-            <CoverSlider />
-          </div>
-        </div>
+      {/* SIXTH SECTION - Why Choose Us  */}
+
+      <div>
+        <WhyChooseUs />
       </div>
 
       {/* SEVENTH SECTION - PROFILE  */}
@@ -506,7 +502,26 @@ export default function Home() {
         </div>
       </div>
 
-      {/* EIGHT SECTION - FAQ's  */}
+      {/* SEVENTH SECTION - TRANSFORMATION  */}
+
+      <div className="">
+        <div className="p-10 bg-gray-200 shadow-xl">
+          <h5 className="text-3xl font-sans font-semibold text-gray-800">
+            Your Transformation Destination.
+          </h5>
+          <div className="px-0 md:px-20 pt-10 hover:scale-95 duration-500">
+            <CoverSlider />
+          </div>
+        </div>
+      </div>
+
+      {/* EIGHTH SECTION - SIGNUP FOR OFFERS  */}
+
+      <div>
+        <SignUpExcitingOffer />
+      </div>
+
+      {/* NINTH SECTION - FAQ's  */}
 
       <div>
         <div className="w-full flex justify-center items-center px-0 md:px-10">

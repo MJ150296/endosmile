@@ -6,7 +6,7 @@ const faqData = [
   {
     question: "How often should I visit the dentist?",
     answer:
-      "It's recommended to visit your dentist every six months for a routine check-up and cleaning. However, your dentist may suggest more frequent visits based on your oral health needs.",
+      "It's recommended to visit your dentist every three to six months for a routine check-up and cleaning. However, your dentist may suggest more frequent visits based on your oral health needs.",
   },
   {
     question: "What is the best way to prevent cavities?",
@@ -21,7 +21,7 @@ const faqData = [
   {
     question: "What should I do if I have a toothache?",
     answer:
-      "If you have a toothache, rinse your mouth with warm water, floss to remove food debris, and avoid extreme temperatures. Schedule a visit to your dentist as soon as possible.",
+      "If you experience toothache, schedule a visit with your dentist immediately. Avoid self-medication.",
   },
   {
     question: "What is the difference between a filling and a crown?",
@@ -38,7 +38,7 @@ const FAQComponent: React.FC = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-10 mb-10">
+    <div className="max-w-4xl mx-auto px-10 py-20 mb-10">
       <h5 className="text-green-600 tracking-wide font-semibold text-3xl mb-5">
         Got Questions About Your Smile?
         <span className="text-blue-600">We&apos;ve Got Answers!</span>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import SocialMedia from "./SocialMedia";
 
 const Navbar = () => {
   const pathname = usePathname(); // Replace useRouter with usePathname
@@ -29,6 +30,9 @@ const Navbar = () => {
               className="object-contain"
             />
           </Link>
+          <div className="flex">
+            <SocialMedia />
+          </div>
         </div>
 
         {/* Navbar Links */}

@@ -10,21 +10,23 @@ const Footer: React.FC = () => {
         {/* Top Section */}
         <div className="flex flex-wrap justify-between">
           {/* Clinic Info */}
-          <div className="mb-6 md:mb-0 w-full md:w-1/3">
+          <div className="mb-6 md:mb-0 w-full md:w-1/3 md:pr-5">
             <h3 className="text-xl font-bold mb-4">EndoSmile Dental Care</h3>
             <p className="mb-2">
-              Patients can look forward to an atmosphere that’s cozy, casual,
-              and fun!
+              "Patients will experience a comfortable, professional setting
+              designed for relaxation and care."
             </p>
             <p className="mb-2">Location:</p>
-            <p>Gaur City 2, Greater Noida</p>
+            <p>Gaur City 2, Greater Noida (west)</p>
           </div>
 
           {/* Opening Hours */}
           <div className="mb-6 md:mb-0 w-full md:w-1/3">
             <h3 className="text-xl font-bold mb-4">Opening Hours</h3>
-            <p>Tue to Sun: 9:30 AM to 5:00 PM</p>
-            <p>Monday: Closed</p>
+            <p>Mon to Sat -</p>
+            <p>Morning: 10:00 AM to 01:00 PM</p>
+            <p>Evening: 05:00 PM to 08:00 PM</p>
+            <p>Sunday: Appointment Only</p>
           </div>
 
           {/* Contact Info */}
@@ -109,12 +111,12 @@ const Footer: React.FC = () => {
                   href="/services/zoom-teeth-whitening"
                   className="hover:underline"
                 >
-                  Zoom Teeth Whitening
+                  Painless RCT Treatments
                 </Link>
               </li>
               <li>
                 <Link href="/services/invisalign" className="hover:underline">
-                  Invisalign
+                  Crowns & Bridges
                 </Link>
               </li>
               <li>
@@ -122,7 +124,7 @@ const Footer: React.FC = () => {
                   href="/services/smile-makeover"
                   className="hover:underline"
                 >
-                  Smile Makeover
+                  Cosmetic Dentistry
                 </Link>
               </li>
               <li>
@@ -130,7 +132,7 @@ const Footer: React.FC = () => {
                   href="/services/dental-veneers"
                   className="hover:underline"
                 >
-                  Dental Veneers
+                  Dental Fillings and Implants
                 </Link>
               </li>
               <li>
@@ -138,15 +140,7 @@ const Footer: React.FC = () => {
                   href="/services/dental-implants"
                   className="hover:underline"
                 >
-                  Dental Implants
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/tooth-jewellery"
-                  className="hover:underline"
-                >
-                  Tooth Jewellery
+                  Clear Alligners
                 </Link>
               </li>
             </ul>
