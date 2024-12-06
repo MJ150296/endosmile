@@ -77,7 +77,7 @@ const BookAppointmentForm: React.FC = () => {
         
         Please let me know the available slots for an appointment.`;
 
-      const whatsappURL = `https://wa.me/+918700051152?text=${encodeURIComponent(
+      const whatsappURL = `https://wa.me/+918368847831?text=${encodeURIComponent(
         whatsappMessage
       )}`;
 
