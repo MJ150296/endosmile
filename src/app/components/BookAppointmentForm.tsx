@@ -7,6 +7,7 @@ import { CountUp } from "countup.js";
 type FormData = {
   name: string;
   email: string;
+  phone: string;
   message: string;
 };
 
@@ -14,6 +15,7 @@ const BookAppointmentForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
   const [errors, setErrors] = useState<Partial<FormData>>({});
@@ -66,9 +68,25 @@ const BookAppointmentForm: React.FC = () => {
       console.log("Form Data Submitted:", formData);
       setShowSuccess(true);
 
+      // Prepare WhatsApp message with form data for dentist appointment
+      const whatsappMessage = `Hello, I would like to book a dental appointment. Here are my details:
+        - Name: ${formData.name}
+        - Email: ${formData.email}
+        - Phone: ${formData.phone}
+        - Message: ${formData.message}
+        
+        Please let me know the available slots for an appointment.`;
+
+      const whatsappURL = `https://wa.me/+918700051152?text=${encodeURIComponent(
+        whatsappMessage
+      )}`;
+
+      // Open WhatsApp with the message
+      window.open(whatsappURL, "_blank");
+
       // Reset form after success
       setTimeout(() => {
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", phone: "", message: "" });
         setErrors({});
         setShowSuccess(false);
       }, 3000);
@@ -134,6 +152,25 @@ const BookAppointmentForm: React.FC = () => {
           />
           {errors.email && (
             <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+          )}
+        </div>
+
+        <div>
+          <label className="block text-sm font-medium text-gray-700">
+            Phone Number
+          </label>
+          <input
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            className={`w-full mt-1 p-3 border ${
+              errors.phone ? "border-red-500" : "border-gray-300"
+            } rounded-lg focus:ring focus:ring-blue-200 transition duration-200`}
+            placeholder="Your Phone Number"
+          />
+          {errors.phone && (
+            <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
           )}
         </div>
 
