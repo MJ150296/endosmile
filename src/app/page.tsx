@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Counter from "./components/Counter";
 import ServiceCard from "./components/ServiceCard";
@@ -8,6 +10,8 @@ import { nanoid } from "nanoid";
 import HeadingPointer from "./components/HeadingPointer";
 import WhyChooseUs from "./components/WhyChooseUs";
 import SignUpExcitingOffer from "./components/SignUpExcitingOffer";
+import Link from "next/link";
+import React, { useRef } from "react";
 
 export default function Home() {
   const services = [
@@ -63,16 +67,6 @@ export default function Home() {
     },
     {
       id: nanoid(),
-      iconURL: "/Images/Icons/dental (1).png",
-      title: "Braces & Aligners",
-      description:
-        "Transform your smile with braces and aligners, offering precision and comfort.",
-      imageURL: "/Images/services/braces.jpg",
-      linkURL: "",
-      detailedDescription: "",
-    },
-    {
-      id: nanoid(),
       iconURL: "/Images/Icons/pediatric.png",
       title: "Periradicular Treatments",
       description:
@@ -81,6 +75,17 @@ export default function Home() {
       linkURL: "",
       detailedDescription: "",
     },
+    {
+      id: nanoid(),
+      iconURL: "/Images/Icons/dental (1).png",
+      title: "Braces & Aligners",
+      description:
+        "Transform your smile with braces and aligners, offering precision and comfort.",
+      imageURL: "/Images/services/braces.jpg",
+      linkURL: "",
+      detailedDescription: "",
+    },
+
     {
       id: nanoid(),
       iconURL: "/Images/Icons/dentures.png",
@@ -92,6 +97,15 @@ export default function Home() {
       detailedDescription: "",
     },
   ];
+
+  const SignUpExcitingOfferRef = useRef<HTMLDivElement>(null); // Create a ref for the target section
+
+  const handleScrollToSignUpExcitingOffer = () => {
+    if (SignUpExcitingOfferRef.current) {
+      SignUpExcitingOfferRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       {/* WHATSAPP ICON  */}
@@ -133,7 +147,7 @@ export default function Home() {
             </h1>
 
             {/* Subheading */}
-            <h2 className="text-gray-600 leading-relaxed">
+            <h2 className="text-gray-700 leading-relaxed">
               Your trusted partner in delivering unparalleled dental care,
               dedicated to enhancing the beauty of your smile.
             </h2>
@@ -174,10 +188,16 @@ export default function Home() {
 
             {/* Call-To-Action Buttons */}
             <div className="mt-6 flex flex-row gap-4 justify-start">
-              <button className="p-3 md:px-6 md:py-3 text-white bg-blue-600 rounded-md shadow hover:bg-blue-700 transition">
+              <Link
+                href="/bookAppointment"
+                className="p-3 md:px-6 md:py-3 text-white bg-blue-600 rounded-md shadow hover:bg-blue-700 transition"
+              >
                 Book An Appointment
-              </button>
-              <button className="p-3 md:px-6 md:py-3 text-white bg-green-600 rounded-md shadow hover:bg-green-700 transition">
+              </Link>
+              <button
+                className="p-3 md:px-6 md:py-3 text-white bg-green-600 rounded-md shadow hover:bg-green-700 transition"
+                onClick={handleScrollToSignUpExcitingOffer} // Trigger scroll on click
+              >
                 + Enquiries
               </button>
             </div>
@@ -212,24 +232,35 @@ export default function Home() {
       {/* SECOND SECTION   POP UP MODAL */}
 
       <div className="flex flex-col items-center -mt-12">
-        <div className="w-4/5 max-w-4xl bg-white rounded-xl shadow-xl p-6 sm:p-8 md:p-10 flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-12">
+        <div className="w-4/5 max-w-4xl bg-white rounded-xl shadow-xl p-6 sm:p-8 md:px-10 md:py-8 flex flex-col lg:flex-row justify-between items-start gap-6 lg:gap-12">
           {/* Dental Queries Section */}
           <div className="flex flex-col text-lg font-medium text-center lg:text-left">
             <p>Any Dental Queries</p>
-            <p className="font-sans font-light">+91-1234567890</p>
+            <p className="font-sans font-light">+91 - 83688 47831</p>
           </div>
 
           {/* Opening Hours Section */}
-          <div className="flex flex-col text-lg sm:text-xl font-medium text-center lg:text-left">
+          <div className="flex flex-col text-lg sm:text-xl font-medium text-start">
             <p>Opening Hours</p>
-            <p className="font-sans font-light">Tue to Sun 10:00AM to 7:30PM</p>
+            <p className="font-sans font-light text-sm">
+              <span className="font-semibold">Mon to Sat</span> 10:00AM to
+              1:00PM(Morning) <br />
+              <span className="md:ml-[78px]">05:00PM to 8:00PM(Evening)</span>
+              <br />
+              <span>
+                <span className="font-semibold">Sunday -</span> Appointment Only
+              </span>
+            </p>
           </div>
 
           {/* Book Appointment Button Section */}
           <div className="flex flex-col text-center lg:text-left">
-            <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
+            <Link
+              href="/bookAppointment"
+              className="p-3 md:px-6 md:py-3 text-white bg-blue-600 rounded-full shadow hover:bg-green-600 transition"
+            >
               Book An Appointment
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -258,13 +289,17 @@ export default function Home() {
             <p className="text-3xl md:text-5xl font-semibold">
               Bringing Bright Smiles and Better Health Together.
             </p>
-            <p className="mr-10 text-gray-600 tracking-wide">
-              At EndoSmile Dental Care, we believe every smile tells a story.
-              Our mission is to provide exceptional dental care tailored to your
-              unique needs, combining cutting-edge technology with a
-              compassionate touch. From routine check-ups to advanced dental
-              solutions, we are committed to enhancing your oral health and
-              restoring your confidence—one smile at a time.
+            <p className="text-gray-600">
+              {" "}
+              At <strong>EndoSmile Dental Care</strong>, we believe every smile
+              tells a story. Our mission is to provide exceptional{" "}
+              <strong>dental care in Greater Noida West</strong>, blending
+              advanced <strong>dental technology</strong> with a compassionate
+              approach. From routine check-ups to advanced treatments like{" "}
+              <strong>Root Canal Therapy</strong> and{" "}
+              <strong>Smile Makeovers</strong>, we are dedicated to improving
+              your <strong>oral health</strong> and boosting your confidence—one
+              smile at a time.{" "}
             </p>
 
             {/* Stats Section */}
@@ -281,9 +316,12 @@ export default function Home() {
 
             {/* CTA Button */}
             <div className="flex justify-center lg:justify-start">
-              <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base sm:text-lg">
-                Make An Appointment +
-              </button>
+            <Link
+              href="/bookAppointment"
+              className="p-3 md:px-6 md:py-3 text-white bg-blue-600 rounded-full shadow hover:bg-green-600 transition"
+            >
+              Make An Appointment +
+            </Link>
             </div>
           </div>
         </div>
@@ -305,9 +343,9 @@ export default function Home() {
                 </p>
               </div>
               <div className="w-full md:w-1/4 py-5 flex justify-end items-center">
-                <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
-                  Go to Services
-                </button>
+                <Link href="/treatments" className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
+                  Our Treatments
+                </Link>
               </div>
             </div>
             <div className="w-full flex flex-wrap flex-1 gap-x-10 gap-y-14 justify-center items-center">
@@ -331,31 +369,40 @@ export default function Home() {
             <p className="text-3xl md:text-5xl font-semibold">
               Elevating Your Oral Health and Smile Aesthetics with Expertise
             </p>
-            <div className="space-y-4">
-              <p className="mr-10 text-gray-600">
-                Welcome to EndoSmile Dental Care, your trusted dental clinic in
-                Greater Noida! Here, expertise truly meets excellence. With our
-                team of highly skilled professionals and a passion for
-                innovation, we&apos;re dedicated to offering personalized care
-                that prioritizes your comfort and oral health.
-              </p>
-              <p className="mr-10 text-gray-600">
-                From advanced endodontics and smile makeovers to preventive
-                dental solutions, we combine state-of-the-art technology with a
-                compassionate approach to ensure your visit is as effective as
-                it is comfortable.
-              </p>
-              <p className="mr-10 text-gray-600">
-                Located in the heart of Greater Noida, we take pride in
-                transforming smiles and boosting confidence for our community.
-                Choose EndoSmile Dental Care for exceptional results you can
-                trust—because your smile deserves nothing but the best!
-              </p>
+            <div className="space-y-4 mr-10 text-gray-600">
+              <p>
+                {" "}
+                Welcome to <strong>EndoSmile Dental Care</strong>, the trusted
+                dental clinic in <strong>Greater Noida West</strong>, where
+                expertise meets innovation. Led by{" "}
+                <strong>Dr. Sumit Dinkar</strong>, a renowned{" "}
+                <strong>Micro Endodontist and Aesthetic Dentist</strong>, our
+                clinic is committed to providing personalized care that
+                prioritizes your comfort and oral health. As part of our mission
+                to make dental care accessible, we align with government
+                initiatives like the{" "}
+                <strong>National Oral Health Programme (NOHP)</strong> to
+                promote preventive and affordable dental solutions for the
+                community.{" "}
+              </p>{" "}
+              <p>
+                {" "}
+                At EndoSmile Dental Care, we specialize in advanced treatments
+                such as <strong>Root Canal Therapy</strong>,{" "}
+                <strong>Smile Makeovers</strong>, and{" "}
+                <strong>Cosmetic Dentistry</strong>, while also offering routine
+                check-ups and preventive care. Our clinic integrates
+                state-of-the-art technology with a patient-first approach to
+                ensure every visit is both effective and stress-free. We also
+                participate in schemes like <strong>Ayushman Bharat</strong> to
+                provide subsidized dental care for eligible patients, ensuring
+                oral health is accessible to everyone.{" "}
+              </p>{" "}
             </div>
             <div>
-              <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
-                Treatments
-              </button>
+              <Link href="/treatments" className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
+                Go to Treatments
+              </Link>
             </div>
           </div>
           <div className="w-full py-5 md:w-1/2 mt-10 md:mt-0 flex relative justify-center items-center">
@@ -424,9 +471,12 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
+              <Link
+                href="/bookAppointment"
+                className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base"
+              >
                 Book An Appointment +
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -459,31 +509,52 @@ export default function Home() {
                 </span>
               </p>
               <p className="text-green-600 font-semibold">
-                Principal Dentist; Endodontist (Root Canal Specialist)
+                Micro Endodontist and Aesthetic Dentist
               </p>
             </div>
             <div className="space-y-4 tracking-wide leading-relaxed text-gray-800">
               <p>
-                Dr. Sumit Dinkar is a passionate and skilled dentist dedicated
-                to crafting confident, radiant smiles. With his expertise and a
-                warm, approachable demeanor, he ensures every patient feels at
-                ease while receiving top-notch care. Specializing in Endodontics
-                (Root Canal Treatment) and Cosmetic Dentistry, Dr. Sumit is on a
-                mission to transform oral health and smiles alike!
-              </p>
+                {" "}
+                Dr. Sumit Dinkar is a highly skilled{" "}
+                <strong>Micro Endodontist</strong> and{" "}
+                <strong>Aesthetic Dentist</strong> based in{" "}
+                <strong>Greater Noida West</strong>, specializing in{" "}
+                <strong>Root Canal Treatment</strong>,{" "}
+                <strong>Smile Design</strong>, and{" "}
+                <strong>Cosmetic Dentistry</strong>. Known for his precision and
+                approachable demeanor, Dr. Sumit provides world-class dental
+                care in a comfortable, stress-free environment, transforming
+                smiles and oral health across the region.{" "}
+              </p>{" "}
               <p>
-                A proud alumnus of the prestigious Maulana Azad Institute of
-                Dental Sciences, New Delhi, Dr. Sumit brings over a decade of
-                hands-on experience to his practice. He&apos;s a lifetime member
-                of the Indian Academy of Aesthetic and Cosmetic Dentistry and
-                has pursued advanced training in Smile Design, Porcelain
-                Veneers, Teeth Whitening, Bioclear techniques, Implant
-                Dentistry, and TMD (Temporomandibular Disorder) Management.
-              </p>
+                {" "}
+                An alumnus of the prestigious{" "}
+                <strong>
+                  Maulana Azad Institute of Dental Sciences, New Delhi
+                </strong>
+                , Dr. Sumit has over a decade of expertise in advanced
+                procedures like <strong>crown and bridge work</strong>,{" "}
+                <strong>peri-radicular surgeries</strong>, and{" "}
+                <strong>aesthetic treatments</strong>. He is also trained to
+                deliver compassionate care under general anesthesia for patients
+                with special needs.{" "}
+              </p>{" "}
               <p>
-                Dr. Sumit&apos;s blend of cutting-edge skills and genuine care
-                for his patients makes every dental visit a step closer to the
-                perfect smile you deserve!
+                {" "}
+                A lifetime member of the{" "}
+                <strong>
+                  Indian Academy of Aesthetic and Cosmetic Dentistry
+                </strong>
+                , Dr. Sumit has advanced training in{" "}
+                <strong>Porcelain Veneers</strong>,{" "}
+                <strong>Teeth Whitening</strong>,{" "}
+                <strong>Bioclear techniques</strong>, and{" "}
+                <strong>Temporomandibular Disorder (TMD) Management</strong>.
+                With notable achievements like securing{" "}
+                <strong>Delhi PG Rank 1</strong> and winning the{" "}
+                <strong>Best Paper Presentation</strong> award, Dr. Sumit
+                ensures every dental visit is a step closer to the{" "}
+                <strong>perfect smile</strong>.{" "}
               </p>
               <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
                 Read More
@@ -517,7 +588,7 @@ export default function Home() {
 
       {/* EIGHTH SECTION - SIGNUP FOR OFFERS  */}
 
-      <div>
+      <div ref={SignUpExcitingOfferRef}>
         <SignUpExcitingOffer />
       </div>
 

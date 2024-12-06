@@ -12,10 +12,7 @@ const Footer: React.FC = () => {
           {/* Clinic Info */}
           <div className="mb-6 md:mb-0 w-full md:w-1/3 md:pr-5">
             <h3 className="text-xl font-bold mb-4">EndoSmile Dental Care</h3>
-            <p className="mb-2">
-              Patients will experience a comfortable, professional setting
-              designed for relaxation and care.
-            </p>
+            <p className="mb-2">"Your Path to Perfect Oral Health."</p>
             <p className="mb-2">Location:</p>
             <p>Gaur City 2, Greater Noida (west)</p>
           </div>
@@ -35,10 +32,10 @@ const Footer: React.FC = () => {
             <p>
               Phone:
               <a
-                href="tel:+91 7895927366"
+                href="tel:+91 8368847831"
                 className="text-blue-400 hover:underline"
               >
-                +91 7895927366
+                +91 8368847831
               </a>
             </p>
             <p>
@@ -58,35 +55,39 @@ const Footer: React.FC = () => {
 
         {/* Links Section */}
         <div className="flex flex-wrap justify-between text-sm">
+          {/* Services */}
+          <div className="w-full md:w-1/3">
+            <h3 className="text-lg font-semibold mb-4">Our Services</h3>
+            <ul>
+              <li className="hover:underline">Painless RCT Treatments</li>
+              <li className="hover:underline">Crowns & Bridges</li>
+              <li className="hover:underline">Cosmetic Dentistry</li>
+              <li className="hover:underline">Dental Fillings and Implants</li>
+              <li className="hover:underline">Clear Alligners</li>
+            </ul>
+          </div>
+
           {/* Quick Links */}
           <div className="w-full md:w-1/3 mb-6">
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul>
               <li>
-                <Link href="/dr-sumit-dinkar" className="hover:underline">
-                  Dr Sumit Dinkar
-                </Link>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/about" className="hover:underline">
-                  About EndoSmile Dental Care
-                </Link>
+                <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="/team" className="hover:underline">
-                  Meet Our Team
-                </Link>
+                <Link href="/treatments">Treatments</Link>
               </li>
               <li>
-                <Link href="/stories" className="hover:underline">
-                  Smile Stories
-                </Link>
+                <Link href="/blogs">Blogs</Link>
               </li>
             </ul>
           </div>
 
           {/* Policies */}
-          <div className="w-full md:w-1/3 mb-6">
+          {/* <div className="w-full md:w-1/3 mb-6">
             <h3 className="text-lg font-semibold mb-4">Help</h3>
             <ul>
               <li>
@@ -100,57 +101,26 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
-          {/* Services */}
+          {/* GOOGLE MAP  */}
+
           <div className="w-full md:w-1/3">
-            <h3 className="text-lg font-semibold mb-4">Our Services</h3>
-            <ul>
-              <li>
-                <Link
-                  href="/services/zoom-teeth-whitening"
-                  className="hover:underline"
-                >
-                  Painless RCT Treatments
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/invisalign" className="hover:underline">
-                  Crowns & Bridges
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/smile-makeover"
-                  className="hover:underline"
-                >
-                  Cosmetic Dentistry
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/dental-veneers"
-                  className="hover:underline"
-                >
-                  Dental Fillings and Implants
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/dental-implants"
-                  className="hover:underline"
-                >
-                  Clear Alligners
-                </Link>
-              </li>
-            </ul>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3502.3625286261413!2d77.42298475433635!3d28.618894897843848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s11th%20avenue%20gaur%20city%202!5e0!3m2!1sen!2sin!4v1733499543590!5m2!1sen!2sin"
+              width="400"
+              height="200"
+              loading="lazy"
+              className="rounded-lg shadow-lg shadow-gray-600"
+            ></iframe>
           </div>
         </div>
 
         {/* Bottom Section */}
         <div className="mt-8 text-center text-sm text-gray-400">
           © {new Date().getFullYear()} EndoSmile Dental Care. All rights
-          reserved. | Designed with ❤️ in Greater Noida
+          reserved. | Designed with ❤️{" "}
+          <span className="font-semibold">Avaco Technologies</span>
         </div>
       </div>
     </footer>

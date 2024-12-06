@@ -18,8 +18,8 @@ const WhyChooseUs = () => {
         timing for all patients.
         <span className="text-xl text-green-600">&quot;</span>
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700">
-        <div className="bg-blue-100 rounded-lg p-6 text-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="bg-blue-100 text-gray-700 hover:bg-green-100 hover:text-gray-900 hover:scale-95 duration-500 rounded-lg p-6 text-center">
           <Image
             src="/Images/ChooseUsIcons/patientCentric.svg"
             alt="Patient-Centric Approach"
@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
           />
           <h3 className="text-xl font-bold mb-2">Patient-Centric Approach</h3>
         </div>
-        <div className="bg-blue-100 rounded-lg p-6 text-center">
+        <div className="bg-blue-100 text-gray-700 hover:bg-green-100 hover:text-gray-900 hover:scale-95 duration-500 rounded-lg p-6 text-center">
           <Image
             src="/Images/ChooseUsIcons/quality.svg"
             alt="Commitment to Quality"
@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
           />
           <h3 className="text-xl font-bold mb-2">Commitment to Quality</h3>
         </div>
-        <div className="bg-blue-100 rounded-lg p-6 text-center">
+        <div className="bg-blue-100 text-gray-700 hover:bg-green-100 hover:text-gray-900 hover:scale-95 duration-500 rounded-lg p-6 text-center">
           <Image
             src="/Images/ChooseUsIcons/dentist.svg"
             alt="Specialized Expertise"
@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
           />
           <h3 className="text-xl font-bold mb-2">Specialized Expertise</h3>
         </div>
-        <div className="bg-blue-100 rounded-lg p-6 text-center">
+        <div className="bg-blue-100 text-gray-700 hover:bg-green-100 hover:text-gray-900 hover:scale-95 duration-500 rounded-lg p-6 text-center">
           <Image
             src="/Images/ChooseUsIcons/dentist-tool.svg"
             alt="Advanced Technology"
@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
           />
           <h3 className="text-xl font-bold mb-2">Advanced Technology</h3>
         </div>
-        <div className="bg-blue-100 rounded-lg p-6 text-center">
+        <div className="bg-blue-100 text-gray-700 hover:bg-green-100 hover:text-gray-900 hover:scale-95 duration-500 rounded-lg p-6 text-center">
           <Image
             src="/Images/ChooseUsIcons/dental-care.svg"
             alt="Affordable Care"
@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
           />
           <h3 className="text-xl font-bold mb-2">Affordable Care</h3>
         </div>
-        <div className="bg-blue-100 rounded-lg p-6 text-center">
+        <div className="bg-blue-100 text-gray-700 hover:bg-green-100 hover:text-gray-900 hover:scale-95 duration-500 rounded-lg p-6 text-center">
           <Image
             src="/Images/ChooseUsIcons/education.svg"
             alt="Patient Education"

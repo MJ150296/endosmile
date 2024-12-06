@@ -42,7 +42,7 @@ const SignUpExcitingOffer = () => {
       </div>
 
       <p className="text-2xl font-semibold bg-gradient-to-br from-[#23a4db] to-[#3FA434] bg-clip-text text-transparent">
-        Call us at +91-78959 27366
+        Call us at +91-83688 47831
       </p>
 
       <p className="text-3xl font-semibold bg-gradient-to-br from-[#3FA434] to-[#23a4db] bg-clip-text text-transparent">
@@ -51,7 +51,7 @@ const SignUpExcitingOffer = () => {
 
       <div className="flex md:hidden gap-x-5 px-5">
         <a
-          href="https://wa.me/+918700051152"
+          href="https://wa.me/+918368847831"
           target="_blank"
           rel="noopener noreferrer"
         >

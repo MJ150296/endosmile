@@ -9,6 +9,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import { CountUp } from "countup.js";
 import { nanoid } from "nanoid";
 import Image from "next/image";
+import Link from "next/link";
 
 const Treatments = () => {
   const treatmentDetails = [
@@ -138,12 +139,12 @@ const Treatments = () => {
 
         {/* Call to Action */}
         <div className="mt-12 text-center p-5">
-          <a
-            href="/contact"
-            className="bg-blue-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition duration-300"
+          <Link
+            href="/bookAppointment"
+            className="p-3 md:px-6 md:py-3 text-white bg-blue-600 rounded-lg shadow hover:bg-green-600 transition"
           >
-            Book an Appointment
-          </a>
+            Book An Appointment
+          </Link>
         </div>
 
         {/* Swiper for Treatments */}

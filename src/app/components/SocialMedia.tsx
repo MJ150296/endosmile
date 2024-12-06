@@ -6,7 +6,7 @@ function SocialMedia() {
       <div className="w-full flex flex-col items-center">
         <div className="hidden md:flex gap-x-10 px-5">
           <a
-            href="https://wa.me/+918700051152"
+            href="https://wa.me/+918368847831"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -4,6 +4,7 @@ import Image from "next/image";
 import SwiperComponent from "../components/SwiperComponent";
 import DoctorCardList from "../components/DoctorsCardList";
 import HeadingPointer from "../components/HeadingPointer";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -90,9 +91,12 @@ const About = () => {
             </div>
 
             <div>
-              <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
+              <Link
+                href="/bookAppointment"
+                className="p-3 md:px-6 md:py-3 text-white bg-blue-600 rounded-full shadow hover:bg-green-600 transition"
+              >
                 Book An Appointment
-              </button>
+              </Link>
             </div>
           </div>
           <div className="w-full md:w-1/2 flex flex-col items-end justify-center pr-0 md:pr-10">
