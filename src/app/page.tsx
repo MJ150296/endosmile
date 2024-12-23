@@ -316,12 +316,12 @@ export default function Home() {
 
             {/* CTA Button */}
             <div className="flex justify-center lg:justify-start">
-            <Link
-              href="/bookAppointment"
-              className="p-3 md:px-6 md:py-3 text-white bg-blue-600 rounded-full shadow hover:bg-green-600 transition"
-            >
-              Make An Appointment +
-            </Link>
+              <Link
+                href="/bookAppointment"
+                className="p-3 md:px-6 md:py-3 text-white bg-blue-600 rounded-full shadow hover:bg-green-600 transition"
+              >
+                Make An Appointment +
+              </Link>
             </div>
           </div>
         </div>
@@ -343,7 +343,10 @@ export default function Home() {
                 </p>
               </div>
               <div className="w-full md:w-1/4 py-5 flex justify-end items-center">
-                <Link href="/treatments" className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
+                <Link
+                  href="/treatments"
+                  className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base"
+                >
                   Our Treatments
                 </Link>
               </div>
@@ -400,7 +403,10 @@ export default function Home() {
               </p>{" "}
             </div>
             <div>
-              <Link href="/treatments" className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
+              <Link
+                href="/treatments"
+                className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base"
+              >
                 Go to Treatments
               </Link>
             </div>
@@ -540,21 +546,10 @@ export default function Home() {
                 with special needs.{" "}
               </p>{" "}
               <p>
-                {" "}
-                A lifetime member of the{" "}
-                <strong>
-                  Indian Academy of Aesthetic and Cosmetic Dentistry
-                </strong>
-                , Dr. Sumit has advanced training in{" "}
+                Dr. Sumit has advanced training in{" "}
                 <strong>Porcelain Veneers</strong>,{" "}
-                <strong>Teeth Whitening</strong>,{" "}
-                <strong>Bioclear techniques</strong>, and{" "}
-                <strong>Temporomandibular Disorder (TMD) Management</strong>.
-                With notable achievements like securing{" "}
-                <strong>Delhi PG Rank 1</strong> and winning the{" "}
-                <strong>Best Paper Presentation</strong> award, Dr. Sumit
-                ensures every dental visit is a step closer to the{" "}
-                <strong>perfect smile</strong>.{" "}
+                <strong>Teeth Whitening</strong>. Dr. Sumit ensures every dental
+                visit is a step closer to the <strong>perfect smile</strong>.
               </p>
               <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
                 Read More
