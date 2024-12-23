@@ -111,9 +111,9 @@ export default function Home() {
       {/* WHATSAPP ICON  */}
       <div className="fixed z-50 right-5 bottom-10 flex flex-col gap-y-3">
         {/* Phone Icon */}
-        <a href="tel:7895927366" aria-label="Call 7895927366">
+        <a href="tel:8368847831" aria-label="Call 8368847831">
           <Image
-            src="/Images/Icons/phone.png"
+            src="/Images/Icons/phoneB.png"
             alt="Phone Icon"
             width={40}
             height={40}
@@ -123,7 +123,7 @@ export default function Home() {
 
         {/* WhatsApp Icon */}
         <a
-          href="https://api.whatsapp.com/send?phone=7895927366&text=Hello Doc!%20Help%20me%20with%20the%20following%20questions%20please."
+          href="https://api.whatsapp.com/send?phone=8368847831&text=Hello%20Doc!%20Please%20help%20me%20with%20the%20following%20question."
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Message on WhatsApp"
@@ -232,7 +232,7 @@ export default function Home() {
       {/* SECOND SECTION   POP UP MODAL */}
 
       <div className="flex flex-col items-center -mt-12">
-        <div className="w-4/5 max-w-4xl bg-white rounded-xl shadow-xl p-6 sm:p-8 md:px-10 md:py-8 flex flex-col lg:flex-row justify-between items-start gap-6 lg:gap-12">
+        <div className="w-4/5 max-w-4xl bg-white rounded-xl shadow-xl p-6 sm:p-8 md:px-10 md:py-8 flex flex-col lg:flex-row justify-between items-start md:items-center gap-6 lg:gap-12">
           {/* Dental Queries Section */}
           <div className="flex flex-col text-lg font-medium text-center lg:text-left">
             <p>Any Dental Queries</p>
@@ -409,7 +409,7 @@ export default function Home() {
             <div className="p-0 md:p-20">
               <Image
                 src="/Images/bg/bg1.jpg"
-                alt="Dr Sumit"
+                alt="Dr Sumit || endoSmile dental care || greater noida west"
                 width={530} // Specify image width
                 height={600} // Specify image height
                 className="object-cover rounded-lg"
@@ -418,18 +418,18 @@ export default function Home() {
             </div>
             <div className="absolute md:top-20 md:left-10 top-0 right-0">
               <Image
-                src="/Images/expertise-img-1.jpg"
+                src="/Images/Clinic/dentist.jpg"
                 alt="Dr Sumit"
                 width={220} // Specify image width
                 height={600} // Specify image height
-                className="object-cover rounded-3xl w-32 md:w-48"
+                className="object-cover rounded-3xl w-32 md:w-48 transform scale-x-[-1]"
                 priority
               />
             </div>
             <div className="absolute hidden md:flex md:bottom-20 md:right-10 ">
               <Image
-                src="/Images/expertise-img-1.jpg"
-                alt="Dr Sumit"
+                src="/Images/Clinic/dentist.jpg"
+                alt="Dr Sumit || EndoSmile Dental Care || Greater Noida west"
                 width={200} // Specify image width
                 height={600} // Specify image height
                 className="object-cover rounded-3xl w-28 md:w-60"
@@ -441,7 +441,7 @@ export default function Home() {
 
             <div className="absolute md:hidden -bottom-10 left-0">
               <Image
-                src="/Images/expertise-img-1.jpg"
+                src="/Images/Clinic/dentist.jpg"
                 alt="Dr Sumit"
                 width={200} // Specify image width
                 height={600} // Specify image height
@@ -455,7 +455,7 @@ export default function Home() {
 
       {/* FIFTH SECTION  */}
 
-      <div className="px-0 md:px-10">
+      <div className="hidden px-0 md:px-10">
         <div className="flex flex-col px-5 md:px-10 pt-10">
           <div className="flex flex-col gap-y-5 md:flex-row md:justify-between">
             <div className="">

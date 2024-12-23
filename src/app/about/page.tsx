@@ -127,7 +127,7 @@ const About = () => {
               </p>
               <div className="flex gap-x-2">
                 <Image
-                  src="/Images/Icons/phone1.png"
+                  src="/Images/Icons/phoneB.png"
                   alt="Phone Icon"
                   width={50}
                   height={30}
@@ -149,9 +149,8 @@ const About = () => {
         <div className="px-5 md:px-20 py-10 md:py-5 w-full flex">
           <div className="flex flex-col gap-y-2">
             <h4 className="text-4xl font-semibold text-blue-600">
-              The Smile <span className="text-green-600">Squad</span>
+              The Smile <span className="text-green-600">Expert</span>
             </h4>
-
             <div className="p-10 flex">
               <DoctorCardList />
             </div>
@@ -159,7 +158,7 @@ const About = () => {
         </div>
 
         {/* STAFF GROUP IMAGE  */}
-        <div className="w-full p-20 flex justify-center items-center">
+        <div className="hidden w-full p-20 justify-center items-center">
           <p className="text-3xl">STAFF GROUP IMAGE</p>
         </div>
       </div>

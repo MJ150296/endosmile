@@ -35,19 +35,21 @@ function ServiceCard({ service }: { service: Service }) {
           <p className="font-semibold tracking-wide text-blue-600">{title}</p>
           <p className="text-green-600 font-extrabold">&gt;</p>
         </div>
-        <div className="w-full flex justify-center items-center pb-2">
+        <div className="w-full h-full md:h-24 flex justify-center items-center pb-2">
           <div className="w-11/12">
             <p className="text-center text-gray-800">{description}</p>
           </div>
         </div>
         <div className="w-full flex justify-center items-center">
-          <Image
-            src={imageURL}
-            alt="Card Image"
-            width={300}
-            height={200} // Adjust height to match the image's aspect ratio
-            className="object-cover rounded-3xl"
-          />
+          <div className="w-72 h-64">
+            <Image
+              src={imageURL}
+              alt="Card Image"
+              width={300}
+              height={200} // Adjust height to match the image's aspect ratio
+              className="object-fill w-full h-full rounded-3xl"
+            />
+          </div>
         </div>
       </div>
 

@@ -11,22 +11,6 @@ const DoctorCardList = () => {
       specialist: "Principal Dentist",
       externalLink: "#",
     },
-    {
-      id: nanoid(),
-      imageSrc: "/Images/Clinic/dentist.jpg",
-      altText: "Dentist",
-      name: "Dr. Mayank",
-      specialist: "Orthodontics",
-      externalLink: "#",
-    },
-    {
-      id: nanoid(),
-      imageSrc: "/Images/Clinic/dentist.jpg",
-      altText: "Dentist",
-      name: "Dr. Mohit",
-      specialist: "Periodontist",
-      externalLink: "#",
-    },
   ];
   return (
     <div className="flex flex-1 flex-wrap gap-10">

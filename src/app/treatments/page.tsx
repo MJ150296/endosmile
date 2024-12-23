@@ -166,9 +166,9 @@ const Treatments = () => {
                 <Image
                   src={treatment.image}
                   alt={treatment.title}
-                  width={500}
-                  height={500}
-                  className="w-full md:w-1/3 rounded-lg animate__animated animate__zoomIn"
+                  width={200}
+                  height={200}
+                  className="w-full md:w-96 rounded-lg animate__animated animate__zoomIn"
                 />
                 <div className="md:ml-6 mt-4 md:mt-0 text-center md:text-left">
                   <h2 className="text-2xl font-semibold text-blue-500">

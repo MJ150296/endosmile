@@ -43,10 +43,10 @@ const Footer: React.FC = () => {
             <p>
               Email:{" "}
               <a
-                href="mailto:contact@endosmiledentalcare.com"
+                href="mailto:endosmiledentalcare@gmail.com"
                 className="text-blue-400 hover:underline"
               >
-                contact@endosmiledentalcare.com
+                endosmiledentalcare@gmail.com
               </a>
             </p>
           </div>
@@ -109,11 +109,9 @@ const Footer: React.FC = () => {
 
           <div className="w-full md:w-1/3">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3502.3625286261413!2d77.42298475433635!3d28.618894897843848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s11th%20avenue%20gaur%20city%202!5e0!3m2!1sen!2sin!4v1733499543590!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.0060037994235!2d77.43618889999999!3d28.599596699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cefe4346f5001%3A0x41bed249551cec15!2sEndo%20Smile%20Dental%20Care%7CBest%20Dentist%20in%20Greater%20Noida%20West%7CDr%20Sumit%20Dinkar%20RCT%20Specialist%7C%20Crowns%20%26%20Implants!5e0!3m2!1sen!2sin!4v1734765033861!5m2!1sen!2sin"
               width="400"
               height="200"
-              loading="lazy"
-              className="rounded-lg shadow-lg shadow-gray-600"
             ></iframe>
           </div>
         </div>

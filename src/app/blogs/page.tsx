@@ -9,28 +9,28 @@ const Blogs = () => {
   const blogs = [
     {
       id: nanoid(),
-      image: "/Images/smileStories/smile05.jpg",
+      image: "/Images/oralHygiene.png",
       title: "The Importance of Oral Hygiene",
       description:
         "Learn why maintaining good oral hygiene is essential for overall health and how it prevents dental issues.",
     },
     {
       id: nanoid(),
-      image: "/Images/smileStories/smile05.jpg",
+      image: "/Images/services/cosmeticDentistry1.jpg",
       title: "Top 5 Cosmetic Dental Procedures",
       description:
         "Explore the most popular cosmetic dental treatments to enhance your smile and boost confidence.",
     },
     {
       id: nanoid(),
-      image: "/Images/smileStories/smile05.jpg",
+      image: "/Images/services/rootCanal.jpg",
       title: "Root Canal Myths Debunked",
       description:
         "Understand the truth about root canals and why they are not as scary as you might think.",
     },
     {
       id: nanoid(),
-      image: "/Images/smileStories/smile05.jpg",
+      image: "/Images/services/pediaticDentistry.jpg",
       title: "Pediatric Dentistry Tips",
       description:
         "Discover how to care for your child's teeth and ensure a lifetime of healthy smiles.",

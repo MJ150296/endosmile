@@ -12,7 +12,7 @@ const SignUpExcitingOffer = () => {
 
   const handleGoClick = () => {
     const specialOfferMessage = `I'm all ears! Got any exclusive offers? My email is ${specialOfferEmail}.`;
-    const whatsappURL = `https://wa.me/+918700051152?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/+918368847831?text=${encodeURIComponent(
       specialOfferMessage
     )}`;
     window.open(whatsappURL, "_blank"); // Opens WhatsApp in a new tab
