@@ -548,7 +548,7 @@ export default function Home() {
               <p>
                 Dr. Sumit has advanced training in{" "}
                 <strong>Porcelain Veneers</strong>,{" "}
-                <strong>Teeth Whitening</strong>. Dr. Sumit ensures every dental
+                <strong>Teeth Whitening</strong> and ensures every dental
                 visit is a step closer to the <strong>perfect smile</strong>.
               </p>
               <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
