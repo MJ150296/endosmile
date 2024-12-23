@@ -16,7 +16,10 @@ const Footer: React.FC = () => {
               Your Path to Perfect Oral Health.
             </p>
             <p className="mb-2">Location:</p>
-            <p>Gaur City 2, Greater Noida (west)</p>
+            <p>
+              Plot No. 203, NX One Service Ln, Iteda, Greater Noida, Uttar
+              Pradesh 201016
+            </p>
           </div>
 
           {/* Opening Hours */}

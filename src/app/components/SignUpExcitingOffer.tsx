@@ -89,7 +89,7 @@ const SignUpExcitingOffer = () => {
             className="hover:scale-105 duration-200"
           />
         </a>
-        <a href="mailto:singlaromart@gmail.in">
+        <a href="mailto:endosmiledentalcare@gmail.com">
           <Image
             src="/Images/Icons/Gmail.png"
             alt="Gmail"

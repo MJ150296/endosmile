@@ -123,7 +123,7 @@ export default function Home() {
 
         {/* WhatsApp Icon */}
         <a
-          href="https://api.whatsapp.com/send?phone=8368847831&text=Hello%20Doc!%20Please%20help%20me%20with%20the%20following%20question."
+          href="https://api.whatsapp.com/send?phone=+918368847831&text=Hello%20Doc!%20Please%20help%20me%20with%20the%20following%20question."
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Message on WhatsApp"
