@@ -3,9 +3,11 @@ import Image from "next/image";
 const SmileStoryCard = () => {
   return (
     <div className="my-20 grid grid-cols-2 gap-4 md:grid-cols-4">
-      <div className="grid gap-4">
+      {/* <div className="grid gap-4">
         <div>
           <Image
+            width={200}
+            height={200}
             className="h-auto max-w-full rounded-lg object-cover object-center"
             src="/Images/smileStories/smile1.jpg"
             alt="gallery-photo"
@@ -13,6 +15,8 @@ const SmileStoryCard = () => {
         </div>
         <div>
           <Image
+            width={200}
+            height={200}
             className="h-auto max-w-full rounded-lg object-cover object-center "
             src="/Images/smileStories/smile01.jpg"
             alt="gallery-photo"
@@ -20,6 +24,8 @@ const SmileStoryCard = () => {
         </div>
         <div>
           <Image
+            width={200}
+            height={200}
             className="h-auto max-w-full rounded-lg object-cover object-center"
             src="/Images/smileStories/smile05.jpg"
             alt="gallery-photo"
@@ -29,6 +35,8 @@ const SmileStoryCard = () => {
       <div className="grid gap-4">
         <div>
           <Image
+            width={200}
+            height={200}
             className="h-auto max-w-full rounded-lg object-cover object-center"
             src="https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80"
             alt="gallery-photo"
@@ -36,6 +44,8 @@ const SmileStoryCard = () => {
         </div>
         <div>
           <Image
+            width={200}
+            height={200}
             className="h-auto max-w-full rounded-lg object-cover object-center"
             src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
             alt="gallery-photo"
@@ -43,6 +53,8 @@ const SmileStoryCard = () => {
         </div>
         <div>
           <Image
+            width={200}
+            height={200}
             className="h-auto max-w-full rounded-lg object-cover object-center "
             src="https://docs.material-tailwind.com/Image/team-3.jpg"
             alt="gallery-photo"
@@ -52,6 +64,8 @@ const SmileStoryCard = () => {
       <div className="grid gap-4">
         <div>
           <Image
+            width={200}
+            height={200}
             className="h-auto max-w-full rounded-lg object-cover object-center"
             src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2940&amp;q=80"
             alt="gallery-photo"
@@ -59,6 +73,8 @@ const SmileStoryCard = () => {
         </div>
         <div>
           <Image
+            width={200}
+            height={200}
             className="h-auto max-w-full rounded-lg object-cover object-center "
             src="https://docs.material-tailwind.com/Image/team-3.jpg"
             alt="gallery-photo"
@@ -66,6 +82,8 @@ const SmileStoryCard = () => {
         </div>
         <div>
           <Image
+            width={200}
+            height={200}
             className="h-auto max-w-full rounded-lg object-cover object-center"
             src="https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80"
             alt="gallery-photo"
@@ -75,6 +93,8 @@ const SmileStoryCard = () => {
       <div className="grid gap-4">
         <div>
           <Image
+            width={200}
+            height={200}
             className="h-auto max-w-full rounded-lg object-cover object-center"
             src="https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80"
             alt="gallery-photo"
@@ -82,12 +102,14 @@ const SmileStoryCard = () => {
         </div>
         <div>
           <Image
+            width={200}
+            height={200}
             className="h-auto max-w-full rounded-lg object-cover object-center"
             src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=927&amp;q=80"
             alt="gallery-photo"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
