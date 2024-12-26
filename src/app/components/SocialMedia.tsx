@@ -19,7 +19,7 @@ function SocialMedia() {
             />
           </a>
           <a
-            href="http://m.me/An-it solution company"
+            href="https://www.facebook.com/profile.php?id=61570948870281"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -32,7 +32,7 @@ function SocialMedia() {
             />
           </a>
           <a
-            href="https://www.instagram.com/itssolutioncompany/"
+            href="https://www.instagram.com/sumit_dinkar24/"
             target="_blank"
             rel="noopener noreferrer"
           >
