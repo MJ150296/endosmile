@@ -111,7 +111,7 @@ export default function Home() {
       {/* WHATSAPP ICON  */}
       <div className="fixed z-50 right-5 bottom-10 flex flex-col gap-y-3">
         {/* Phone Icon */}
-        <a href="tel:8368847831" aria-label="Call 8368847831">
+        <a href="tel:+918368847831" aria-label="Call 8368847831">
           <Image
             src="/Images/Icons/phoneB.png"
             alt="Phone Icon"
