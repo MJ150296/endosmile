@@ -20,7 +20,7 @@ const DoctorCard: React.FC<DoctorProps> = ({ doctor }) => {
         alt={doctor.altText}
         width={250}
         height={150}
-        className="rounded-lg shadow-xl"
+        className="h-full object-contain place-items-center rounded-lg shadow-xl"
       />
       <h2 className="mt-4 text-xl font-semibold text-gray-800">
         {doctor.name}

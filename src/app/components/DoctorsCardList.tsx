@@ -11,11 +11,27 @@ const DoctorCardList = () => {
       specialist: "Principal Dentist",
       externalLink: "#",
     },
+    {
+      id: nanoid(),
+      imageSrc: "/Images/Clinic/dentist1.jpeg",
+      altText: "Dentist",
+      name: "Dr. Niraj Kumar",
+      specialist: "Maxillofacial Prosthodontist",
+      externalLink: "#",
+    },
+    {
+      id: nanoid(),
+      imageSrc: "/Images/Clinic/dentist2.png",
+      altText: "Dentist",
+      name: "Dr. Chandravir Singh",
+      specialist: "Oral Surgeon",
+      externalLink: "#",
+    },
   ];
   return (
     <div className="flex flex-1 flex-wrap gap-10">
       {doctorsDetails.map((doctor) => (
-        <DoctorCard key={doctor.id} doctor = {doctor}/>
+        <DoctorCard key={doctor.id} doctor={doctor} />
       ))}
     </div>
   );

@@ -149,7 +149,7 @@ const About = () => {
         <div className="px-5 md:px-20 py-10 md:py-5 w-full flex">
           <div className="flex flex-col gap-y-2">
             <h4 className="text-4xl font-semibold text-blue-600">
-              The Smile <span className="text-green-600">Expert</span>
+              The Smile <span className="text-green-600">Squad</span>
             </h4>
             <div className="p-10 flex">
               <DoctorCardList />
