@@ -27,7 +27,7 @@ const DoctorCard: React.FC<DoctorProps> = ({ doctor }) => {
         {doctor.name}
       </h2>
       <p className="text-gray-600">{doctor.specialist}</p>
-      <p className="text-gray-600">{doctor.exp}</p>
+      <p className="text-gray-600">Experience - {doctor.exp}</p>
       <a
         href={doctor.externalLink}
         target="_blank"

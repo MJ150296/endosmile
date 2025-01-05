@@ -135,7 +135,7 @@ const About = () => {
                 />
                 <div className="flex flex-col font-medium">
                   <p className="text-blue-600">FOR MORE INFORMATION</p>
-                  <p className="text-green-600 font-semibold">+91 7895927366</p>
+                  <p className="text-green-600 font-semibold">+91-83688 47831</p>
                 </div>
               </div>
             </div>
