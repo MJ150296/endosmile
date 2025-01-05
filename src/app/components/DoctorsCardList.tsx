@@ -9,6 +9,7 @@ const DoctorCardList = () => {
       altText: "Dentist",
       name: "Dr. Sumit Dinkar",
       specialist: "Principal Dentist",
+      exp: "14+ years",
       externalLink: "#",
     },
     {
@@ -17,6 +18,7 @@ const DoctorCardList = () => {
       altText: "Dentist",
       name: "Dr. Niraj Kumar",
       specialist: "Maxillofacial Prosthodontist",
+      exp: "12+ years",
       externalLink: "#",
     },
     {
@@ -25,6 +27,7 @@ const DoctorCardList = () => {
       altText: "Dentist",
       name: "Dr. Chandravir Singh",
       specialist: "Oral Surgeon",
+      exp: "15+ years",
       externalLink: "#",
     },
   ];
