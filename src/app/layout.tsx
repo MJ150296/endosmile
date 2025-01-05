@@ -33,6 +33,14 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/app/icon.ico" type="image" sizes="any" />
+        <link
+          rel="apple-touch-icon"
+          href="/app/apple-icon.ico"
+          type="image"
+          sizes="any"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen overflow-hidden`}
