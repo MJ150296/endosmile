@@ -33,11 +33,13 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="64x64" />
+        <link rel="icon" href="/icon.png" sizes="192x192" type="image/png" />
         <link
           rel="apple-touch-icon"
-          href="/apple-icon.ico"
+          href="/apple-icon.png"
+          sizes="180x180"
+          type="image/png"
         />
       </head>
       <body
