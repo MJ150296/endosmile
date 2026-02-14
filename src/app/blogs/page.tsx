@@ -1,89 +1,88 @@
-"use client";
-
+// pages/blog/index.tsx
 import React from "react";
-import "animate.css";
-import { nanoid } from "nanoid";
+import Link from "next/link";
 import Image from "next/image";
+import { blogs } from "../data/blogs";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import "animate.css"; // Make sure animate.css is imported globally (in _app.tsx or here)
 
-const Blogs = () => {
-  const blogs = [
-    {
-      id: nanoid(),
-      image: "/Images/oralHygiene.png",
-      title: "The Importance of Oral Hygiene",
-      description:
-        "Learn why maintaining good oral hygiene is essential for overall health and how it prevents dental issues.",
-    },
-    {
-      id: nanoid(),
-      image: "/Images/services/cosmeticDentistry1.jpg",
-      title: "Top 5 Cosmetic Dental Procedures",
-      description:
-        "Explore the most popular cosmetic dental treatments to enhance your smile and boost confidence.",
-    },
-    {
-      id: nanoid(),
-      image: "/Images/services/rootCanal.jpg",
-      title: "Root Canal Myths Debunked",
-      description:
-        "Understand the truth about root canals and why they are not as scary as you might think.",
-    },
-    {
-      id: nanoid(),
-      image: "/Images/services/pediaticDentistry.jpg",
-      title: "Pediatric Dentistry Tips",
-      description:
-        "Discover how to care for your child's teeth and ensure a lifetime of healthy smiles.",
-    },
-  ];
-
+const BlogList: React.FC = () => {
   return (
-    <div className="pt-28 px-5 bg-gray-50 min-h-screen">
-      {/* Header */}
-      <div className="text-center mb-12 pt-14">
-        <h1 className="text-4xl font-bold text-blue-600 animate__animated animate__fadeInDown">
-          Latest Blogs
+    <section className="pt-40 px-4 max-w-7xl mx-auto">
+      {/* Page Title */}
+      <div className="text-center mb-16">
+        <h1 className="text-5xl font-extrabold text-blue-500 drop-shadow-sm mb-4 animate__animated animate__fadeInDown">
+          Endosmile Dental Insights
         </h1>
-        <p className="text-lg tracking-wide text-green-600 mt-4 animate__animated animate__fadeInUp">
-          Stay updated with the latest dental care tips, news, and insights.
+        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed animate__animated animate__fadeIn animate__delay-1s">
+          Stay informed with expert tips, the latest dental technologies, and
+          oral health advice curated by our specialists at{" "}
+          <span className="font-semibold text-green-500">Endosmile</span>.
         </p>
       </div>
 
-      {/* Blog Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 px-10 pb-20">
-        {blogs.map((blog) => (
-          <div
+      {/* Blog Cards Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {blogs.map((blog, index) => (
+          <Link
             key={blog.id}
-            className="bg-white shadow-lg rounded-lg overflow-hidden animate__animated animate__fadeInUp"
+            href={`/blogs/${blog.id}`}
+            className={`group block transition-all duration-300 hover:-translate-y-1 animate__animated animate__fadeInUp animate__delay-${
+              index % 3
+            }s`}
           >
-            {/* Blog Image */}
-            <Image
-              src={blog.image}
-              alt={blog.title}
-              width={200}
-              height={200}
-              className="w-full h-48 object-cover"
-            />
-            {/* Blog Content */}
-            <div className="p-4">
-              <h2 className="text-xl font-semibold text-blue-500">
-                {blog.title}
-              </h2>
-              <p className="text-gray-600 mt-2">{blog.description}</p>
-              <div className="mt-4">
-                <a
-                  href="#"
-                  className="text-blue-600 hover:text-blue-800 font-semibold"
-                >
-                  Read More →
-                </a>
+            <Card className="h-full flex flex-col shadow-md rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl hover:border-blue-500 transition-all duration-300">
+              {/* Blog Thumbnail */}
+              <div className="relative w-full h-60">
+                <Image
+                  src={blog.image}
+                  alt={blog.title}
+                  fill
+                  className="object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
               </div>
-            </div>
-          </div>
+
+              {/* Blog Content */}
+              <div className="p-6 flex flex-col flex-grow bg-white dark:bg-gray-900">
+                <CardHeader className="p-0 mb-4">
+                  <CardTitle className="text-xl font-bold text-gray-800 dark:text-white group-hover:text-blue-500 transition-colors">
+                    {blog.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-0 flex-grow">
+                  <p className="text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
+                    {blog.excerpt}
+                  </p>
+                  <div className="mt-auto flex items-center justify-between">
+                    <span className="inline-block px-4 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium group-hover:bg-green-500 group-hover:text-white transition-colors">
+                      Read More
+                    </span>
+                    <span className="text-xs text-gray-500">
+                      {blog.additionalImages.length} min read
+                    </span>
+                  </div>
+                </CardContent>
+              </div>
+            </Card>
+          </Link>
         ))}
       </div>
-    </div>
+
+      {/* Call to Action */}
+      <div className="mt-20 text-center animate__animated animate__fadeInUp animate__delay-1s">
+        <h3 className="text-3xl font-semibold text-gray-800 dark:text-white mb-6">
+          Looking for personalized dental advice?
+        </h3>
+        <Link
+          href="/contact"
+          className="inline-block bg-gradient-to-r from-blue-500 to-green-500 hover:from-green-500 hover:to-blue-500 text-white font-medium py-4 px-10 rounded-xl shadow-lg transition-all duration-300"
+        >
+          Book Your Consultation
+        </Link>
+      </div>
+    </section>
   );
 };
 
-export default Blogs;
+export default BlogList;
