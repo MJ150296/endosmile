@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/autoplay"; // Optional modules
 import { Autoplay } from "swiper/modules";
 import BookAppointmentForm from "../components/BookAppointmentForm";
-import Image from "next/image";
+// import Image from "next/image";
 import SwiperCore from "swiper";
 
 const AppointmentPage: React.FC = () => {
@@ -84,7 +84,7 @@ const AppointmentPage: React.FC = () => {
 
       {/* Appointment Form Section */}
       <section className="relative py-16 bg-gradient-to-b from-blue-50 to-blue-100">
-        <div className="absolute hidden md:block z-10 top-10 left-32 bg-white p-2 shadow-xl rounded-full animate__animated animate__fadeInUp">
+        {/* <div className="absolute hidden md:block z-10 top-10 left-32 bg-white p-2 shadow-xl rounded-full animate__animated animate__fadeInUp">
           <Image
             src="/Images/discount1.png"
             alt="Discount Image"
@@ -92,7 +92,7 @@ const AppointmentPage: React.FC = () => {
             height={300}
             className="rounded-full"
           />
-        </div>
+        </div> */}
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center text-blue-700 animate__animated animate__fadeInUp">
             Ready to Get Started?
