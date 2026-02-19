@@ -105,12 +105,11 @@ const AppointmentPage: React.FC = () => {
       </section>
 
       {/* Footer Section */}
-      {/* <footer className="py-8 bg-blue-600 text-gray-300 text-center">
+      <footer className="py-8 bg-blue-600 text-gray-300 text-center">
         <p className="text-xl font-sans font-semibold tracking-wide">
-          &quot;Smile brighter on your first visit! Enjoy a 10% discount on your
-          first booking with us!&quot;
+          "Healthy smiles start with healthy habits — Brush, Floss, and Visit Your Dentist Regularly."
         </p>
-      </footer> */}
+      </footer>
     </div>
   );
 };
