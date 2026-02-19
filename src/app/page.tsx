@@ -203,14 +203,13 @@ export default function Home() {
             </div>
 
             {/* Offer Section */}
-            <div className="flex items-start text-red-600 text-start gap-x-2 mt-2 md:mt-4">
+            {/* <div className="flex items-start text-red-600 text-start gap-x-2 mt-2 md:mt-4">
               <p className="mt-1 font-semibold animate-colorChange">*</p>
               <p className="text-sm sm:text-base animate-colorChange">
                 Enjoy an exclusive 10% off your first visit! Your perfect smile
                 awaits!
               </p>
-              {/* in global css  */}
-            </div>
+            </div> */}
           </div>
 
           {/* Image Section */}

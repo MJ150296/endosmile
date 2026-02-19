@@ -317,7 +317,6 @@ export const blogs: Blog[] = [
       <li>Priority appointments</li>
       <li>Free dental goody bags</li>
       <li>Oral health progress tracking</li>
-      <li>10% discount on treatments</li>
     </ul>
     <br />
     <p>Schedule your child's first dental home at our Greater Noida clinic - where we make dentistry fun!</p>`,
