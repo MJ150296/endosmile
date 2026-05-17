@@ -17,34 +17,50 @@ const About = () => {
         url="https://www.endosmiledental.com/about"
         author="EndoSmile Team"
       />
-      <div className="w-full min-h-screen flex flex-col items-center justify-center pt-28">
-        <div className="w-full h-screen bg-fixed bg-[url('/Images/Clinic/DentalClinic3.jpg')] bg-cover bg-center flex flex-col items-center justify-center">
-          <div className="w-full h-full bg-white bg-opacity-20 flex flex-col items-center justify-center">
-            <div className="w-11/12 md:w-full flex flex-col items-center justify-center -mt-14">
-              <h1 className="animate__animated animate__slideInUp px-10 py-5 border-b-2 border-b-white text-3xl md:text-6xl font-bold font-sans bg-black bg-opacity-60 text-gray-200 text-center rounded-tl-3xl rounded-tr-3xl">
-                About Us
-              </h1>
-              <p className="animate__animated animate__slideInUp animate__delay-800ms text-xl px-10 py-5 border-b-2 border-white bg-black bg-opacity-60 text-gray-200 text-center max-w-3xl rounded-3xl">
-                Welcome to{" "}
-                <span className="font-semibold">EndoSmile Dental Care</span>,
-                where{" "}
-                <span className="font-semibold">
-                  your smile is our priority!
-                </span>{" "}
-                Our clinic is committed to providing the{" "}
-                <span className="font-semibold">best dental care services</span>{" "}
-                using state-of-the-art technology and{" "}
-                <span className="font-semibold">
-                  personalized treatment plans.
-                </span>
-              </p>
-              <p className="animate__animated animate__slideInUp animate__delay-1.5s text-xl px-10 py-5 border-b-2 border-white bg-black bg-opacity-60 text-gray-200 text-center max-w-3xl rounded-3xl">
-                Our team of skilled professionals is dedicated to making each
-                visit as comfortable as possible. With a focus on preventive
-                care, we ensure that you have the knowledge and support needed
-                to maintain a healthy smile for life.
-              </p>
+      <div className="w-full min-h-screen flex flex-col items-center justify-center pt-24">
+        {/* Premium About Us Hero */}
+        <div className="relative w-full h-screen flex items-center justify-center text-center overflow-hidden">
+
+          {/* Background Image */}
+          <div className="absolute inset-0 bg-[url('/Images/Clinic/DentalClinic3.jpg')] bg-cover bg-center scale-105"></div>
+
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
+
+          {/* Content */}
+          <div className="relative z-10 max-w-4xl px-6">
+
+            {/* Title */}
+            <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-white animate__animated animate__fadeInUp">
+              About Us
+            </h1>
+
+            {/* Divider */}
+            <div className="w-20 h-[2px] bg-white/60 mx-auto my-6"></div>
+
+            {/* Description */}
+            <p className="text-lg md:text-xl text-white/90 leading-relaxed animate__animated animate__fadeInUp animate__delay-500ms">
+              Welcome to <span className="font-semibold text-white">EndoSmile Dental Care</span>,
+              where precision meets compassion. We deliver advanced dental care using modern
+              technology and personalized treatment plans designed around you.
+            </p>
+
+            {/* Secondary Text */}
+            <p className="mt-4 text-base md:text-lg text-white/80 leading-relaxed animate__animated animate__fadeInUp animate__delay-1s">
+              Our focus is simple—comfort, prevention, and long-term oral health.
+              Every visit is crafted to give you confidence in your smile.
+            </p>
+
+            {/* Glass CTA */}
+            <div className="mt-10 animate__animated animate__fadeInUp animate__delay-1.5s">
+              <Link
+                href="/bookAppointment"
+                className="px-8 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 transition-all duration-300"
+              >
+                Book An Appointment
+              </Link>
             </div>
+
           </div>
         </div>
 
@@ -65,28 +81,10 @@ const About = () => {
             </div>
             <div className="flex flex-col gap-y-3">
               <p className="text-gray-800 tracking-wide leading-relaxed">
-                At EndoSmile Dental Care, we are dedicated to providing
-                exceptional dental services with a patient-first approach.
-                Located in the heart of Greater Noida, our clinic combines
-                advanced dental technology with a team of highly skilled
-                professionals to deliver personalized care. We specialize in
-                preventive, restorative, and cosmetic dentistry, ensuring that
-                every patient achieves and maintains a healthy, confident smile.
-                Our warm and welcoming environment is designed to make every
-                visit comfortable, prioritizing your oral health and overall
-                well-being.
+                <strong>EndoSmile Dental Care</strong> offers <strong>exceptional dental services</strong> in the heart of <strong>Greater Noida</strong>. Our clinic utilizes <strong>advanced dental technology</strong> and <strong>highly skilled dentists</strong> to provide <strong>personalized oral healthcare</strong>. We specialize in <strong>preventive, restorative, and cosmetic dentistry</strong>, ensuring every patient enjoys a <strong>healthy, confident smile</strong> in a warm and comfortable environment.
               </p>
               <p className="text-gray-800 tracking-wide leading-relaxed">
-                With a commitment to excellence and innovation, we strive to set
-                a new standard for dental care in Greater Noida. Our team of
-                experienced dentists and support staff work collaboratively to
-                develop customized treatment plans tailored to your needs.
-                Whether you require routine checkups, orthodontic solutions, or
-                advanced endodontic procedures, EndoSmile Dental Care is your
-                trusted partner for comprehensive oral health care. We are
-                passionate about creating beautiful smiles and enhancing the
-                quality of life for our patients through compassionate and
-                professional dental services.
+                As a leading <strong>dental clinic in Greater Noida</strong>, we provide <strong>expert orthodontic solutions</strong> and <strong>advanced endodontic procedures</strong>. Our team creates <strong>customized treatment plans</strong> for everything from <strong>routine dental checkups</strong> to complex surgeries. Trust <strong>EndoSmile Dental Care</strong> for <strong>compassionate dentistry</strong> and professional excellence tailored to your long-term <strong>oral health</strong>.
               </p>
             </div>
 
@@ -101,7 +99,7 @@ const About = () => {
           </div>
           <div className="w-full md:w-1/2 flex flex-col items-end justify-center pr-0 md:pr-10">
             <Image
-              src="/Images/Clinic/dentist.jpg"
+              src="/Images/sumit/aboutUs.jpg"
               alt="About Us Clinic Image"
               width={400}
               height={400}

@@ -70,12 +70,12 @@ const BlogList: React.FC = () => {
       </div>
 
       {/* Call to Action */}
-      <div className="mt-20 text-center animate__animated animate__fadeInUp animate__delay-1s">
+      <div className="my-20 text-center animate__animated animate__fadeInUp animate__delay-1s">
         <h3 className="text-3xl font-semibold text-gray-800 dark:text-white mb-6">
           Looking for personalized dental advice?
         </h3>
         <Link
-          href="/contact"
+          href="/bookAppointment"
           className="inline-block bg-gradient-to-r from-blue-500 to-green-500 hover:from-green-500 hover:to-blue-500 text-white font-medium py-4 px-10 rounded-xl shadow-lg transition-all duration-300"
         >
           Book Your Consultation

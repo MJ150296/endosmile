@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://endosmiledentalcare.com/sitemap.xml
+
+Disallow: /api/
+Disallow: /admin/

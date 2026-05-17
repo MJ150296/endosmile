@@ -11,7 +11,9 @@ import HeadingPointer from "./components/HeadingPointer";
 import WhyChooseUs from "./components/WhyChooseUs";
 import SignUpExcitingOffer from "./components/SignUpExcitingOffer";
 import Link from "next/link";
-import React, { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import Modal from "./components/Modal1";
+import DoctorProfile from "./components/DoctorProfile1";
 
 export default function Home() {
   const services = [
@@ -22,7 +24,7 @@ export default function Home() {
       description:
         "Save your smile with precise and painless root canal treatment.",
       imageURL: "/Images/services/rootCanal.jpg",
-      linkURL: "",
+      linkURL: "/treatments/root-canal-treatment",
       detailedDescription: "",
     },
     {
@@ -32,7 +34,7 @@ export default function Home() {
       description:
         "Enhance your smile and confidence with personalized cosmetic dentistry.",
       imageURL: "/Images/services/cosmeticDentistry.jpg",
-      linkURL: "",
+      linkURL: "/treatments/cosmetic-dentistry",
       detailedDescription: "",
     },
     {
@@ -42,7 +44,7 @@ export default function Home() {
       description:
         "From seamless fillings to secure dental implants, restore and protect your smile with confidence.",
       imageURL: "/Images/services/ImplantsAndFillings.jpg",
-      linkURL: "",
+      linkURL: "/treatments/dental-implants-and-fillings",
       detailedDescription: "",
     },
     {
@@ -52,7 +54,7 @@ export default function Home() {
       description:
         "Straighten your teeth and perfect your smile with our advanced orthodontic treatments.",
       imageURL: "/Images/services/orthodontics.jpg",
-      linkURL: "",
+      linkURL: "/treatments/orthodontics-braces",
       detailedDescription: "",
     },
     {
@@ -62,17 +64,17 @@ export default function Home() {
       description:
         "Restore your smile with durable crowns and bridges, blending strength and beauty.",
       imageURL: "/Images/services/crowns.jpg",
-      linkURL: "",
+      linkURL: "/treatments/crowns-and-bridges",
       detailedDescription: "",
     },
     {
       id: nanoid(),
       iconURL: "/Images/Icons/pediatric.png",
-      title: "Periradicular Treatments",
+      title: "Pediatric & Children's Dentistry",
       description:
-        "Expert care for tissues around the tooth root, ensuring comfort and health.",
-      imageURL: "/Images/services/pediaticDentistry.jpg",
-      linkURL: "",
+        "Expert dental care for children of all ages in friendly environment.",
+      imageURL: "/Images/services/pediatricDentistry.jpeg",
+      linkURL: "/treatments/pediatric-dentistry",
       detailedDescription: "",
     },
     {
@@ -82,10 +84,9 @@ export default function Home() {
       description:
         "Transform your smile with braces and aligners, offering precision and comfort.",
       imageURL: "/Images/services/braces.jpg",
-      linkURL: "",
+      linkURL: "/treatments/braces-and-aligners",
       detailedDescription: "",
     },
-
     {
       id: nanoid(),
       iconURL: "/Images/Icons/dentures.png",
@@ -93,7 +94,7 @@ export default function Home() {
       description:
         "Restore your smile and confidence with comfortable, natural-looking dentures.",
       imageURL: "/Images/services/dentures.jpg",
-      linkURL: "",
+      linkURL: "/treatments/dentures",
       detailedDescription: "",
     },
   ];
@@ -104,6 +105,88 @@ export default function Home() {
     if (SignUpExcitingOfferRef.current) {
       SignUpExcitingOfferRef.current.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const [isDoctorModalOpen, setIsDoctorModalOpen] = useState(false);
+
+  useEffect(() => {
+  if (isDoctorModalOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, [isDoctorModalOpen]);
+
+  const doctorData = {
+    name: "Dr. Sumit Dinkar",
+    title: "MDS - Conservative Dentistry and Endodontics",
+    education: [
+      {
+        institution: "Maulana Azad Institute of Dental Sciences, Delhi University",
+        degree: "Master of Dental Surgery (MDS) - Conservative Dentistry and Endodontics",
+        year: "2020"
+      },
+      {
+        institution: "Maulana Azad Institute of Dental Sciences, Delhi University",
+        degree: "Bachelor of Dental Surgery (BDS)",
+        year: "2015"
+      }
+    ],
+    certifications: [
+      "Conscious Sedation Trained",
+      "Microscopic Dentistry Certified",
+      "CBCT Guided Endodontic Procedures",
+      "Aesthetic Dentistry and Smile Designing"
+    ],
+    services: [
+      {
+        icon: "/Images/Icons/dental.png",
+        title: "Root Canal Treatment",
+        description: "Advanced microscopic and CBCT-guided endodontic procedures with precision care"
+      },
+      {
+        icon: "/Images/Icons/cosmetics.png",
+        title: "Smile Designing",
+        description: "Comprehensive aesthetic smile enhancement and cosmetic dental procedures"
+      },
+      {
+        icon: "/Images/Icons/crownsAndBridges.png",
+        title: "Crown & Bridge Work",
+        description: "Functional and aesthetic ceramic crowns, bridges, and restorative solutions"
+      },
+      {
+        icon: "/Images/Icons/orthodontics.png",
+        title: "Cosmetic Fillings",
+        description: "Natural-looking tooth-colored restorative fillings for superior aesthetics"
+      }
+    ],
+    socialMedia: [
+      {
+        platform: "Facebook",
+        url: "https://www.facebook.com/profile.php?id=61570948870281",
+        icon: "/Images/Icons/Facebook.png"
+      },
+      {
+        platform: "Instagram",
+        url: "https://www.instagram.com/sumit_dinkar24/",
+        icon: "/Images/Icons/Instagram.png"
+      }
+    ],
+    contact: {
+      phone: "+91 83688 47831",
+      email: "endosmiledentalcare@gmail.com",
+      whatsapp: "918368847831"
+    },
+    images: [
+      "/Images/sumit/sumit1.png",
+      "/Images/Clinic/dentist.jpg",
+      "/Images/sumit/sumit2.png",
+      "/Images/Clinic/clinic1.jpg"
+    ]
   };
 
   return (
@@ -137,130 +220,167 @@ export default function Home() {
           />
         </a>
       </div>
-      <div className="pt-40 py-12 pb-32 bg-gray-100 shadow-md">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10 px-6 lg:px-10">
+      <div className="relative pt-40 pb-32 overflow-hidden">
+
+        {/* Background Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-gray-50 to-gray-100"></div>
+
+        {/* Dot Pattern Background */}
+        <div className="absolute inset-0 opacity-10">
+          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="dotGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#3b82f6" />
+                <stop offset="100%" stopColor="#22c55e" />
+              </linearGradient>
+              <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="2" fill="url(#dotGradient)" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#dots)" />
+          </svg>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 flex flex-col lg:flex-row items-center gap-16">
+
           {/* Text Section */}
-          <div className="flex-1 flex flex-col text-center gap-6 lg:text-left pt-1">
+          <div className="flex-1 flex flex-col gap-8 text-center lg:text-left">
+
             {/* Heading */}
-            <h1 className="text-4xl font-bold text-gray-800 leading-snug sm:text-5xl lg:text-6xl">
-              Crafting Smiles, Creating Confidence
+            <h1 className="text-5xl font-semibold tracking-tight text-gray-800 leading-tight">
+              <span className="text-blue-600">Endo </span>
+              <span className="text-green-600">Smile </span>
+              Dental Care:
+              <br className="hidden lg:block" />
             </h1>
+            <h2 className="text-3xl text-gray-700 font-medium">
+              Best, advance
+              <span className="text-blue-600"> Dental Solutions </span>
+              and
+              <span className="text-green-600"> Root Canal Specialist </span>
+              in Greater Noida West and Noida Extension</h2>
 
             {/* Subheading */}
-            <h2 className="text-gray-700 leading-relaxed">
-              Your trusted partner in delivering unparalleled dental care,
-              dedicated to enhancing the beauty of your smile.
-            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+              Your trusted partner in delivering exceptional dental care—blending
+              advanced technology with a personalized, human approach.
+            </p>
 
             {/* Tagline */}
-            <h3 className="text-blue-600 text-base font-semibold sm:text-lg lg:text-xl">
-              &quot;Endo<span className="text-green-600">Smile</span> - The Art
-              of Creating Beautiful Smiles&quot;
-            </h3>
+            <p className="text-blue-600 font-medium text-lg tracking-wide">
+              Endo<span className="text-green-500">Smile</span> — The Art of Beautiful Smiles
+            </p>
 
-            {/* Stats Section */}
-            <div className="flex gap-4 border-t border-b border-gray-400 py-4 sm:justify-between sm:items-center">
-              <div className="flex flex-col items-center sm:items-start">
-                <span className="text-lg sm:text-xl lg:text-3xl font-bold">
-                  <Counter end={5} duration={2} suffix=".0" />
-                </span>
-                <p className="text-xs sm:text-sm text-gray-600">
-                  Google Rating
-                </p>
-              </div>
-              <div className="flex flex-col items-center sm:items-start">
-                <span className="text-lg sm:text-xl lg:text-3xl font-bold">
-                  <Counter end={24} duration={2} suffix="x7" />
-                </span>
-                <p className="text-xs sm:text-sm text-gray-600">
-                  Emergency Services
-                </p>
-              </div>
-              <div className="flex flex-col items-center sm:items-start">
-                <span className="text-lg sm:text-xl lg:text-3xl font-bold">
-                  <Counter end={12} duration={2} suffix="+" />
-                </span>
-                <p className="text-xs sm:text-sm text-gray-600">
-                  Years of Experience
-                </p>
-              </div>
+            {/* Premium Stats */}
+            <div className="flex justify-center lg:justify-start gap-6 mt-4">
+
+              {[
+                { value: <Counter end={5} duration={2} suffix=".0" />, label: "Google Rating" },
+                { value: <Counter end={24} duration={2} suffix="x7" />, label: "Emergency Care" },
+                { value: <Counter end={12} duration={2} suffix="+" />, label: "Years Experience" }
+              ].map((item, i) => (
+
+                <a key={i} href="https://share.google/MKrINQA0xM0qW13ft" target="blank" className="hover:scale-105 transition-transform duration-200">
+                  <div
+                    className="px-6 py-4 rounded-2xl bg-white/60 backdrop-blur-md shadow-sm border border-gray-200 text-center"
+                  >
+                    <div className="text-2xl font-semibold text-gray-900">
+                      {item.value}
+                    </div>
+                    <p className="text-sm text-gray-500 mt-1">{item.label}</p>
+                  </div>
+                </a>
+
+              ))}
+
             </div>
 
-            {/* Call-To-Action Buttons */}
-            <div className="mt-6 flex flex-row gap-4 justify-start">
+            {/* CTA */}
+            <div className="flex flex-row gap-4 justify-center lg:justify-start mt-6">
+
               <Link
                 href="/bookAppointment"
-                className="p-3 md:px-6 md:py-3 text-white bg-blue-600 rounded-md shadow hover:bg-blue-700 transition"
+                className="px-6 py-3 rounded-full bg-blue-600 text-white font-medium shadow-md hover:bg-blue-700 transition-all duration-300"
               >
-                Book An Appointment
+                Book Appointment
               </Link>
-              <button
-                className="p-3 md:px-6 md:py-3 text-white bg-green-600 rounded-md shadow hover:bg-green-700 transition"
-                onClick={handleScrollToSignUpExcitingOffer} // Trigger scroll on click
-              >
-                + Enquiries
-              </button>
-            </div>
 
-            {/* Offer Section */}
-            {/* <div className="flex items-start text-red-600 text-start gap-x-2 mt-2 md:mt-4">
-              <p className="mt-1 font-semibold animate-colorChange">*</p>
-              <p className="text-sm sm:text-base animate-colorChange">
-                Enjoy an exclusive 10% off your first visit! Your perfect smile
-                awaits!
-              </p>
-            </div> */}
+              <button
+                onClick={handleScrollToSignUpExcitingOffer}
+                className="px-6 py-3 rounded-full bg-white/70 backdrop-blur-md border border-gray-200 text-gray-800 hover:bg-white transition-all duration-300"
+              >
+                Enquiries
+              </button>
+
+            </div>
           </div>
 
           {/* Image Section */}
-          <div className="flex-1 p-5 md:p-0 flex justify-center items-center">
-            <div className="rounded-lg shadow-lg overflow-hidden">
+          <div className="flex-1 flex justify-center items-center">
+
+            <div className="relative rounded-3xl overflow-hidden shadow-xl">
+
+              {/* Glow Effect */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-transparent"></div>
+
               <Image
-                src="/Images/Clinic/dentist.jpg" // Ensure correct path for your image
+                src="/Images/Clinic/dentist.jpg"
                 alt="Dr Sumit"
-                width={380} // Specify image width
-                height={600} // Specify image height
+                width={420}
+                height={620}
                 className="object-cover"
                 priority
               />
             </div>
+
           </div>
         </div>
       </div>
 
       {/* SECOND SECTION   POP UP MODAL */}
 
-      <div className="flex flex-col items-center -mt-12">
-        <div className="w-4/5 max-w-4xl bg-white rounded-xl shadow-xl p-6 sm:p-8 md:px-10 md:py-8 flex flex-col lg:flex-row justify-between items-start md:items-center gap-6 lg:gap-12">
-          {/* Dental Queries Section */}
-          <div className="flex flex-col text-lg font-medium text-center lg:text-left">
-            <p>Any Dental Queries</p>
-            <p className="font-sans font-light">+91 - 83688 47831</p>
+      {/* Floating Info Card */}
+      {/* Floating Info Card */}
+      <div className="relative z-20 flex justify-center -mt-24 px-6">
+
+        <div className="w-full max-w-5xl rounded-3xl bg-white/70 backdrop-blur-xl border border-white/40 shadow-[0_20px_60px_rgba(0,0,0,0.15)] px-6 py-8 md:px-10 md:py-10">
+
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
+
+            {/* Queries */}
+            <div className="text-center lg:text-left">
+              <p className="text-gray-800 font-medium text-lg">Any Dental Queries</p>
+              <p className="text-gray-600 text-base mt-1">+91 - 83688 47831</p>
+            </div>
+
+            {/* Divider (only desktop) */}
+            <div className="hidden lg:block w-px h-12 bg-gray-300"></div>
+
+            {/* Opening Hours */}
+            <div className="text-center lg:text-left">
+              <p className="text-gray-800 font-medium text-lg">Opening Hours</p>
+              <p className="text-gray-600 text-sm mt-1 leading-relaxed">
+                <span className="font-medium">Mon to Sat:</span> 10:00 AM – 1:00 PM <br />
+                5:00 PM - 8:00 PM <br />
+                <span className="font-medium">Sunday:</span> Appointment Only
+              </p>
+            </div>
+
+            {/* Divider */}
+            <div className="hidden lg:block w-px h-12 bg-gray-300"></div>
+
+            {/* CTA */}
+            <div>
+              <Link
+                href="/bookAppointment"
+                className="px-6 py-3 rounded-full bg-blue-600 text-white font-medium shadow-md hover:bg-blue-700 transition-all duration-300"
+              >
+                Book Appointment
+              </Link>
+            </div>
+
           </div>
 
-          {/* Opening Hours Section */}
-          <div className="flex flex-col text-lg sm:text-xl font-medium text-start">
-            <p>Opening Hours</p>
-            <p className="font-sans font-light text-sm">
-              <span className="font-semibold">Mon to Sat</span> 10:00AM to
-              1:00PM(Morning) <br />
-              <span className="md:ml-[78px]">05:00PM to 8:00PM(Evening)</span>
-              <br />
-              <span>
-                <span className="font-semibold">Sunday -</span> Appointment Only
-              </span>
-            </p>
-          </div>
-
-          {/* Book Appointment Button Section */}
-          <div className="flex flex-col text-center lg:text-left">
-            <Link
-              href="/bookAppointment"
-              className="p-3 md:px-6 md:py-3 text-white bg-blue-600 rounded-full shadow hover:bg-green-600 transition"
-            >
-              Book An Appointment
-            </Link>
-          </div>
         </div>
       </div>
 
@@ -270,13 +390,15 @@ export default function Home() {
         <div className="w-full flex flex-col-reverse gap-y-10 md:flex-row md:px-10 pt-20 pb-5">
           {/* Image Section */}
           <div className="w-full md:w-1/2 p-10 md:p-0 flex justify-center items-start">
-            <Image
-              src="/Images/AboutUs.png"
-              alt="About Us"
-              width={400}
-              height={400} // Ensure image height is proportional to the width
-              className="rounded-xl shadow-xl shadow-gray-400 "
-            />
+            <Link href="/about" className="hover:scale-95 duration-500">
+              <Image
+                src="/Images/AboutUs.png"
+                alt="About Us"
+                width={400}
+                height={400} // Ensure image height is proportional to the width
+                className="rounded-xl shadow-xl shadow-gray-400 "
+              />
+            </Link>
           </div>
 
           {/* Content Section */}
@@ -328,33 +450,31 @@ export default function Home() {
 
       {/* THIRD SECTION - OUR SERVICES*/}
 
-      <div>
-        <div className="w-full flex flex-col p-5 md:p-10">
-          <div className="w-full flex flex-col gap-y-10">
-            <div className="w-full flex flex-col md:flex-row">
-              <div className="w-3/4 flex flex-col gap-y-10">
-                <div className="flex gap-x-3 items-center">
-                  <HeadingPointer />
-                  <h3 className="font-semibold">OUR SERVICES</h3>
-                </div>
-                <p className="text-3xl md:text-5xl font-semibold">
-                  Comprehensive dental care tailored services for every smile
-                </p>
+      <div className="w-full flex flex-col p-5 md:p-10">
+        <div className="w-full flex flex-col gap-y-10">
+          <div className="w-full flex flex-col md:flex-row">
+            <div className="w-3/4 flex flex-col gap-y-10">
+              <div className="flex gap-x-3 items-center">
+                <HeadingPointer />
+                <h3 className="font-semibold">OUR SERVICES</h3>
               </div>
-              <div className="w-full md:w-1/4 py-5 flex justify-end items-center">
-                <Link
-                  href="/treatments"
-                  className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base"
-                >
-                  Our Treatments
-                </Link>
-              </div>
+              <p className="text-3xl md:text-5xl font-semibold">
+                Comprehensive dental care tailored services for every smile
+              </p>
             </div>
-            <div className="w-full flex flex-wrap flex-1 gap-x-10 gap-y-14 justify-center items-center">
-              {services.map((service) => (
-                <ServiceCard key={service.id} service={service} />
-              ))}
+            <div className="w-full md:w-1/4 py-5 flex justify-end items-center">
+              <Link
+                href="/treatments"
+                className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base"
+              >
+                Our Treatments
+              </Link>
             </div>
+          </div>
+          <div className="w-full flex flex-wrap flex-1 gap-10 justify-center items-center">
+            {services.map((service) => (
+              <ServiceCard key={service.id} service={service} />
+            ))}
           </div>
         </div>
       </div>
@@ -423,7 +543,7 @@ export default function Home() {
             </div>
             <div className="absolute md:top-20 md:left-10 top-0 right-0">
               <Image
-                src="/Images/Clinic/dentist.jpg"
+                src="/Images/sumit/sumit2.png"
                 alt="Dr Sumit"
                 width={220} // Specify image width
                 height={600} // Specify image height
@@ -433,7 +553,7 @@ export default function Home() {
             </div>
             <div className="absolute hidden md:flex md:bottom-20 md:right-10 ">
               <Image
-                src="/Images/Clinic/dentist.jpg"
+                src="/Images/sumit/sumit1.png"
                 alt="Dr Sumit || EndoSmile Dental Care || Greater Noida west"
                 width={200} // Specify image width
                 height={600} // Specify image height
@@ -550,7 +670,10 @@ export default function Home() {
                 <strong>Teeth Whitening</strong> and ensures every dental
                 visit is a step closer to the <strong>perfect smile</strong>.
               </p>
-              <button className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base">
+              <button
+                onClick={() => setIsDoctorModalOpen(true)}
+                className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base"
+              >
                 Read More
               </button>
             </div>
@@ -595,6 +718,19 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <Modal
+        isOpen={isDoctorModalOpen}
+        onClose={() => setIsDoctorModalOpen(false)}
+        size="lg"
+        closeOnOverlayClick={true}
+        closeOnEscape={true}
+      >
+        <DoctorProfile
+          doctor={doctorData}
+          onClose={() => setIsDoctorModalOpen(false)}
+        />
+      </Modal>
     </>
   );
 }

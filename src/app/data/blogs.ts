@@ -17,7 +17,7 @@ export const blogs: Blog[] = [
       "How to Choose the Best Toothbrush & Toothpaste | Endo Smile Dental Care, Greater Noida",
     excerpt:
       "Confused about electric vs manual brushes or which toothpaste suits your needs? Discover expert guidance from Endo Smile Dental Care for optimal oral health.",
-    image: "/blogs/choose_brush/choose_brush.jpg",
+    image: "/Images/blogs/blog1cover.png",
     subheading: "Your Complete Oral Care Guide by Endo Smile Dental Care",
     content: `<p>Selecting the right dental care products isn't about marketing claims—it's about understanding your oral health needs. At <strong>Endo Smile Dental Care</strong> in Greater Noida, we help patients from Gaur City, Sector 4, and nearby areas choose products that address specific concerns like sensitivity, gum issues, or enamel protection.</p>
     <br />
@@ -47,8 +47,8 @@ export const blogs: Blog[] = [
     content2:
       "Our dental experts analyze your enamel condition and gum health before recommending products. We carry professional-grade toothpaste samples for sensitivity, enamel repair, and gingivitis prevention.",
     additionalImages: [
-      "/blogs/choose_brush/brushes.jpg",
-      "/blogs/choose_brush/toothpaste_variety.jpg",
+      "/Images/blogs/blog1a.jpeg",
+      "/Images/blogs/blog1b.jpeg",
     ],
   },
   {
@@ -56,7 +56,7 @@ export const blogs: Blog[] = [
     title: "Why 6-Month Dental Checkups Are Essential | Endo Smile Dental Care",
     excerpt:
       "Prevent costly treatments and detect oral cancer early. Discover how regular dental visits at Endo Smile Dental Care protect your smile and overall health.",
-    image: "/blogs/dental-checkup/checkup_main.jpg",
+    image: "/Images/blogs/blog2cover.png",
     subheading: "Preventive Care for Lifelong Oral Health",
     content: `<p>Many patients only visit dentists when experiencing pain, but at <strong>Endo Smile Dental Care</strong>, we emphasize that regular checkups prevent 85% of dental emergencies. Our patients in Greater Noida West benefit from our comprehensive preventive care program.</p>
     <br />
@@ -90,8 +90,8 @@ export const blogs: Blog[] = [
     content2:
       "Our PrimeSmile Preventive Plan is popular among families and professionals across Greater Noida. It includes priority booking and discounts on treatments.",
     additionalImages: [
-      "/blogs/dental-checkup/digital_xray.jpg",
-      "/blogs/dental-checkup/cleaning_procedure.jpg",
+      "/Images/blogs/blog2a.jpeg",
+      "/Images/blogs/blog2b.png",
     ],
   },
   {
@@ -99,7 +99,7 @@ export const blogs: Blog[] = [
     title: "Top 5 Oral Care Innovations for 2025 | Endo Smile Dental Care",
     excerpt:
       "From AI brushing coaches to bioactive fillings. Discover the latest advancements revolutionizing dental care at Endo Smile Dental Care.",
-    image: "/blogs/innovations/dental_tech.jpg",
+    image: "/Images/blogs/blog3cover.png",
     subheading: "Cutting-Edge Dentistry in Greater Noida",
     content: `<p>At <strong>Endo Smile Dental Care</strong>, we're bringing tomorrow's dentistry to Greater Noida today. Here are the top advancements we offer:</p>
     <br />
@@ -127,8 +127,8 @@ export const blogs: Blog[] = [
     content2:
       "Laser diagnostics detect early cavities without radiation - ideal for children and pregnant women. Ask about our advanced detection systems during your next visit.",
     additionalImages: [
-      "/blogs/innovations/cerec_machine.jpg",
-      "/blogs/innovations/digital_smile_design.jpg",
+      "/Images/blogs/blog3a.png",
+      "/Images/blogs/blog3b.jpeg",
     ],
   },
   {
@@ -136,7 +136,7 @@ export const blogs: Blog[] = [
     title: "7 Signs You Need Immediate Dental Care | Endo Smile Dental Care",
     excerpt:
       "Bleeding gums? Tooth sensitivity? Don't ignore these warning signs. Learn when to seek professional dental care at Endo Smile Dental Care.",
-    image: "/blogs/warning-signs/gum_health.jpg",
+    image: "/Images/blogs/blog4cover.png",
     subheading: "Recognize Dental Emergencies Early",
     content: `<p>At <strong>Endo Smile Dental Care</strong>, we educate Greater Noida residents on recognizing urgent dental symptoms:</p>
     <br />
@@ -164,8 +164,8 @@ export const blogs: Blog[] = [
     content2:
       "We reserve emergency slots daily for urgent cases. Our pain management protocols ensure comfortable treatment experiences.",
     additionalImages: [
-      "/blogs/warning-signs/sensitivity.jpg",
-      "/blogs/warning-signs/oral_screening.jpg",
+      "/Images/blogs/blog4a.png",
+      "/Images/blogs/blog4b.png",
     ],
   },
   {
@@ -173,7 +173,7 @@ export const blogs: Blog[] = [
     title: "Benefits of Professional Teeth Whitening | Endo Smile Dental Care",
     excerpt:
       "Achieve 8 shades whiter teeth safely. Discover why professional whitening outperforms DIY kits for lasting, brilliant smiles.",
-    image: "/blogs/whitening/whitening_main.jpg",
+    image: "/Images/blogs/blog5cover.png",
     subheading: "Safe, Effective Brightening Solutions",
     content: `<p>At <strong>Endo Smile Dental Care</strong> in Greater Noida, our professional whitening delivers superior results because:</p>
     <br />
@@ -205,8 +205,8 @@ export const blogs: Blog[] = [
     content2:
       "We use enamel-safe formulas with potassium nitrate and fluoride to protect teeth during whitening. Ask about our combined in-office + take-home system.",
     additionalImages: [
-      "/blogs/whitening/shade_guide.jpg",
-      "/blogs/whitening/led_whitening.jpg",
+      "/Images/blogs/blog5a.jpeg",
+      "/Images/blogs/blog5b.jpeg",
     ],
   },
   {
@@ -215,7 +215,7 @@ export const blogs: Blog[] = [
       "Dental Implants vs. Bridges: Which Is Right For You? | Endo Smile Dental Care",
     excerpt:
       "Replace missing teeth confidently. Compare longevity, cost, and comfort of implants versus bridges with our dental experts.",
-    image: "/blogs/implants/implants_vs_bridges.jpg",
+    image: "/Images/blogs/blog6cover.png",
     subheading: "Modern Tooth Replacement Solutions",
     content: `<p>At <strong>Endo Smile Dental Care</strong> in Greater Noida, we help patients choose between implants and bridges based on:</p>
     <br />
@@ -275,8 +275,8 @@ export const blogs: Blog[] = [
     content2:
       "We offer both traditional and Maryland bridges based on your bite strength and aesthetic requirements. Ask about our metal-free options.",
     additionalImages: [
-      "/blogs/implants/implant_placement.jpg",
-      "/blogs/implants/bridge_closeup.jpg",
+      "/Images/blogs/blog6a.jpeg",
+      "/Images/blogs/blog6b.jpeg",
     ],
   },
   {
@@ -285,7 +285,7 @@ export const blogs: Blog[] = [
       "Pediatric Dental Care Guide: From First Tooth to Adolescence | Endo Smile Dental Care",
     excerpt:
       "Set your child up for lifelong dental health. Expert tips on teething, cavity prevention, and orthodontic timing from our pediatric specialists.",
-    image: "/blogs/pediatric/pediatric_main.jpg",
+    image: "/Images/blogs/blog7cover.png",
     subheading: "Building Healthy Smiles from the Start",
     content: `<p>At <strong>Endo Smile Dental Care</strong> in Greater Noida, our pediatric program focuses on:</p>
     <br />
@@ -325,8 +325,8 @@ export const blogs: Blog[] = [
     content2:
       "Early orthodontic assessments at age 7 have prevented complex treatments for 60% of our young patients. Ask about our free growth evaluations.",
     additionalImages: [
-      "/blogs/pediatric/child_friendly_clinic.jpg",
-      "/blogs/pediatric/sealants.jpg",
+      "/Images/blogs/blog7a.jpeg",
+      "/Images/blogs/blog7b.jpeg",
     ],
   },
 ];

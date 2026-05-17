@@ -59,7 +59,7 @@ const Treatments = () => {
       description:
         "Give your little ones the best start to oral health with our specialized pediatric dentistry services. From preventive care to treating cavities, we provide gentle, compassionate dental care tailored to children. Our child-friendly environment ensures your kids feel at ease while learning good oral hygiene habits. Start your child's journey to a lifetime of healthy smiles with us.",
       altText: "Pediatric Dentistry",
-      image: "/Images/services/pediaticDentistry.jpg",
+      image: "/Images/services/pediatricDentistry.jpeg",
     },
     {
       id: nanoid(),
@@ -100,7 +100,7 @@ const Treatments = () => {
       />
       <div className="pt-28 bg-gray-50">
         {/* Header Section */}
-        <div className="text-center py-32 -mt-1 bg-fixed bg-[url('/Images/Clinic/DentalClinic1.jpg')] bg-cover bg-center shadow-lg">
+        <div className="text-center py-32 -mt-4 bg-fixed bg-[url('/Images/Clinic/DentalClinic1.jpg')] bg-cover bg-center shadow-lg">
           <h1 className="text-5xl font-sans font-bold text-blue-600 animate__animated animate__fadeInDown">
             Our Treatments
           </h1>

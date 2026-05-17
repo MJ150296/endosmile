@@ -17,8 +17,7 @@ const Footer: React.FC = () => {
             </p>
             <p className="mb-2">Location:</p>
             <p>
-              Plot No. 203, NX One Service Ln, Iteda, Greater Noida, Uttar
-              Pradesh 201016
+              203 - Hawelia Road, Iteda<br />Greater Noida 201318
             </p>
           </div>
 
@@ -40,7 +39,7 @@ const Footer: React.FC = () => {
                 href="tel:+91 8368847831"
                 className="text-blue-400 hover:underline"
               >
-                +91 8368847831
+                +91 83688 47831
               </a>
             </p>
             <p>
@@ -68,7 +67,7 @@ const Footer: React.FC = () => {
               <li className="hover:underline">Crowns & Bridges</li>
               <li className="hover:underline">Cosmetic Dentistry</li>
               <li className="hover:underline">Dental Fillings and Implants</li>
-              <li className="hover:underline">Clear Alligners</li>
+              <li className="hover:underline">Clear Aligners</li>
             </ul>
           </div>
 
@@ -121,9 +120,12 @@ const Footer: React.FC = () => {
 
         {/* Bottom Section */}
         <div className="mt-8 text-center text-sm text-gray-400">
-          © {new Date().getFullYear()} EndoSmile Dental Care. All rights
-          reserved. | Designed with ❤️{" "}
-          <span className="font-semibold">Avaco Technologies</span>
+          <p>© {new Date().getFullYear()} EndoSmile Dental Care. All rights
+            reserved.</p>
+          <p>Designed & Developed by - <span className="font-semibold">Mayank Joshi</span></p>
+          <a href="tel:+917895927366" aria-label="Call 8368847831" className="font-semibold">
+            +91 78959 27366
+          </a>
         </div>
       </div>
     </footer>
