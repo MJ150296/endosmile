@@ -15,6 +15,7 @@ const Treatments = () => {
   const treatmentDetails = [
     {
       id: nanoid(),
+      slug: "cosmetic-dentistry",
       title: "Cosmetic Dentistry",
       description:
         "Transform your smile with our state-of-the-art cosmetic dentistry services. We offer a range of treatments, including teeth whitening, veneers, and smile makeovers, designed to improve the aesthetics of your teeth and boost your confidence. Our experienced team uses cutting-edge techniques to deliver natural-looking results tailored to your preferences. Whether you want to correct discoloration, close gaps, or reshape teeth, our customized solutions ensure a radiant, flawless smile.",
@@ -23,6 +24,7 @@ const Treatments = () => {
     },
     {
       id: nanoid(),
+      slug: "root-canal-treatment",
       title: "Root Canal Treatment",
       description:
         "Save your natural teeth and alleviate pain with our expert root canal treatment. This procedure treats infected or damaged tooth pulp, preventing tooth loss and restoring function. With advanced tools and techniques, we ensure a painless and stress-free experience. Our meticulous care provides long-term relief and maintains your oral health. Don’t let tooth pain affect your life—our root canal therapy delivers effective solutions to preserve your beautiful smile.",
@@ -31,6 +33,7 @@ const Treatments = () => {
     },
     {
       id: nanoid(),
+      slug: "orthodontics-braces",
       title: "Orthodontics Procedure",
       description:
         "Achieve a perfectly aligned smile with our orthodontic procedures. Whether you opt for traditional braces or modern clear aligners like Invisalign, we provide tailored solutions to address misalignment, overcrowding, and bite issues. These treatments enhance not only your appearance but also your oral health. Trust our team for advanced, comfortable care that delivers a healthier, more confident smile.",
@@ -39,6 +42,7 @@ const Treatments = () => {
     },
     {
       id: nanoid(),
+      slug: "braces-and-aligners",
       title: "Braces & Aligners",
       description:
         "Perfect your smile with our comprehensive braces and aligner treatments. Choose traditional braces for complex alignment issues or Invisalign for a nearly invisible option. These solutions improve your smile's appearance and oral health. Our personalized plans fit your lifestyle, ensuring minimal disruption to your routine. Achieve a straighter smile with expert care tailored to your needs.",
@@ -47,6 +51,7 @@ const Treatments = () => {
     },
     {
       id: nanoid(),
+      slug: "dental-implants-and-fillings",
       title: "Dental Implants & Fillings",
       description:
         "Restore your teeth's functionality and aesthetics with our dental implants and fillings. Implants provide a permanent solution for missing teeth, ensuring durability and a natural look, while our high-quality fillings repair cavities effectively. Using biocompatible materials and advanced techniques, we ensure your comfort and long-lasting results. Trust us to rebuild your smile seamlessly.",
@@ -55,6 +60,7 @@ const Treatments = () => {
     },
     {
       id: nanoid(),
+      slug: "pediatric-dentistry",
       title: "Pediatric Dentistry",
       description:
         "Give your little ones the best start to oral health with our specialized pediatric dentistry services. From preventive care to treating cavities, we provide gentle, compassionate dental care tailored to children. Our child-friendly environment ensures your kids feel at ease while learning good oral hygiene habits. Start your child's journey to a lifetime of healthy smiles with us.",
@@ -63,6 +69,7 @@ const Treatments = () => {
     },
     {
       id: nanoid(),
+      slug: "dentures",
       title: "Dentures",
       description:
         "Regain your smile and confidence with our high-quality dentures. Designed for comfort and a natural appearance, our dentures replace missing teeth, restoring functionality and aesthetics. Whether you need partial or full dentures, we offer custom solutions that fit perfectly and improve your quality of life. Let us help you smile with ease and comfort again.",
@@ -162,21 +169,23 @@ const Treatments = () => {
         >
           {treatmentDetails.map((treatment) => (
             <SwiperSlide key={treatment.id}>
-              <div className="p-20 flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg">
-                <Image
-                  src={treatment.image}
-                  alt={treatment.title}
-                  width={200}
-                  height={200}
-                  className="w-full md:w-96 rounded-lg animate__animated animate__zoomIn"
-                />
-                <div className="md:ml-6 mt-4 md:mt-0 text-center md:text-left">
-                  <h2 className="text-2xl font-semibold text-blue-500">
-                    {treatment.title}
-                  </h2>
-                  <p className="text-gray-600 mt-2">{treatment.description}</p>
+              <Link href={`/treatments/${treatment.slug}`}>
+                <div className="p-20 flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg cursor-pointer hover:opacity-90 transition-opacity">
+                  <Image
+                    src={treatment.image}
+                    alt={treatment.title}
+                    width={200}
+                    height={200}
+                    className="w-full md:w-96 rounded-lg animate__animated animate__zoomIn"
+                  />
+                  <div className="md:ml-6 mt-4 md:mt-0 text-center md:text-left">
+                    <h2 className="text-2xl font-semibold text-blue-500">
+                      {treatment.title}
+                    </h2>
+                    <p className="text-gray-600 mt-2">{treatment.description}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

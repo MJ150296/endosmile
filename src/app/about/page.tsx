@@ -123,19 +123,19 @@ const About = () => {
                 fear-free—because your smile deserves the happiest vibes and the
                 best care!
               </p>
-              <div className="flex gap-x-2">
+              <a href="tel:+918368847831" className="flex gap-x-2 group cursor-pointer">
                 <Image
                   src="/Images/Icons/phoneB.png"
                   alt="Phone Icon"
                   width={50}
                   height={30}
-                  className="animate__animated animate__tada animate__infinite animate__slow"
+                  className="animate__animated animate__tada animate__infinite animate__slow group-hover:scale-110 transition-transform"
                 />
                 <div className="flex flex-col font-medium">
                   <p className="text-blue-600">FOR MORE INFORMATION</p>
-                  <p className="text-green-600 font-semibold">+91-83688 47831</p>
+                  <p className="text-green-600 font-semibold group-hover:underline">+91-83688 47831</p>
                 </div>
-              </div>
+              </a>
             </div>
             <div className="w-full md:w-2/3">
               <SwiperComponent />

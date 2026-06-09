@@ -12,7 +12,7 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
   const treatment = getTreatmentBySlug(resolvedParams.treatmentSlug);
-  
+
   if (!treatment) {
     return {
       title: 'Treatment Not Found',
@@ -53,10 +53,10 @@ export default async function TreatmentPage({ params }: Props) {
             <HeadingPointer />
             <h3 className="font-semibold text-blue-600">OUR TREATMENTS</h3>
           </div>
-          
+
           <h1 className="text-4xl lg:text-5xl font-semibold mb-6">{treatment.title}</h1>
           <p className="text-lg text-gray-600 mb-8">{treatment.shortDescription}</p>
-          
+
           <div className="mb-10">
             <h2 className="text-2xl font-semibold mb-4">About This Treatment</h2>
             <p className="text-gray-700 leading-relaxed">{treatment.description}</p>
@@ -101,7 +101,7 @@ export default async function TreatmentPage({ params }: Props) {
               />
             </div>
 
-            <div className="bg-gray-50 rounded-2xl p-6 mb-6">
+            {/* <div className="bg-gray-50 rounded-2xl p-6 mb-6">
               <h3 className="font-semibold text-xl mb-4">Treatment Details</h3>
               
               <div className="space-y-3">
@@ -118,7 +118,7 @@ export default async function TreatmentPage({ params }: Props) {
                   <span className="font-medium">{treatment.recoveryTime}</span>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <Link
               href="/bookAppointment"

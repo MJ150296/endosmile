@@ -28,9 +28,9 @@ const BlogDetail: React.FC = () => {
 
       <Card className="shadow-xl border border-gray-100 bg-white dark:bg-gray-900 relative overflow-hidden rounded-2xl">
         {/* Subtle Background Logo */}
-        <div className="absolute inset-0 z-0 opacity-10 flex justify-center items-center pointer-events-none">
+        <div className="absolute inset-0 z-0 opacity-30 flex justify-center items-center pointer-events-none">
           <Image
-            src="/endosmile-logo.png" // Replace with actual Endosmile logo
+            src="/Images/Logo2.png" // Replace with actual Endosmile logo
             alt="Endosmile Logo"
             width={350}
             height={350}
