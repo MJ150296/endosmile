@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
           <div className="w-full md:w-1/3">
             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
             <ul>
-              <li className="hover:underline">Painless RCT Treatments</li>
+              <li className="hover:underline">RCT Treatments</li>
               <li className="hover:underline">Crowns & Bridges</li>
               <li className="hover:underline">Cosmetic Dentistry</li>
               <li className="hover:underline">Dental Fillings and Implants</li>

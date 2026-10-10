@@ -254,7 +254,7 @@ export default function Home() {
               <br className="hidden lg:block" />
             </h1>
             <h2 className="text-3xl text-gray-700 font-medium">
-              Best, advance
+              Advance
               <span className="text-blue-600"> Dental Solutions </span>
               and
               <span className="text-green-600"> Root Canal Specialist </span>
@@ -426,12 +426,12 @@ export default function Home() {
             {/* Stats Section */}
             <div className="flex flex-col lg:flex-row justify-between p-5 border-b border-t border-gray-200">
               <div className="w-full lg:w-1/2 flex flex-col text-center lg:text-left mb-5 lg:mb-0">
-                <p className="text-3xl sm:text-4xl font-semibold">5000+</p>
-                <p className="text-lg">Smiles Delivered</p>
+                <p className="text-3xl sm:text-4xl font-semibold">10+</p>
+                <p className="text-lg">Years Caring for You</p>
               </div>
               <div className="w-full lg:w-1/2 flex flex-col text-center lg:text-left">
-                <p className="text-3xl sm:text-4xl font-semibold">100%</p>
-                <p className="text-lg">Patient Satisfaction</p>
+                <p className="text-3xl sm:text-4xl font-semibold">5 ★</p>
+                <p className="text-lg">Google Rating</p>
               </div>
             </div>
 
@@ -500,12 +500,7 @@ export default function Home() {
                 <strong>Dr. Sumit Dinkar</strong>, a renowned{" "}
                 <strong>Micro Endodontist and Aesthetic Dentist</strong>, our
                 clinic is committed to providing personalized care that
-                prioritizes your comfort and oral health. As part of our mission
-                to make dental care accessible, we align with government
-                initiatives like the{" "}
-                <strong>National Oral Health Programme (NOHP)</strong> to
-                promote preventive and affordable dental solutions for the
-                community.{" "}
+                prioritizes your comfort and oral health.
               </p>{" "}
               <p>
                 {" "}
@@ -515,10 +510,7 @@ export default function Home() {
                 <strong>Cosmetic Dentistry</strong>, while also offering routine
                 check-ups and preventive care. Our clinic integrates
                 state-of-the-art technology with a patient-first approach to
-                ensure every visit is both effective and stress-free. We also
-                participate in schemes like <strong>Ayushman Bharat</strong> to
-                provide subsidized dental care for eligible patients, ensuring
-                oral health is accessible to everyone.{" "}
+                ensure every visit is both effective and stress-free.
               </p>{" "}
             </div>
             <div>
