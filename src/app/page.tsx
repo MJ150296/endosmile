@@ -698,7 +698,8 @@ export default function Home() {
       {/* EIGHTH SECTION - SIGNUP FOR OFFERS  */}
 
       <div ref={SignUpExcitingOfferRef}>
-        <SignUpExcitingOffer />
+        <div>.</div>
+        {/* <SignUpExcitingOffer /> */}
       </div>
 
       {/* NINTH SECTION - FAQ's  */}

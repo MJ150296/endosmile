@@ -9,7 +9,7 @@ const DoctorCardList = () => {
       altText: "Dentist",
       name: "Dr. Sumit Dinkar",
       specialist: "Principal Dentist",
-      exp: "14+ years",
+      exp: "11+ years",
       externalLink: "#",
     },
     {
