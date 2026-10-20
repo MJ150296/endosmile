@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
       <p className="text-center mb-12 mx-5 md:mx-24 text-gray-800 text-lg">
         <span className="text-xl text-blue-600">&quot;Endo</span>
         <span className="text-xl text-green-600">Smile,</span> a leading Dental
-        Surgery Clinic in Greater Noida - west, is renowned for its exceptional
+        Surgery Clinic in Greater Noida - west, is renowned for its
         care provided by Micro Endodontist and Aesthetic Dentist Dr.
         Sumit Dinkar. Open Monday to Saturday, the clinic operates from{" "}
         <span className="text-xl text-blue-600">10:00 AM to 01:00 PM</span> and

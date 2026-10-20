@@ -11,7 +11,7 @@ const About = () => {
     <>
       <SEO
         title="About Us | EndoSmile Dental Care"
-        description="Learn more about EndoSmile Dental Care, your trusted dental clinic for healthy smiles."
+        description="Learn more about EndoSmile Dental Care, your dental clinic for healthy smiles."
         keywords="dental care, dental clinic, oral health, smile"
         image="/images/about-us-image.jpg"
         url="https://www.endosmiledental.com/about"
@@ -81,7 +81,7 @@ const About = () => {
             </div>
             <div className="flex flex-col gap-y-3">
               <p className="text-gray-800 tracking-wide leading-relaxed">
-                <strong>EndoSmile Dental Care</strong> offers <strong>exceptional dental services</strong> in the heart of <strong>Greater Noida</strong>. Our clinic utilizes <strong>advanced dental technology</strong> and <strong>highly skilled dentists</strong> to provide <strong>personalized oral healthcare</strong>. We specialize in <strong>preventive, restorative, and cosmetic dentistry</strong>, ensuring every patient enjoys a <strong>healthy, confident smile</strong> in a warm and comfortable environment.
+                <strong>EndoSmile Dental Care</strong> offers <strong>dental services</strong> in the heart of <strong>Greater Noida</strong>. Our clinic utilizes <strong>advanced dental technology</strong> and <strong>highly skilled dentists</strong> to provide <strong>personalized oral healthcare</strong>. We specialize in <strong>preventive, restorative, and cosmetic dentistry</strong>, ensuring every patient enjoys a <strong>healthy, confident smile</strong> in a warm and comfortable environment.
               </p>
               <p className="text-gray-800 tracking-wide leading-relaxed">
                 As a leading <strong>dental clinic in Greater Noida</strong>, we provide <strong>orthodontic solutions</strong> and <strong>advanced endodontic procedures</strong>. Our team creates <strong>customized treatment plans</strong> for everything from <strong>routine dental checkups</strong> to complex surgeries. Trust <strong>EndoSmile Dental Care</strong> for <strong>compassionate dentistry</strong> and professional excellence tailored to your long-term <strong>oral health</strong>.

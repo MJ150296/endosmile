@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s | EndoSmile Dental Care"
   },
   description:
-    "Top rated dental clinic in Greater Noida West (Iteda). Root Canal Treatment, Smile Designing, Cosmetic Dentistry by Dr Sumit Dinkar. 5 Star Google Rating | Emergency Dental Care Open 7 Days.",
+    "Top rated dental clinic in Greater Noida West (Iteda). Root Canal Treatment, Smile Designing, Cosmetic Dentistry by Dr Sumit Dinkar. Emergency Dental Care Open 7 Days.",
   keywords: ["dentist greater noida", "root canal greater noida", "dental clinic greater noida west", "dentist near me", "endodontist greater noida", "smile designing", "cosmetic dentistry", "dr sumit dinkar", "ended smile iteda"],
   authors: [{ name: "Dr Sumit Dinkar" }],
   creator: "EndoSmile Dental Care",

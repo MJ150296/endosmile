@@ -110,16 +110,16 @@ export default function Home() {
   const [isDoctorModalOpen, setIsDoctorModalOpen] = useState(false);
 
   useEffect(() => {
-  if (isDoctorModalOpen) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
+    if (isDoctorModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
 
-  return () => {
-    document.body.style.overflow = "auto";
-  };
-}, [isDoctorModalOpen]);
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isDoctorModalOpen]);
 
   const doctorData = {
     name: "Dr. Sumit Dinkar",
@@ -262,7 +262,7 @@ export default function Home() {
 
             {/* Subheading */}
             <p className="text-gray-600 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Your trusted partner in delivering exceptional dental care—blending
+              Your partner in delivering dental care—blending
               advanced technology with a personalized, human approach.
             </p>
 
@@ -275,9 +275,9 @@ export default function Home() {
             <div className="flex justify-center lg:justify-start gap-6 mt-4">
 
               {[
-                { value: <Counter end={5} duration={2} suffix=".0" />, label: "Google Rating" },
+                { value: <Counter end={100} duration={2} suffix="%" />, label: "Sterilization Standard" },
                 { value: <Counter end={24} duration={2} suffix="x7" />, label: "Emergency Care" },
-                { value: <Counter end={12} duration={2} suffix="+" />, label: "Years Experience" }
+                { value: <Counter end={11} duration={2} suffix="+" />, label: "Years Experience" }
               ].map((item, i) => (
 
                 <a key={i} href="https://share.google/MKrINQA0xM0qW13ft" target="blank" className="hover:scale-105 transition-transform duration-200">
@@ -413,7 +413,7 @@ export default function Home() {
             <p className="text-gray-600">
               {" "}
               At <strong>EndoSmile Dental Care</strong>, we believe every smile
-              tells a story. Our mission is to provide exceptional{" "}
+              tells a story. Our mission is to provide {" "}
               <strong>dental care in Greater Noida West</strong>, blending
               advanced <strong>dental technology</strong> with a compassionate
               approach. From routine check-ups to advanced treatments like{" "}
@@ -430,8 +430,8 @@ export default function Home() {
                 <p className="text-lg">Years Caring for You</p>
               </div>
               <div className="w-full lg:w-1/2 flex flex-col text-center lg:text-left">
-                <p className="text-3xl sm:text-4xl font-semibold">5 ★</p>
-                <p className="text-lg">Google Rating</p>
+                <p className="text-3xl sm:text-4xl font-semibold">5000+</p>
+                <p className="text-lg">Smiles Restored</p>
               </div>
             </div>
 
@@ -494,7 +494,7 @@ export default function Home() {
             <div className="space-y-4 mr-10 text-gray-600">
               <p>
                 {" "}
-                Welcome to <strong>EndoSmile Dental Care</strong>, the trusted
+                Welcome to <strong>EndoSmile Dental Care</strong>, the
                 dental clinic in <strong>Greater Noida West</strong>, where
                 expertise meets innovation. Led by{" "}
                 <strong>Dr. Sumit Dinkar</strong>, a renowned{" "}
@@ -621,9 +621,6 @@ export default function Home() {
             <div className="space-y-1">
               <p className="text-4xl font-sans text-gray-800 font-semibold">
                 Dr. Sumit Dinkar
-                <span className="text-xl text-blue-600">
-                  (The Smile Architect)
-                </span>
               </p>
               <p className="text-green-600 font-semibold">
                 Micro Endodontist and Aesthetic Dentist

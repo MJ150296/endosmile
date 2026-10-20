@@ -99,7 +99,7 @@ const Treatments = () => {
     <>
       <SEO
         title="Treatments | EndoSmile Dental Care | Greater Noida West"
-        description="Learn more about EndoSmile Dental Care, your trusted dental clinic for healthy smiles."
+        description="Learn more about EndoSmile Dental Care, your dental clinic for healthy smiles."
         keywords="dental care, dental clinic, oral health, smile"
         image="/images/about-us-image.jpg"
         url="https://www.endosmiledental.com/treatments"
