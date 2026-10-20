@@ -15,7 +15,7 @@ const BlogList: React.FC = () => {
           Endosmile Dental Insights
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed animate__animated animate__fadeIn animate__delay-1s">
-          Stay informed with expert tips, the latest dental technologies, and
+          Stay informed with tips, the latest dental technologies, and
           oral health advice curated by our specialists at{" "}
           <span className="font-semibold text-green-500">Endosmile</span>.
         </p>

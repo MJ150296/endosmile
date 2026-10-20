@@ -16,7 +16,7 @@ export const blogs: Blog[] = [
     title:
       "How to Choose the Best Toothbrush & Toothpaste | Endo Smile Dental Care, Greater Noida",
     excerpt:
-      "Confused about electric vs manual brushes or which toothpaste suits your needs? Discover expert guidance from Endo Smile Dental Care for optimal oral health.",
+      "Confused about electric vs manual brushes or which toothpaste suits your needs? Discover guidance from Endo Smile Dental Care for optimal oral health.",
     image: "/Images/blogs/blog1cover.png",
     subheading: "Your Complete Oral Care Guide by Endo Smile Dental Care",
     content: `<p>Selecting the right dental care products isn't about marketing claims—it's about understanding your oral health needs. At <strong>Endo Smile Dental Care</strong> in Greater Noida, we help patients from Gaur City, Sector 4, and nearby areas choose products that address specific concerns like sensitivity, gum issues, or enamel protection.</p>
@@ -45,7 +45,7 @@ export const blogs: Blog[] = [
     content1:
       "For residents in Gaur City and Sector 4 dealing with hard water stains, we recommend electric brushes with circular motion heads and whitening toothpaste with gentle abrasives. We provide personalized product demos at our clinic.",
     content2:
-      "Our dental experts analyze your enamel condition and gum health before recommending products. We carry professional-grade toothpaste samples for sensitivity, enamel repair, and gingivitis prevention.",
+      "Our dentist analyze your enamel condition and gum health before recommending products. We carry professional-grade toothpaste samples for sensitivity, enamel repair, and gingivitis prevention.",
     additionalImages: [
       "/Images/blogs/blog1a.jpeg",
       "/Images/blogs/blog1b.jpeg",
@@ -214,7 +214,7 @@ export const blogs: Blog[] = [
     title:
       "Dental Implants vs. Bridges: Which Is Right For You? | Endo Smile Dental Care",
     excerpt:
-      "Replace missing teeth confidently. Compare longevity, cost, and comfort of implants versus bridges with our dental experts.",
+      "Replace missing teeth confidently. Compare longevity, cost, and comfort of implants versus bridges with our dentist.",
     image: "/Images/blogs/blog6cover.png",
     subheading: "Modern Tooth Replacement Solutions",
     content: `<p>At <strong>Endo Smile Dental Care</strong> in Greater Noida, we help patients choose between implants and bridges based on:</p>
@@ -284,7 +284,7 @@ export const blogs: Blog[] = [
     title:
       "Pediatric Dental Care Guide: From First Tooth to Adolescence | Endo Smile Dental Care",
     excerpt:
-      "Set your child up for lifelong dental health. Expert tips on teething, cavity prevention, and orthodontic timing from our pediatric specialists.",
+      "Set your child up for lifelong dental health. Tips on teething, cavity prevention, and orthodontic timing from our pediatric specialists.",
     image: "/Images/blogs/blog7cover.png",
     subheading: "Building Healthy Smiles from the Start",
     content: `<p>At <strong>Endo Smile Dental Care</strong> in Greater Noida, our pediatric program focuses on:</p>

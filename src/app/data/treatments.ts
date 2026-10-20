@@ -20,11 +20,11 @@ export const treatments: Treatment[] = [
   {
     id: "1",
     slug: "root-canal-treatment",
-    title: "Painless Root Canal Treatment",
+    title: "Root Canal Treatment",
     shortDescription: "Save your tooth with advanced microscopic root canal treatment",
-    description: "Root canal treatment is needed when the pulp inside your tooth becomes infected or inflamed due to deep decay, repeated dental procedures, faulty crowns, or a crack in the tooth. At EndoSmile Dental Care, we perform painless root canal procedures using state-of-the-art dental operating microscopes that allow us to see even the smallest canals inside your tooth. With over 98% success rate, our root canal treatments help you save your natural tooth and avoid extraction.",
+    description: "Root canal treatment is needed when the pulp inside your tooth becomes infected or inflamed due to deep decay, repeated dental procedures, faulty crowns, or a crack in the tooth. At EndoSmile Dental Care, we perform root canal procedures using state-of-the-art dental operating microscopes that allow us to see even the smallest canals inside your tooth. With over 98% success rate, our root canal treatments help you save your natural tooth and avoid extraction.",
     benefits: [
-      "Painless procedure with modern anesthesia",
+      "Procedure with modern anesthesia",
       "Saves your natural tooth",
       "Stops infection from spreading",
       "Restores full chewing function",
@@ -44,9 +44,9 @@ export const treatments: Treatment[] = [
     duration: "1-2 visits",
     priceRange: "₹4,500 - ₹8,000",
     recoveryTime: "1-2 days",
-    metaTitle: "Painless Root Canal Treatment in Greater Noida West | EndoSmile",
-    metaDescription: "Expert painless root canal treatment in Greater Noida West by Dr Sumit Dinkar. Microscopic root canal with 98% success rate. Same day appointments available.",
-    keywords: ["root canal treatment greater noida", "painless root canal near me", "endodontist greater noida west", "tooth pain treatment", "microscopic root canal"]
+    metaTitle: "Root Canal Treatment in Greater Noida West | EndoSmile",
+    metaDescription: "Root canal treatment in Greater Noida West by Dr Sumit Dinkar. Microscopic root canal with 98% success rate. Same day appointments available.",
+    keywords: ["root canal treatment greater noida", "root canal near me", "endodontist greater noida west", "tooth pain treatment", "microscopic root canal"]
   },
   {
     id: "2",
@@ -76,7 +76,7 @@ export const treatments: Treatment[] = [
     priceRange: "₹15,000 - ₹50,000",
     recoveryTime: "No downtime",
     metaTitle: "Cosmetic Dentistry & Smile Designing | Greater Noida West",
-    metaDescription: "Premium cosmetic dentistry and smile designing in Greater Noida West. Porcelain veneers, teeth whitening, smile makeovers by expert cosmetic dentist Dr Sumit Dinkar.",
+    metaDescription: "Premium cosmetic dentistry and smile designing in Greater Noida West. Porcelain veneers, teeth whitening, smile makeovers by cosmetic dentist Dr Sumit Dinkar.",
     keywords: ["cosmetic dentistry greater noida", "smile designing near me", "porcelain veneers greater noida", "teeth whitening", "dental veneers cost"]
   },
   {
@@ -138,7 +138,7 @@ export const treatments: Treatment[] = [
     priceRange: "₹30,000 - ₹80,000",
     recoveryTime: "No downtime, periodic adjustments",
     metaTitle: "Orthodontics Braces & Aligners | Greater Noida Orthodontist",
-    metaDescription: "Expert orthodontic treatment in Greater Noida West. Metal braces, ceramic braces, clear aligners for teeth straightening for all ages.",
+    metaDescription: "Orthodontic treatment in Greater Noida West. Metal braces, ceramic braces, clear aligners for teeth straightening for all ages.",
     keywords: ["orthodontist greater noida", "braces for teeth cost", "clear aligners greater noida", "teeth straightening", "invisible braces"]
   },
   {
@@ -184,7 +184,7 @@ export const treatments: Treatment[] = [
       "Early detection of problems",
       "Gentle and patient approach",
       "Parents education and guidance",
-      "Painless treatments for kids"
+      "treatments for kids"
     ],
     procedureSteps: [
       "Fun filled first visit",
@@ -200,8 +200,8 @@ export const treatments: Treatment[] = [
     priceRange: "₹500 - ₹3,000",
     recoveryTime: "No downtime",
     metaTitle: "Pediatric Dentistry | Children Dentist in Greater Noida West",
-    metaDescription: "Specialized pediatric dentist in Greater Noida West for children's dental care. Gentle, painless treatments for kids of all ages in child friendly clinic.",
-    keywords: ["pediatric dentist greater noida", "children dentist near me", "kids dental clinic", "child tooth treatment", "best dentist for kids"]
+    metaDescription: "Specialized pediatric dentist in Greater Noida West for children's dental care. Gentle, treatments for kids of all ages in child friendly clinic.",
+    keywords: ["pediatric dentist greater noida", "children dentist near me", "kids dental clinic", "child tooth treatment", "dentist for kids"]
   },
   {
     id: "7",

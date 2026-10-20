@@ -13,8 +13,8 @@ const SwiperComponent: React.FC = () => {
     {
       id: nanoid(),
       image: "/Images/services/cosmeticDentistry.jpg",
-      altText: "Smile Experts",
-      title: "Smile Experts",
+      altText: "Smile, Smiles",
+      title: "Smile, Smiles",
       description: "Our skilled team crafts smiles you'll love to show off",
     },
     {

@@ -7,7 +7,7 @@ const StructuredData = () => {
     "@context": "https://schema.org",
     "@type": "Dentist",
     "name": "EndoSmile Dental Care",
-    "description": "Top rated dental clinic in Greater Noida West offering painless Root Canal Treatment, Smile Designing, Cosmetic Dentistry by Dr Sumit Dinkar.",
+    "description": "Top rated dental clinic in Greater Noida West offering Root Canal Treatment, Smile Designing, Cosmetic Dentistry by Dr Sumit Dinkar.",
     "url": "https://endosmiledentalcare.com",
     "telephone": "+91 83688 47831",
     "email": "endosmiledentalcare@gmail.com",

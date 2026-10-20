@@ -20,9 +20,9 @@ export default function Home() {
     {
       id: nanoid(),
       iconURL: "/Images/Icons/orthodontics.png",
-      title: "Painless Root Canal Treatment",
+      title: "Root Canal Treatment",
       description:
-        "Save your smile with precise and painless root canal treatment.",
+        "Save your smile with precise and root canal treatment.",
       imageURL: "/Images/services/rootCanal.jpg",
       linkURL: "/treatments/root-canal-treatment",
       detailedDescription: "",
@@ -72,7 +72,7 @@ export default function Home() {
       iconURL: "/Images/Icons/pediatric.png",
       title: "Pediatric & Children's Dentistry",
       description:
-        "Expert dental care for children of all ages in friendly environment.",
+        "Dental care for children of all ages in friendly environment.",
       imageURL: "/Images/services/pediatricDentistry.jpeg",
       linkURL: "/treatments/pediatric-dentistry",
       detailedDescription: "",
@@ -673,7 +673,7 @@ export default function Home() {
           <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
             <Image
               src="/Images/Clinic/dentist.jpg"
-              alt="Best Dentist in Grater Noida"
+              alt="Dentist in Grater Noida"
               width={380}
               height={9}
               className="rounded-xl shadow-xl"

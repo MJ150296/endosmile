@@ -27,7 +27,7 @@ const Treatments = () => {
       slug: "root-canal-treatment",
       title: "Root Canal Treatment",
       description:
-        "Save your natural teeth and alleviate pain with our expert root canal treatment. This procedure treats infected or damaged tooth pulp, preventing tooth loss and restoring function. With advanced tools and techniques, we ensure a painless and stress-free experience. Our meticulous care provides long-term relief and maintains your oral health. Don’t let tooth pain affect your life—our root canal therapy delivers effective solutions to preserve your beautiful smile.",
+        "Save your natural teeth and alleviate pain with our root canal treatment. This procedure treats infected or damaged tooth pulp, preventing tooth loss and restoring function. With advanced tools and techniques, we ensure stress-free experience. Our meticulous care provides long-term relief and maintains your oral health. Don't let tooth pain affect your life—our root canal therapy delivers effective solutions to preserve your beautiful smile.",
       altText: "Root Canal Treatment",
       image: "/Images/services/rootCanal.jpg",
     },
@@ -45,7 +45,7 @@ const Treatments = () => {
       slug: "braces-and-aligners",
       title: "Braces & Aligners",
       description:
-        "Perfect your smile with our comprehensive braces and aligner treatments. Choose traditional braces for complex alignment issues or Invisalign for a nearly invisible option. These solutions improve your smile's appearance and oral health. Our personalized plans fit your lifestyle, ensuring minimal disruption to your routine. Achieve a straighter smile with expert care tailored to your needs.",
+        "Perfect your smile with our comprehensive braces and aligner treatments. Choose traditional braces for complex alignment issues or Invisalign for a nearly invisible option. These solutions improve your smile's appearance and oral health. Our personalized plans fit your lifestyle, ensuring minimal disruption to your routine. Achieve a straighter smile with care tailored to your needs.",
       altText: "Braces & Aligners",
       image: "/Images/services/braces.jpg",
     },
@@ -63,7 +63,7 @@ const Treatments = () => {
       slug: "pediatric-dentistry",
       title: "Pediatric Dentistry",
       description:
-        "Give your little ones the best start to oral health with our specialized pediatric dentistry services. From preventive care to treating cavities, we provide gentle, compassionate dental care tailored to children. Our child-friendly environment ensures your kids feel at ease while learning good oral hygiene habits. Start your child's journey to a lifetime of healthy smiles with us.",
+        "Give your little ones the best start to oral health with our pediatric dentistry services. From preventive care to treating cavities, we provide gentle, compassionate dental care tailored to children. Start your child's journey to a lifetime of healthy smiles with us.",
       altText: "Pediatric Dentistry",
       image: "/Images/services/pediatricDentistry.jpeg",
     },
@@ -72,7 +72,7 @@ const Treatments = () => {
       slug: "dentures",
       title: "Dentures",
       description:
-        "Regain your smile and confidence with our high-quality dentures. Designed for comfort and a natural appearance, our dentures replace missing teeth, restoring functionality and aesthetics. Whether you need partial or full dentures, we offer custom solutions that fit perfectly and improve your quality of life. Let us help you smile with ease and comfort again.",
+        "Regain your smile and confidence with dentures. Designed for comfort and a natural appearance, restoring functionality and aesthetics. Whether you need partial or full dentures, we offer custom solutions that fit perfectly and improve your quality of life. Let us help you smile with ease and comfort again.",
       altText: "Dentures",
       image: "/Images/services/dentures.jpg",
     },
