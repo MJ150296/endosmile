@@ -4,7 +4,6 @@ import React from "react";
 import "animate.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/autoplay"; // Optional modules
 import { Autoplay } from "swiper/modules";
 import BookAppointmentForm from "../components/BookAppointmentForm";
 // import Image from "next/image";
@@ -52,7 +51,7 @@ const AppointmentPage: React.FC = () => {
                 Experienced Professionals
               </h3>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                Our team has decades of experience providing top-notch dental
+                Our team has decades of experience providing dental
                 care to all our patients.
               </p>
             </div>

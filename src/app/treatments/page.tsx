@@ -83,7 +83,7 @@ const Treatments = () => {
     const stats = [
       { id: "patients", value: 5000 },
       { id: "treatments", value: 2000 },
-      { id: "years", value: 12 },
+      { id: "years", value: 11 },
     ];
 
     const options = { duration: 2 };
