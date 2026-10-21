@@ -429,10 +429,10 @@ export default function Home() {
                 <p className="text-3xl sm:text-4xl font-semibold">10+</p>
                 <p className="text-lg">Years Caring for You</p>
               </div>
-              <div className="w-full lg:w-1/2 flex flex-col text-center lg:text-left">
+              {/* <div className="w-full lg:w-1/2 flex flex-col text-center lg:text-left">
                 <p className="text-3xl sm:text-4xl font-semibold">5000+</p>
                 <p className="text-lg">Smiles Restored</p>
-              </div>
+              </div> */}
             </div>
 
             {/* CTA Button */}
@@ -453,16 +453,16 @@ export default function Home() {
       <div className="w-full flex flex-col p-5 md:p-10">
         <div className="w-full flex flex-col gap-y-10">
           <div className="w-full flex flex-col md:flex-row">
-            <div className="w-3/4 flex flex-col gap-y-10">
+            <div className="w-4/5 flex flex-col gap-y-10">
               <div className="flex gap-x-3 items-center">
                 <HeadingPointer />
                 <h3 className="font-semibold">OUR SERVICES</h3>
               </div>
-              <p className="text-3xl md:text-5xl font-semibold">
+              <p className="text-3xl md:text-4xl font-semibold">
                 Comprehensive dental care tailored services for every smile
               </p>
             </div>
-            <div className="w-full md:w-1/4 py-5 flex justify-end items-center">
+            <div className="w-full md:w-1/5 py-5 flex justify-end items-end">
               <Link
                 href="/treatments"
                 className="px-6 py-3 bg-blue-600 rounded-full shadow-lg hover:bg-green-600 text-white text-base"
@@ -493,25 +493,17 @@ export default function Home() {
             </p>
             <div className="space-y-4 mr-10 text-gray-600">
               <p>
-                {" "}
-                Welcome to <strong>EndoSmile Dental Care</strong>, the
-                dental clinic in <strong>Greater Noida West</strong>, where
-                expertise meets innovation. Led by{" "}
-                <strong>Dr. Sumit Dinkar</strong>, a renowned{" "}
-                <strong>Micro Endodontist and Aesthetic Dentist</strong>, our
-                clinic is committed to providing personalized care that
-                prioritizes your comfort and oral health.
-              </p>{" "}
+                <strong>EndoSmile Dental Care</strong> is a dental clinic located in Greater Noida West, providing dental consultation, diagnosis, treatment, and preventive oral healthcare services.
+              </p>
               <p>
-                {" "}
-                At EndoSmile Dental Care, we specialize in advanced treatments
-                such as <strong>Root Canal Therapy</strong>,{" "}
-                <strong>Smile Makeovers</strong>, and{" "}
-                <strong>Cosmetic Dentistry</strong>, while also offering routine
-                check-ups and preventive care. Our clinic integrates
-                state-of-the-art technology with a patient-first approach to
-                ensure every visit is both effective and stress-free.
-              </p>{" "}
+                The clinic is associated with <strong>Dr. Sumit Dinkar</strong>, whose professional qualifications and areas of practice include endodontics and aesthetic dentistry, as applicable to his registered credentials.
+              </p>
+              <p>
+                Services offered at the clinic include root canal treatment, aesthetic dental procedures, smile-related treatments, routine dental examinations, and preventive oral care. Treatment recommendations are based on individual dental needs and clinical assessment.
+              </p>
+              <p>
+                The clinic aims to support patients in maintaining oral health through appropriate dental care, patient education, and treatment planning.
+              </p>
             </div>
             <div>
               <Link
