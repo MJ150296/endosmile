@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Counter from "./components/Counter";
 import ServiceCard from "./components/ServiceCard";
 import SmileStoryCard from "./components/SmileStoryCard";
 import CoverSlider from "./components/CoverSlider";
@@ -22,7 +21,7 @@ export default function Home() {
       iconURL: "/Images/Icons/orthodontics.png",
       title: "Root Canal Treatment",
       description:
-        "Save your smile with precise and root canal treatment.",
+        "Treatment to remove inflamed or infected pulp and restore a tooth when clinically appropriate.",
       imageURL: "/Images/services/rootCanal.jpg",
       linkURL: "/treatments/root-canal-treatment",
       detailedDescription: "",
@@ -32,7 +31,7 @@ export default function Home() {
       iconURL: "/Images/Icons/cosmetics.png",
       title: "Cosmetic Dentistry",
       description:
-        "Enhance your smile and confidence with personalized cosmetic dentistry.",
+        "Procedures that address the appearance of teeth and gums after assessment of oral health and treatment goals.",
       imageURL: "/Images/services/cosmeticDentistry.jpg",
       linkURL: "/treatments/cosmetic-dentistry",
       detailedDescription: "",
@@ -42,7 +41,7 @@ export default function Home() {
       iconURL: "/Images/Icons/dental.png",
       title: "Dental Fillings and Implants",
       description:
-        "From seamless fillings to secure dental implants, restore and protect your smile with confidence.",
+        "Fillings repair localized tooth damage; implants are one option for replacing missing teeth.",
       imageURL: "/Images/services/ImplantsAndFillings.jpg",
       linkURL: "/treatments/dental-implants-and-fillings",
       detailedDescription: "",
@@ -52,7 +51,7 @@ export default function Home() {
       iconURL: "/Images/Icons/orthodontics1.png",
       title: "Orthodontics Treatment",
       description:
-        "Straighten your teeth and perfect your smile with our advanced orthodontic treatments.",
+        "Orthodontic assessment and treatment for tooth alignment and bite relationships.",
       imageURL: "/Images/services/orthodontics.jpg",
       linkURL: "/treatments/orthodontics-braces",
       detailedDescription: "",
@@ -62,7 +61,7 @@ export default function Home() {
       iconURL: "/Images/Icons/crownsAndBridges.png",
       title: "Crowns and Bridges",
       description:
-        "Restore your smile with durable crowns and bridges, blending strength and beauty.",
+        "Fixed restorations used to protect damaged teeth or replace selected missing teeth.",
       imageURL: "/Images/services/crowns.jpg",
       linkURL: "/treatments/crowns-and-bridges",
       detailedDescription: "",
@@ -72,7 +71,7 @@ export default function Home() {
       iconURL: "/Images/Icons/pediatric.png",
       title: "Pediatric & Children's Dentistry",
       description:
-        "Dental care for children of all ages in friendly environment.",
+        "Preventive, diagnostic, and restorative dental care for children and adolescents.",
       imageURL: "/Images/services/pediatricDentistry.jpeg",
       linkURL: "/treatments/pediatric-dentistry",
       detailedDescription: "",
@@ -82,7 +81,7 @@ export default function Home() {
       iconURL: "/Images/Icons/dental (1).png",
       title: "Braces & Aligners",
       description:
-        "Transform your smile with braces and aligners, offering precision and comfort.",
+        "Fixed braces and clear aligners for selected orthodontic alignment needs.",
       imageURL: "/Images/services/braces.jpg",
       linkURL: "/treatments/braces-and-aligners",
       detailedDescription: "",
@@ -92,7 +91,7 @@ export default function Home() {
       iconURL: "/Images/Icons/dentures.png",
       title: "Dentures",
       description:
-        "Restore your smile and confidence with comfortable, natural-looking dentures.",
+        "Removable complete or partial prostheses for selected patterns of tooth loss.",
       imageURL: "/Images/services/dentures.jpg",
       linkURL: "/treatments/dentures",
       detailedDescription: "",
@@ -146,7 +145,7 @@ export default function Home() {
       {
         icon: "/Images/Icons/dental.png",
         title: "Root Canal Treatment",
-        description: "Advanced microscopic and CBCT-guided endodontic procedures with precision care"
+        description: "Microscopic and CBCT-guided endodontic procedures with precision care"
       },
       {
         icon: "/Images/Icons/cosmetics.png",
@@ -254,30 +253,27 @@ export default function Home() {
               <br className="hidden lg:block" />
             </h1>
             <h2 className="text-3xl text-gray-700 font-medium">
-              Advance
-              <span className="text-blue-600"> Dental Solutions </span>
-              and
-              <span className="text-green-600"> Root Canal Specialist </span>
-              in Greater Noida West and Noida Extension</h2>
+              <span className="text-blue-600">Dental consultation and treatment</span>
+              <span className="text-green-600"> in Greater Noida West</span></h2>
 
             {/* Subheading */}
             <p className="text-gray-600 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Your partner in delivering dental care—blending
-              advanced technology with a personalized, human approach.
+              Consultation, prevention, diagnosis, and treatment planning for
+              individual oral health needs.
             </p>
 
             {/* Tagline */}
             <p className="text-blue-600 font-medium text-lg tracking-wide">
-              Endo<span className="text-green-500">Smile</span> — The Art of Beautiful Smiles
+              Endo<span className="text-green-500">Smile</span> Dental Care
             </p>
 
             {/* Premium Stats */}
             <div className="flex justify-center lg:justify-start gap-6 mt-4">
 
               {[
-                { value: <Counter end={100} duration={2} suffix="%" />, label: "Sterilization Standard" },
-                { value: <Counter end={24} duration={2} suffix="x7" />, label: "Emergency Care" },
-                { value: <Counter end={11} duration={2} suffix="+" />, label: "Years Experience" }
+                { value: "Mon–Sat", label: "Clinic hours" },
+                { value: "By appointment", label: "Sunday visits" },
+                { value: "Individual", label: "Treatment planning" }
               ].map((item, i) => (
 
                 <a key={i} href="https://share.google/MKrINQA0xM0qW13ft" target="blank" className="hover:scale-105 transition-transform duration-200">
@@ -349,7 +345,7 @@ export default function Home() {
 
             {/* Queries */}
             <div className="text-center lg:text-left">
-              <p className="text-gray-800 font-medium text-lg">Any Dental Queries</p>
+                <p className="text-gray-800 font-medium text-lg">Dental enquiries</p>
               <p className="text-gray-600 text-base mt-1">+91 - 83688 47831</p>
             </div>
 
@@ -408,19 +404,15 @@ export default function Home() {
               <h3 className="font-semibold">ABOUT US</h3>
             </div>
             <p className="text-3xl md:text-5xl font-semibold">
-              Bringing Bright Smiles and Better Health Together.
+              Oral health care based on clinical assessment.
             </p>
             <p className="text-gray-600">
-              {" "}
-              At <strong>EndoSmile Dental Care</strong>, we believe every smile
-              tells a story. Our mission is to provide {" "}
-              <strong>dental care in Greater Noida West</strong>, blending
-              advanced <strong>dental technology</strong> with a compassionate
-              approach. From routine check-ups to advanced treatments like{" "}
-              <strong>Root Canal Therapy</strong> and{" "}
-              <strong>Smile Makeovers</strong>, we are dedicated to improving
-              your <strong>oral health</strong> and boosting your confidence—one
-              smile at a time.{" "}
+              At <strong>EndoSmile Dental Care</strong>, located in{" "}
+              <strong>Greater Noida West</strong>, we provide{" "}
+              <strong>dental consultation</strong>, <strong>preventive care</strong>, and{" "}
+              <strong>treatment services</strong> to support your <strong>oral health</strong>. Our services include routine{" "}
+              <strong>dental check-ups</strong>, <strong>Root Canal Therapy</strong>, restorative procedures, and{" "}
+              <strong>smile enhancement treatments</strong>. Treatment recommendations are based on individual clinical assessments and dental needs, with information provided to help patients make informed decisions about their oral health.
             </p>
 
             {/* Stats Section */}
@@ -459,7 +451,7 @@ export default function Home() {
                 <h3 className="font-semibold">OUR SERVICES</h3>
               </div>
               <p className="text-3xl md:text-4xl font-semibold">
-                Comprehensive dental care tailored services for every smile
+                Dental services for preventive, restorative, endodontic, orthodontic, and aesthetic needs
               </p>
             </div>
             <div className="w-full md:w-1/5 py-5 flex justify-end items-end">
@@ -489,7 +481,7 @@ export default function Home() {
               <h3 className="font-semibold">EXPERTISE</h3>
             </div>
             <p className="text-3xl md:text-5xl font-semibold">
-              Elevating Your Oral Health and Smile Aesthetics with Expertise
+              Clinical assessment and treatment planning
             </p>
             <div className="space-y-4 mr-10 text-gray-600">
               <p>
@@ -621,16 +613,14 @@ export default function Home() {
             <div className="space-y-4 tracking-wide leading-relaxed text-gray-800">
               <p>
                 {" "}
-                Dr. Sumit Dinkar is a highly skilled{" "}
-                <strong>Micro Endodontist</strong> and{" "}
-                <strong>Aesthetic Dentist</strong> based in{" "}
+                Dr. Sumit Dinkar is a dentist with postgraduate training in{" "}
+                <strong>Conservative Dentistry and Endodontics</strong>, based in{" "}
                 <strong>Greater Noida West</strong>, specializing in{" "}
                 <strong>Root Canal Treatment</strong>,{" "}
                 <strong>Smile Design</strong>, and{" "}
-                <strong>Cosmetic Dentistry</strong>. Known for his precision and
-                approachable demeanor, Dr. Sumit provides world-class dental
-                care in a comfortable, stress-free environment, transforming
-                smiles and oral health across the region.{" "}
+                <strong>Cosmetic Dentistry</strong>. Treatment recommendations
+                are made after clinical assessment and discussion of available
+                options.{" "}
               </p>{" "}
               <p>
                 {" "}
@@ -638,18 +628,18 @@ export default function Home() {
                 <strong>
                   Maulana Azad Institute of Dental Sciences, New Delhi
                 </strong>
-                , Dr. Sumit has over a decade of expertise in advanced
+                . His listed qualifications include postgraduate training and
                 procedures like <strong>crown and bridge work</strong>,{" "}
                 <strong>peri-radicular surgeries</strong>, and{" "}
                 <strong>aesthetic treatments</strong>. He is also trained to
-                deliver compassionate care under general anesthesia for patients
-                with special needs.{" "}
+                . Sedation or anesthesia, when indicated, is discussed as part
+                of the treatment plan and depends on the patient and procedure.{" "}
               </p>{" "}
               <p>
-                Dr. Sumit has advanced training in{" "}
+                Dr. Sumit has training in{" "}
                 <strong>Porcelain Veneers</strong>,{" "}
                 <strong>Teeth Whitening</strong> and ensures every dental
-                visit is a step closer to the <strong>perfect smile</strong>.
+                treatment goals are discussed before any aesthetic procedure.
               </p>
               <button
                 onClick={() => setIsDoctorModalOpen(true)}
@@ -676,7 +666,7 @@ export default function Home() {
       <div className="">
         <div className="p-10 bg-gray-200 shadow-xl">
           <h5 className="text-3xl font-sans font-semibold text-gray-800">
-            Your Transformation Destination.
+            Clinic and treatment information.
           </h5>
           <div className="px-0 md:px-20 pt-10 hover:scale-95 duration-500">
             <CoverSlider />

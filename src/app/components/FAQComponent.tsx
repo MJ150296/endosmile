@@ -6,7 +6,7 @@ const faqData = [
   {
     question: "How often should I visit the dentist?",
     answer:
-      "It's recommended to visit your dentist every three to six months for a routine check-up and cleaning. However, your dentist may suggest more frequent visits based on your oral health needs.",
+      "The appropriate interval depends on your oral health, risk factors, age, and treatment needs. Many people benefit from a routine examination about every six months, while others may need more or less frequent visits.",
   },
   {
     question: "What is the best way to prevent cavities?",
@@ -16,12 +16,12 @@ const faqData = [
   {
     question: "Are teeth whitening treatments safe?",
     answer:
-      "Yes, teeth whitening treatments performed by a dentist are safe and effective. Over-the-counter products should be used cautiously and as directed.",
+      "Whitening can be appropriate for some patients after an examination. Temporary sensitivity or gum irritation can occur, and existing restorations do not change color. A dentist can discuss the expected result, risks, and suitable method.",
   },
   {
     question: "What should I do if I have a toothache?",
     answer:
-      "If you experience toothache, schedule a visit with your dentist immediately. Avoid self-medication.",
+      "Arrange a dental assessment, particularly if pain is persistent or accompanied by swelling, fever, trauma, or difficulty swallowing. Seek urgent medical care for facial swelling that affects breathing or swallowing. Do not place aspirin directly on the tooth or gums.",
   },
   {
     question: "What is the difference between a filling and a crown?",
@@ -40,8 +40,7 @@ const FAQComponent: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto px-10 py-20 mb-10">
       <h5 className="text-green-600 tracking-wide font-semibold text-3xl mb-5">
-        Got Questions About Your Smile?
-        <span className="text-blue-600">We&apos;ve Got Answers!</span>
+        Common Questions About Dental Care
       </h5>
       <div className="space-y-4">
         {faqData.map((faq, index) => (

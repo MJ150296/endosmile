@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           <div className="mb-6 md:mb-0 w-full md:w-1/3 md:pr-5">
             <h3 className="text-xl font-bold mb-4">EndoSmile Dental Care</h3>
             <p className="mb-2 font-semibold">
-              Your Path to Perfect Oral Health.
+              Dental consultation and treatment services.
             </p>
             <p className="mb-2">Location:</p>
             <p>

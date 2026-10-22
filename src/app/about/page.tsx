@@ -40,15 +40,15 @@ const About = () => {
 
             {/* Description */}
             <p className="text-lg md:text-xl text-white/90 leading-relaxed animate__animated animate__fadeInUp animate__delay-500ms">
-              Welcome to <span className="font-semibold text-white">EndoSmile Dental Care</span>,
-              where precision meets compassion. We deliver advanced dental care using modern
-              technology and personalized treatment plans designed around you.
+              <span className="font-semibold text-white">EndoSmile Dental Care </span>
+              provides dental consultation, preventive care, and treatment
+              services in Greater Noida West.
             </p>
 
             {/* Secondary Text */}
             <p className="mt-4 text-base md:text-lg text-white/80 leading-relaxed animate__animated animate__fadeInUp animate__delay-1s">
-              Our focus is simple—comfort, prevention, and long-term oral health.
-              Every visit is crafted to give you confidence in your smile.
+              Treatment options are discussed after examination and are based
+              on individual clinical findings and preferences.
             </p>
 
             {/* Glass CTA */}
@@ -76,15 +76,23 @@ const About = () => {
                 ENDO<span className="text-green-600">SMILE</span> DENTAL CARE
               </h2>
               <p className="text-gray-900 text-lg italic">
-                Crafting Confident Smiles
+                Dental consultation and treatment
               </p>
             </div>
             <div className="flex flex-col gap-y-3">
               <p className="text-gray-800 tracking-wide leading-relaxed">
-                <strong>EndoSmile Dental Care</strong> offers <strong>dental services</strong> in the heart of <strong>Greater Noida</strong>. Our clinic utilizes <strong>advanced dental technology</strong> and <strong>highly skilled dentists</strong> to provide <strong>personalized oral healthcare</strong>. We specialize in <strong>preventive, restorative, and cosmetic dentistry</strong>, ensuring every patient enjoys a <strong>healthy, confident smile</strong> in a warm and comfortable environment.
+                <strong>EndoSmile Dental Care</strong> provides dental
+                consultation and services in Greater Noida West, including
+                preventive, restorative, endodontic, orthodontic, and aesthetic
+                care. The appropriate treatment depends on examination findings
+                and the patient&apos;s oral health needs.
               </p>
               <p className="text-gray-800 tracking-wide leading-relaxed">
-                As a <strong>dental clinic in Greater Noida</strong>, we provide <strong>orthodontic solutions</strong> and <strong>advanced endodontic procedures</strong>. Our team creates <strong>customized treatment plans</strong> for everything from <strong>routine dental checkups</strong> to complex surgeries. Trust <strong>EndoSmile Dental Care</strong> for <strong>compassionate dentistry</strong> and professional excellence tailored to your long-term <strong>oral health</strong>.
+                Services include routine examinations, oral hygiene guidance,
+                tooth restoration, root canal treatment, tooth replacement,
+                orthodontic assessment, and selected cosmetic procedures. The
+                clinician explains expected benefits, limitations, risks, and
+                alternatives before treatment.
               </p>
             </div>
 
@@ -119,8 +127,8 @@ const About = () => {
                 Why Choose Us?
               </h3>
               <p className="text-gray-800">
-                At EndoSmile Dental Care, we make dentistry fun, friendly, and
-                fear-free—because your smile deserves the happiest vibes!
+                EndoSmile Dental Care provides a structured clinical setting
+                with attention to communication, prevention, and patient comfort.
               </p>
               <a href="tel:+918368847831" className="flex gap-x-2 group cursor-pointer">
                 <Image

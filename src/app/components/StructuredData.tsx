@@ -7,7 +7,7 @@ const StructuredData = () => {
     "@context": "https://schema.org",
     "@type": "Dentist",
     "name": "EndoSmile Dental Care",
-    "description": "Top rated dental clinic in Greater Noida West offering Root Canal Treatment, Smile Designing, Cosmetic Dentistry by Dr Sumit Dinkar.",
+    "description": "Dental consultation, preventive care, restorative dentistry, endodontic treatment, orthodontics, and pediatric dental services in Greater Noida West.",
     "url": "https://endosmiledentalcare.com",
     "telephone": "+91 83688 47831",
     "email": "endosmiledentalcare@gmail.com",
@@ -33,12 +33,6 @@ const StructuredData = () => {
       "Sa 10:00-13:00, 17:00-20:00"
     ],
     "priceRange": "₹",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "127",
-      "bestRating": "5"
-    },
     "medicalSpecialty": [
       "Endodontics",
       "Cosmetic Dentistry",

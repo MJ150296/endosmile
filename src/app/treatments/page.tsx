@@ -6,7 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
-import { CountUp } from "countup.js";
 import { nanoid } from "nanoid";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,7 +17,7 @@ const Treatments = () => {
       slug: "cosmetic-dentistry",
       title: "Cosmetic Dentistry",
       description:
-        "Transform your smile with our state-of-the-art cosmetic dentistry services. We offer a range of treatments, including teeth whitening, veneers, and smile makeovers, designed to improve the aesthetics of your teeth and boost your confidence. Our experienced team uses cutting-edge techniques to deliver natural-looking results tailored to your preferences. Whether you want to correct discoloration, close gaps, or reshape teeth, our customized solutions ensure a radiant, flawless smile.",
+        "Cosmetic dentistry includes procedures that address tooth color, shape, position, or proportions. Options may include whitening or restorative procedures, depending on oral health, examination findings, and treatment goals.",
       altText: "Cosmetic Dentistry",
       image: "/Images/services/cosmeticDentistry.jpg",
     },
@@ -27,7 +26,7 @@ const Treatments = () => {
       slug: "root-canal-treatment",
       title: "Root Canal Treatment",
       description:
-        "Save your natural teeth and alleviate pain with our root canal treatment. This procedure treats infected or damaged tooth pulp, preventing tooth loss and restoring function. With advanced tools and techniques, we ensure stress-free experience. Our meticulous care provides long-term relief and maintains your oral health. Don't let tooth pain affect your life—our root canal therapy delivers effective solutions to preserve your beautiful smile.",
+        "Root canal treatment removes inflamed or infected pulp from inside a tooth, cleans and seals the root canals, and is followed by appropriate restoration. It may help retain a tooth when the tooth is restorable; the expected outcome depends on clinical findings.",
       altText: "Root Canal Treatment",
       image: "/Images/services/rootCanal.jpg",
     },
@@ -36,7 +35,7 @@ const Treatments = () => {
       slug: "orthodontics-braces",
       title: "Orthodontics Procedure",
       description:
-        "Achieve a perfectly aligned smile with our orthodontic procedures. Whether you opt for traditional braces or modern clear aligners like Invisalign, we provide tailored solutions to address misalignment, overcrowding, and bite issues. These treatments enhance not only your appearance but also your oral health. Trust our team for advanced, comfortable care that delivers a healthier, more confident smile.",
+        "Orthodontic treatment uses appliances such as fixed braces or clear aligners to apply controlled forces and improve tooth alignment and bite relationships. Suitability and duration depend on the individual case.",
       altText: "Orthodontics Procedure",
       image: "/Images/services/orthodontics.jpg",
     },
@@ -45,7 +44,7 @@ const Treatments = () => {
       slug: "braces-and-aligners",
       title: "Braces & Aligners",
       description:
-        "Perfect your smile with our comprehensive braces and aligner treatments. Choose traditional braces for complex alignment issues or Invisalign for a nearly invisible option. These solutions improve your smile's appearance and oral health. Our personalized plans fit your lifestyle, ensuring minimal disruption to your routine. Achieve a straighter smile with care tailored to your needs.",
+        "Fixed braces and clear aligners are options for selected tooth-alignment problems. An orthodontic assessment is needed to determine the appropriate appliance, treatment plan, expected duration, and retention requirements.",
       altText: "Braces & Aligners",
       image: "/Images/services/braces.jpg",
     },
@@ -54,7 +53,7 @@ const Treatments = () => {
       slug: "dental-implants-and-fillings",
       title: "Dental Implants & Fillings",
       description:
-        "Restore your teeth's functionality and aesthetics with our dental implants and fillings. Implants provide a permanent solution for missing teeth, ensuring durability and a natural look, while our high-quality fillings repair cavities effectively. Using biocompatible materials and advanced techniques, we ensure your comfort and long-lasting results. Trust us to rebuild your smile seamlessly.",
+        "Fillings repair teeth affected by decay or limited structural loss. Dental implants are a surgical tooth-replacement option that may support a crown, bridge, or denture after assessment of bone, gums, medical history, and restorative needs.",
       altText: "Dental Implants & Fillings",
       image: "/Images/services/ImplantsAndFillings.jpg",
     },
@@ -63,7 +62,7 @@ const Treatments = () => {
       slug: "pediatric-dentistry",
       title: "Pediatric Dentistry",
       description:
-        "Give your little ones the best start to oral health with our pediatric dentistry services. From preventive care to treating cavities, we provide gentle, compassionate dental care tailored to children. Start your child's journey to a lifetime of healthy smiles with us.",
+        "Pediatric dental care includes examination, prevention, oral hygiene guidance, monitoring of dental development, and treatment of decay or other conditions when indicated.",
       altText: "Pediatric Dentistry",
       image: "/Images/services/pediatricDentistry.jpeg",
     },
@@ -72,28 +71,11 @@ const Treatments = () => {
       slug: "dentures",
       title: "Dentures",
       description:
-        "Regain your smile and confidence with dentures. Designed for comfort and a natural appearance, restoring functionality and aesthetics. Whether you need partial or full dentures, we offer custom solutions that fit perfectly and improve your quality of life. Let us help you smile with ease and comfort again.",
+        "Complete and partial dentures are removable prostheses used for selected patterns of tooth loss. Fit, adaptation, speech, and chewing function vary among patients and may require adjustment or review.",
       altText: "Dentures",
       image: "/Images/services/dentures.jpg",
     },
   ];
-
-  React.useEffect(() => {
-    // Hardcoded values for CountUp.js
-    const stats = [
-      { id: "patients", value: 5000 },
-      { id: "treatments", value: 2000 },
-      { id: "years", value: 11 },
-    ];
-
-    const options = { duration: 2 };
-    stats.forEach((stat) => {
-      const countUp = new CountUp(stat.id, stat.value, options);
-      if (!countUp.error) {
-        countUp.start();
-      }
-    });
-  }, []);
 
   return (
     <>
@@ -113,34 +95,8 @@ const Treatments = () => {
           </h1>
           <div className="mt-4 p-2 w-full flex justify-center items-center bg-black bg-opacity-40">
             <p className="text-lg text-white font-semibold animate__animated animate__fadeInUp">
-              Tailored solutions for every smile, delivered with precision and
-              care.
+              Treatment options based on clinical assessment and individual needs.
             </p>
-          </div>
-        </div>
-
-        {/* Statistics Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 text-center">
-          <div className="bg-blue-100 p-6 rounded-lg shadow-lg animate__animated animate__fadeInUp">
-            <div className="text-5xl font-bold text-blue-600 flex justify-center items-center gap-x-1">
-              <h3 id="patients"></h3>
-              <p>+</p>
-            </div>
-            <p className="text-gray-600 mt-2">Happy Patients</p>
-          </div>
-          <div className="bg-green-100 p-6 rounded-lg shadow-lg animate__animated animate__fadeInUp">
-            <div className="text-5xl font-bold text-green-600 flex justify-center items-center gap-x-1">
-              <h3 id="treatments"></h3>
-              <p>+</p>
-            </div>
-            <p className="text-gray-600 mt-2">Successful Treatments</p>
-          </div>
-          <div className="bg-purple-100 p-6 rounded-lg shadow-lg animate__animated animate__fadeInUp">
-            <div className="text-5xl font-bold text-purple-600 flex justify-center items-center gap-x-1">
-              <h3 id="years"></h3>
-              <p>+</p>
-            </div>
-            <p className="text-gray-600 mt-2">Years of Experience</p>
           </div>
         </div>
 

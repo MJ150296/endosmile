@@ -20,7 +20,7 @@ const SignUpExcitingOffer = () => {
   return (
     <div className="flex flex-col px-5 gap-y-10 pt-20 text-center md:text-start justify-center items-center">
       <p className="text-3xl md:text-5xl font-semibold bg-gradient-to-br from-[#23a4db] to-[#3FA434] bg-clip-text text-transparent">
-        For special Offers & Discount Updates
+        Contact the clinic
       </p>
 
       <div className="w-11/12 md:w-1/2 border-4 border-transparent rounded-lg bg-gradient-to-br from-blue-500 to-purple-500 flex justify-center items-center gap-x-5">
@@ -46,7 +46,7 @@ const SignUpExcitingOffer = () => {
       </p>
 
       <p className="text-3xl font-semibold bg-gradient-to-br from-[#3FA434] to-[#23a4db] bg-clip-text text-transparent">
-        &quot;Strong Teeth, Bright Smiles.&quot;
+        &quot;For appointments and dental enquiries, contact the clinic.&quot;
       </p>
 
       <div className="flex md:hidden gap-x-5 px-5">

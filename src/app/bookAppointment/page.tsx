@@ -59,11 +59,11 @@ const AppointmentPage: React.FC = () => {
           <SwiperSlide>
             <div className="bg-gradient-to-br from-white to-blue-50 shadow-lg p-8 rounded-lg text-center">
               <h3 className="text-2xl font-semibold text-blue-600">
-                State-of-the-Art Technology
+                Diagnostic and treatment planning
               </h3>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                We use advanced tools and techniques for precision and
-                efficiency in treatments.
+                Investigations and treatment techniques are selected according
+                to the clinical question and individual needs.
               </p>
             </div>
           </SwiperSlide>
@@ -73,8 +73,8 @@ const AppointmentPage: React.FC = () => {
                 Patient-Centered Care
               </h3>
               <p className="mt-4 text-gray-600 leading-relaxed">
-                Your comfort and satisfaction are our highest priorities at
-                every step of the journey.
+                The dental team explains procedures, expected effects, and
+                available alternatives before treatment.
               </p>
             </div>
           </SwiperSlide>
@@ -94,10 +94,11 @@ const AppointmentPage: React.FC = () => {
         </div> */}
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center text-blue-700 animate__animated animate__fadeInUp">
-            Ready to Get Started?
+          Request an Appointment
           </h2>
           <p className="text-center text-gray-500 mt-4 mb-12 animate__animated animate__fadeInUp">
-            Use the form below to book your appointment today!
+            Share your contact details and the reason for your visit. The clinic
+            will confirm availability and next steps.
           </p>
           <BookAppointmentForm />
         </div>
