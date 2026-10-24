@@ -37,7 +37,7 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:locale" content="en_US" />
-      <meta property="og:site_name" content="EndoSmile Dental Care" />
+      <meta property="og:site_name" content="Endo Smile Dental Care" />
 
       {/* Twitter Meta Tags */}
       <meta name="twitter:card" content={twitterCardType} />

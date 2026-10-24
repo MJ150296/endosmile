@@ -24,7 +24,7 @@ export const treatments: Treatment[] = [
     shortDescription:
       "Endodontic procedure to preserve natural tooth structure",
     description:
-      "Root canal treatment may be recommended when the dental pulp becomes inflamed or infected due to deep tooth decay, repeated dental procedures, problems with existing restorations, or cracks in the tooth. At EndoSmile Dental Care, root canal procedures are performed using appropriate clinical techniques and dental Loupes with magnification, where indicated, to aid the examination and treatment of complex root canal anatomy. The treatment aims to remove infected or inflamed pulp tissue, preserve the natural tooth where feasible, and restore its function. Treatment outcomes vary depending on the condition of the tooth and individual clinical factors.",
+      "Root canal treatment may be recommended when the dental pulp becomes inflamed or infected due to deep tooth decay, repeated dental procedures, problems with existing restorations, or cracks in the tooth. At Endo Smile Dental Care, root canal procedures are performed using appropriate clinical techniques and dental Loupes with magnification, where indicated, to aid the examination and treatment of complex root canal anatomy. The treatment aims to remove infected or inflamed pulp tissue, preserve the natural tooth where feasible, and restore its function. Treatment outcomes vary depending on the condition of the tooth and individual clinical factors.",
     benefits: [
       "Performed using local anaesthesia, where appropriate, to help manage discomfort during the procedure.",
       "Helps preserve the natural tooth when clinically feasible.",
@@ -46,9 +46,9 @@ export const treatments: Treatment[] = [
     duration: "1-2 visits",
     priceRange: "₹4,500 - ₹8,000",
     recoveryTime: "1-2 days",
-    metaTitle: "Root Canal Treatment in Greater Noida West | EndoSmile",
+    metaTitle: "Root Canal Treatment in Greater Noida West | Endo Smile",
     metaDescription:
-      "Root canal treatment services in Greater Noida West at EndoSmile Dental Care. Consultation and treatment for tooth pain and endodontic care.",
+      "Root canal treatment services in Greater Noida West at Endo Smile Dental Care. Consultation and treatment for tooth pain and endodontic care.",
     keywords: [
       "root canal treatment greater noida",
       "root canal near me",
@@ -64,7 +64,7 @@ export const treatments: Treatment[] = [
     shortDescription:
       "Aesthetic dental procedures for tooth restoration and smile enhancement",
     description:
-      "Cosmetic dentistry encompasses procedures designed to modify the appearance of teeth, gums, and overall smile aesthetics. At EndoSmile Dental Care, smile design planning evaluates facial proportions, tooth alignment, color, and individual patient preferences to address concerns like staining, gaps, or structural irregularities. Treatment suitability is determined based on comprehensive oral evaluation and clinical requirements.",
+      "Cosmetic dentistry encompasses procedures designed to modify the appearance of teeth, gums, and overall smile aesthetics. At Endo Smile Dental Care, smile design planning evaluates facial proportions, tooth alignment, color, and individual patient preferences to address concerns like staining, gaps, or structural irregularities. Treatment suitability is determined based on comprehensive oral evaluation and clinical requirements.",
     benefits: [
       "Customized treatment plan based on individual aesthetic goals and clinical feasibility.",
       "Aims to enhance natural tooth appearance and alignment.",
@@ -109,7 +109,6 @@ export const treatments: Treatment[] = [
       "Provides a fixed alternative for replacing missing teeth.",
       "Helps maintain jawbone structural stability following tooth loss.",
       "Avoids the need to modify healthy adjacent teeth, unlike traditional fixed bridges.",
-      "Restores cavity-damaged teeth with tooth-colored composite or specified filling materials.",
       "Aims to restore chewing function and bite stability.",
       "Prognosis depends on bone density, surgical integration, and systemic health conditions.",
     ],
@@ -128,7 +127,7 @@ export const treatments: Treatment[] = [
     recoveryTime: "3-7 days per stage",
     metaTitle: "Dental Implants & Tooth Fillings | Greater Noida West",
     metaDescription:
-      "Dental implant and composite tooth filling services in Greater Noida West at EndoSmile Dental Care. Restorative dentistry for missing or decayed teeth.",
+      "Dental implant and composite tooth filling services in Greater Noida West at Endo Smile Dental Care. Restorative dentistry for missing or decayed teeth.",
     keywords: [
       "dental implants greater noida",
       "tooth implant cost",
@@ -144,7 +143,7 @@ export const treatments: Treatment[] = [
     shortDescription:
       "Treatment options to correct malocclusion and misaligned teeth",
     description:
-      "Orthodontic treatment involves the diagnosis, prevention, and correction of misaligned teeth and jaw relationships. At EndoSmile Dental Care, various alignment modalities—including metal braces, ceramic braces, and clear appliances—are utilized to correct crowded, spaced, or poorly aligned teeth to improve functional occlusion and oral hygiene access.",
+      "Orthodontic treatment involves the diagnosis, prevention, and correction of misaligned teeth and jaw relationships. At Endo Smile Dental Care, various alignment modalities—including metal braces, ceramic braces, and clear appliances—are utilized to correct crowded, spaced, or poorly aligned teeth to improve functional occlusion and oral hygiene access.",
     benefits: [
       "Helps correct dental crowding, spacing, and bite irregularities.",
       "Improves occlusion and distribution of chewing forces.",
@@ -249,7 +248,7 @@ export const treatments: Treatment[] = [
     metaTitle:
       "Pediatric Dentistry | Children's Dental Care Greater Noida West",
     metaDescription:
-      "Pediatric dental examination and preventive care in Greater Noida West at EndoSmile Dental Care. Dental services tailored for children.",
+      "Pediatric dental examination and preventive care in Greater Noida West at Endo Smile Dental Care. Dental services tailored for children.",
     keywords: [
       "pediatric dentist greater noida",
       "children dentist near me",

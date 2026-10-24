@@ -25,7 +25,7 @@ const Navbar = () => {
           <Link href="/">
             <Image
               src="/Images/Logo1.png"
-              alt="EndoSmile Dental Care Logo"
+              alt="Endo Smile Dental Care Logo"
               width={150}
               height={25}
               className="object-contain"

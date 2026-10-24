@@ -10,12 +10,12 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About Us | EndoSmile Dental Care"
-        description="Learn more about EndoSmile Dental Care, your dental clinic for healthy smiles."
+        title="About Us | Endo Smile Dental Care"
+        description="Learn more about Endo Smile Dental Care, your dental clinic for healthy smiles."
         keywords="dental care, dental clinic, oral health, smile"
         image="/images/about-us-image.jpg"
         url="https://www.endosmiledental.com/about"
-        author="EndoSmile Team"
+        author="Endo Smile Team"
       />
       <div className="w-full min-h-screen flex flex-col items-center justify-center pt-24">
         {/* Premium About Us Hero */}
@@ -40,7 +40,7 @@ const About = () => {
 
             {/* Description */}
             <p className="text-lg md:text-xl text-white/90 leading-relaxed animate__animated animate__fadeInUp animate__delay-500ms">
-              <span className="font-semibold text-white">EndoSmile Dental Care </span>
+              <span className="font-semibold text-white">Endo Smile Dental Care </span>
               provides dental consultation, preventive care, and treatment
               services in Greater Noida West.
             </p>
@@ -73,7 +73,7 @@ const About = () => {
             </div>
             <div className="flex flex-col gap-y-1">
               <h2 className="text-3xl text-blue-600 font-semibold">
-                ENDO<span className="text-green-600">SMILE</span> DENTAL CARE
+                ENDO <span className="text-green-600">SMILE</span> DENTAL CARE
               </h2>
               <p className="text-gray-900 text-lg italic">
                 Dental consultation and treatment
@@ -81,7 +81,7 @@ const About = () => {
             </div>
             <div className="flex flex-col gap-y-3">
               <p className="text-gray-800 tracking-wide leading-relaxed">
-                <strong>EndoSmile Dental Care</strong> provides dental
+                <strong>Endo Smile Dental Care</strong> provides dental
                 consultation and services in Greater Noida West, including
                 preventive, restorative, endodontic, orthodontic, and aesthetic
                 care. The appropriate treatment depends on examination findings
@@ -121,13 +121,13 @@ const About = () => {
           <div className="w-full flex flex-col md:flex-row gap-y-10 gap-x-10">
             <div className="w-full p-10 md:p-0 md:w-1/3 flex flex-col gap-y-5 justify-center">
               <p className="text-green-600 tracking-wide">
-                ENDO<span className="text-blue-600">SMILE</span> DENTAL CARE
+                ENDO <span className="text-blue-600">SMILE</span> DENTAL CARE
               </p>
               <h3 className="text-4xl text-gray-700 font-sans font-medium">
                 Why Choose Us?
               </h3>
               <p className="text-gray-800">
-                EndoSmile Dental Care provides a structured clinical setting
+                Endo Smile Dental Care provides a structured clinical setting
                 with attention to communication, prevention, and patient comfort.
               </p>
               <a href="tel:+918368847831" className="flex gap-x-2 group cursor-pointer">

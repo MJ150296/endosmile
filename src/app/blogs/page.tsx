@@ -12,12 +12,12 @@ const BlogList: React.FC = () => {
       {/* Page Title */}
       <div className="text-center mb-16">
         <h1 className="text-5xl font-extrabold text-blue-500 drop-shadow-sm mb-4 animate__animated animate__fadeInDown">
-          Endosmile Dental Insights
+          Endo Smile Dental Insights
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed animate__animated animate__fadeIn animate__delay-1s">
           Stay informed with tips, the latest dental technologies, and
           oral health advice curated by our specialists at{" "}
-          <span className="font-semibold text-green-500">Endosmile</span>.
+          <span className="font-semibold text-green-500">Endo Smile</span>.
         </p>
       </div>
 

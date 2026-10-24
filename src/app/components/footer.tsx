@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-wrap justify-between">
           {/* Clinic Info */}
           <div className="mb-6 md:mb-0 w-full md:w-1/3 md:pr-5">
-            <h3 className="text-xl font-bold mb-4">EndoSmile Dental Care</h3>
+            <h3 className="text-xl font-bold mb-4">Endo Smile Dental Care</h3>
             <p className="mb-2 font-semibold">
               Dental consultation and treatment services.
             </p>
@@ -120,7 +120,7 @@ const Footer: React.FC = () => {
 
         {/* Bottom Section */}
         <div className="mt-8 text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} EndoSmile Dental Care. All rights
+          <p>© {new Date().getFullYear()} Endo Smile Dental Care. All rights
             reserved.</p>
           <p>Designed & Developed by - <span className="font-semibold">Mayank Joshi</span></p>
           <a href="tel:+917895927366" aria-label="Call 8368847831" className="font-semibold">

@@ -6,7 +6,7 @@ const StructuredData = () => {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Dentist",
-    "name": "EndoSmile Dental Care",
+    "name": "Endo Smile Dental Care",
     "description": "Dental consultation, preventive care, restorative dentistry, endodontic treatment, orthodontics, and pediatric dental services in Greater Noida West.",
     "url": "https://endosmiledentalcare.com",
     "telephone": "+91 83688 47831",

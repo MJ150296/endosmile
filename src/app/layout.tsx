@@ -19,25 +19,25 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL('https://endosmiledentalcare.com'),
   title: {
-    default: "EndoSmile Dental Care | Dentist in Greater Noida West",
-    template: "%s | EndoSmile Dental Care"
+    default: "Endo Smile Dental Care | Dentist in Greater Noida West",
+    template: "%s | Endo Smile Dental Care"
   },
   description:
     "Dental consultation, preventive care, restorative dentistry, endodontic treatment, orthodontics, and pediatric dental services in Greater Noida West.",
   keywords: ["dentist greater noida", "root canal greater noida", "dental clinic greater noida west", "dentist near me", "endodontist greater noida", "smile designing", "cosmetic dentistry", "dr sumit dinkar", "ended smile iteda"],
   authors: [{ name: "Dr Sumit Dinkar" }],
-  creator: "EndoSmile Dental Care",
-  publisher: "EndoSmile Dental Care",
+  creator: "Endo Smile Dental Care",
+  publisher: "Endo Smile Dental Care",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: "EndoSmile Dental Care | Dentist in Greater Noida West",
+    title: "Endo Smile Dental Care | Dentist in Greater Noida West",
     description: "Dental consultation, preventive care, restorative dentistry, endodontic treatment, orthodontics, and pediatric dental services in Greater Noida West.",
     url: 'https://endosmiledentalcare.com',
-    siteName: 'EndoSmile Dental Care',
+    siteName: 'Endo Smile Dental Care',
     locale: 'en_IN',
     type: 'website',
   },

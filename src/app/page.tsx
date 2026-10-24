@@ -219,7 +219,7 @@ export default function Home() {
           />
         </a>
       </div>
-      <div className="relative pt-40 pb-32 overflow-hidden">
+      <div className="relative overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-32">
 
         {/* Background Gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-white via-gray-50 to-gray-100"></div>
@@ -240,21 +240,22 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 flex flex-col lg:flex-row items-center gap-16">
+        <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center gap-10 px-4 sm:gap-12 sm:px-6 lg:flex-row lg:gap-16 lg:px-10">
 
           {/* Text Section */}
-          <div className="flex-1 flex flex-col gap-8 text-center lg:text-left">
+          <div className="flex min-w-0 w-full flex-1 flex-col gap-6 text-center sm:gap-8 lg:text-left">
 
             {/* Heading */}
-            <h1 className="text-5xl font-semibold tracking-tight text-gray-800 leading-tight">
+            <h1 className="text-4xl font-semibold leading-tight tracking-tight text-gray-800 sm:text-5xl">
               <span className="text-blue-600">Endo </span>
               <span className="text-green-600">Smile </span>
               Dental Care:
               <br className="hidden lg:block" />
             </h1>
-            <h2 className="text-3xl text-gray-700 font-medium">
-              <span className="text-blue-600">Dental consultation and treatment</span>
-              <span className="text-green-600"> in Greater Noida West</span></h2>
+            <h2 className="text-2xl font-medium leading-snug text-gray-700 sm:text-3xl">
+              <span className="text-blue-600">Dental consultation and treatment</span>{" "}
+              <span className="text-green-600">in Greater Noida West</span>
+            </h2>
 
             {/* Subheading */}
             <p className="text-gray-600 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
@@ -264,11 +265,11 @@ export default function Home() {
 
             {/* Tagline */}
             <p className="text-blue-600 font-medium text-lg tracking-wide">
-              Endo<span className="text-green-500">Smile</span> Dental Care
+              Endo <span className="text-green-500">Smile</span> Dental Care
             </p>
 
             {/* Premium Stats */}
-            <div className="flex justify-center lg:justify-start gap-6 mt-4">
+            <div className="mt-2 grid w-full grid-cols-1 gap-3 sm:mt-4 sm:grid-cols-3 sm:gap-4 lg:justify-start">
 
               {[
                 { value: "Mon–Sat", label: "Clinic hours" },
@@ -276,11 +277,11 @@ export default function Home() {
                 { value: "Individual", label: "Treatment planning" }
               ].map((item, i) => (
 
-                <a key={i} href="https://share.google/MKrINQA0xM0qW13ft" target="blank" className="hover:scale-105 transition-transform duration-200">
+                <a key={i} href="https://share.google/MKrINQA0xM0qW13ft" target="_blank" rel="noopener noreferrer" className="w-full transition-transform duration-200 hover:scale-105">
                   <div
-                    className="px-6 py-4 rounded-2xl bg-white/60 backdrop-blur-md shadow-sm border border-gray-200 text-center"
+                    className="h-full rounded-2xl border border-gray-200 bg-white/60 px-4 py-4 text-center shadow-sm backdrop-blur-md sm:px-3 lg:px-4"
                   >
-                    <div className="text-2xl font-semibold text-gray-900">
+                    <div className="text-xl font-semibold text-gray-900 sm:text-2xl">
                       {item.value}
                     </div>
                     <p className="text-sm text-gray-500 mt-1">{item.label}</p>
@@ -292,18 +293,18 @@ export default function Home() {
             </div>
 
             {/* CTA */}
-            <div className="flex flex-row gap-4 justify-center lg:justify-start mt-6">
+            <div className="mt-4 flex w-full flex-col gap-3 sm:mt-6 sm:flex-row sm:justify-center lg:justify-start">
 
               <Link
                 href="/bookAppointment"
-                className="px-6 py-3 rounded-full bg-blue-600 text-white font-medium shadow-md hover:bg-blue-700 transition-all duration-300"
+                className="rounded-full bg-blue-600 px-6 py-3 text-center font-medium text-white shadow-md transition-all duration-300 hover:bg-blue-700"
               >
                 Book Appointment
               </Link>
 
               <button
                 onClick={handleScrollToSignUpExcitingOffer}
-                className="px-6 py-3 rounded-full bg-white/70 backdrop-blur-md border border-gray-200 text-gray-800 hover:bg-white transition-all duration-300"
+                className="rounded-full border border-gray-200 bg-white/70 px-6 py-3 text-center text-gray-800 backdrop-blur-md transition-all duration-300 hover:bg-white"
               >
                 Enquiries
               </button>
@@ -312,9 +313,9 @@ export default function Home() {
           </div>
 
           {/* Image Section */}
-          <div className="flex-1 flex justify-center items-center">
+          <div className="flex w-full flex-1 items-center justify-center">
 
-            <div className="relative rounded-3xl overflow-hidden shadow-xl">
+            <div className="relative w-full max-w-[420px] overflow-hidden rounded-3xl shadow-xl">
 
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-transparent"></div>
@@ -324,7 +325,7 @@ export default function Home() {
                 alt="Dr Sumit"
                 width={420}
                 height={620}
-                className="object-cover"
+                className="h-auto w-full object-cover"
                 priority
               />
             </div>
@@ -407,7 +408,7 @@ export default function Home() {
               Oral health care based on clinical assessment.
             </p>
             <p className="text-gray-600">
-              At <strong>EndoSmile Dental Care</strong>, located in{" "}
+              At <strong>Endo Smile Dental Care</strong>, located in{" "}
               <strong>Greater Noida West</strong>, we provide{" "}
               <strong>dental consultation</strong>, <strong>preventive care</strong>, and{" "}
               <strong>treatment services</strong> to support your <strong>oral health</strong>. Our services include routine{" "}
@@ -485,7 +486,7 @@ export default function Home() {
             </p>
             <div className="space-y-4 mr-10 text-gray-600">
               <p>
-                <strong>EndoSmile Dental Care</strong> is a dental clinic located in Greater Noida West, providing dental consultation, diagnosis, treatment, and preventive oral healthcare services.
+                <strong>Endo Smile Dental Care</strong> is a dental clinic located in Greater Noida West, providing dental consultation, diagnosis, treatment, and preventive oral healthcare services.
               </p>
               <p>
                 The clinic is associated with <strong>Dr. Sumit Dinkar</strong>, whose professional qualifications and areas of practice include endodontics and aesthetic dentistry, as applicable to his registered credentials.
@@ -510,7 +511,7 @@ export default function Home() {
             <div className="p-0 md:p-20">
               <Image
                 src="/Images/bg/bg1.jpg"
-                alt="Dr Sumit || endoSmile dental care || greater noida west"
+                alt="Dr Sumit || Endo Smile dental care || greater noida west"
                 width={530} // Specify image width
                 height={600} // Specify image height
                 className="object-cover rounded-lg"
@@ -530,7 +531,7 @@ export default function Home() {
             <div className="absolute hidden md:flex md:bottom-20 md:right-10 ">
               <Image
                 src="/Images/sumit/sumit1.png"
-                alt="Dr Sumit || EndoSmile Dental Care || Greater Noida west"
+                alt="Dr Sumit || Endo Smile Dental Care || Greater Noida west"
                 width={200} // Specify image width
                 height={600} // Specify image height
                 className="object-cover rounded-3xl w-28 md:w-60"
@@ -561,7 +562,7 @@ export default function Home() {
           <div className="flex flex-col gap-y-5 md:flex-row md:justify-between">
             <div className="">
               <h2 className="tracking-wide text-green-600 text-3xl md:text-4xl">
-                ENDOSMILE
+                ENDO SMILE
                 <span className="text-blue-600 text-2xl md:text-3xl font-medium">
                   STORIES..
                 </span>

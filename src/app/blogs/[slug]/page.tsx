@@ -30,8 +30,8 @@ const BlogDetail: React.FC = () => {
         {/* Subtle Background Logo */}
         <div className="absolute inset-0 z-0 opacity-30 flex justify-center items-center pointer-events-none">
           <Image
-            src="/Images/Logo2.png" // Replace with actual Endosmile logo
-            alt="Endosmile Logo"
+            src="/Images/Logo2.png" // Replace with actual Endo Smile logo
+            alt="Endo Smile Logo"
             width={350}
             height={350}
             className="object-contain"

@@ -80,12 +80,12 @@ const Treatments = () => {
   return (
     <>
       <SEO
-        title="Treatments | EndoSmile Dental Care | Greater Noida West"
-        description="Learn more about EndoSmile Dental Care, your dental clinic for healthy smiles."
+        title="Treatments | Endo Smile Dental Care | Greater Noida West"
+        description="Learn more about Endo Smile Dental Care, your dental clinic for healthy smiles."
         keywords="dental care, dental clinic, oral health, smile"
         image="/images/about-us-image.jpg"
         url="https://www.endosmiledental.com/treatments"
-        author="EndoSmile Team"
+        author="Endo Smile Team"
       />
       <div className="pt-28 bg-gray-50">
         {/* Header Section */}
